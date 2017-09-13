@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "update-resource": "babel-node scripts/resources/index.js",
     "update-en-resource": "babel-node scripts/resources/index.js en",
-    "prettier-resource": "prettier --single-quote --print-width 80 --trailing-comma all --write 'static/**/*.json'"
+    "prettier-resource": "prettier --single-quote --print-width 80 --trailing-comma all --write 'resources/**/*.json'"
   },
   "author": "",
   "license": "ISC",
