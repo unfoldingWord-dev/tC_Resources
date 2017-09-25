@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import axios from 'axios';
 import fs from 'fs-extra';
 import path from 'path-extra';
@@ -97,8 +96,8 @@ door43ApiHelper
     .then(() => {
       // remove temp folder
       setTimeout(() => {
-        fs.removeSync(TEMP_PATH)
-      }, 1000)
+        fs.removeSync(TEMP_PATH);
+      }, 1000);
     });
   })
   .catch(err => {

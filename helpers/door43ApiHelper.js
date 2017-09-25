@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import axios from 'axios';
 
 export const getUrl = async (languageId, resourceId) => {
