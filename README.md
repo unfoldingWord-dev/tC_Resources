@@ -3,4 +3,11 @@
 
 # tC Resources
 
-Helper methods and static resources for [translationCore](https://github.com/unfoldingWord-dev/translationCore)
+Helper methods and static resources for [translationCore].
+
+## Usage
+
+This repository should be included as a sub-module in [translationCore].
+
+
+[translationCore]:https://github.com/unfoldingWord-dev/translationCore
