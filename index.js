@@ -35,8 +35,9 @@ const RESOURCE_OUTPUT_PATH = path.join(
   RESOURCE_TYPE,
   RESOURCE_Key,
 );
+console.log(RESOURCE_OUTPUT_PATH);
 const ZIP_FILE_PATH = path.join(RESOURCE_INPUT_PATH, RESOURCE_ID + '.zip');
-
+console.log(ZIP_FILE_PATH);
 // create temp directories
 fs.mkdirsSync(TEMP_PATH);
 fs.mkdirsSync(RESOURCE_INPUT_PATH);

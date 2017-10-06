@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "eslint ./helpers ./index.js && jest",
-    "update-resource": "babel-node ./index.js",
-    "update-en-resource": "babel-node ./index.js en",
+    "update-resource": "babel-node index.js",
+    "update-en-resource": "babel-node index.js en",
     "prettier-resource": "prettier --single-quote --print-width 80 --trailing-comma all --write 'resources/**/*.json'"
   },
   "jest": {
