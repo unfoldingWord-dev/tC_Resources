@@ -1,7 +1,7 @@
 {
   "1": [
     {
-      "word": "Ὑπομίμνῃσκε",
+      "word": "ὑπομίμνῃσκε",
       "lemma": "ὑπομιμνῄσκω",
       "strongs": "G52790",
       "morph": "Gr,VTMPA2,,S,"
@@ -108,7 +108,7 @@
       "word": "πᾶσαν",
       "lemma": "πᾶς",
       "strongs": "G39560",
-      "morph": "Gr,RI,,,,AFS,"
+      "morph": "Gr,EQ,,,,AFS,"
     },
     {
       "word": "ἐνδεικνυμένους",
@@ -325,7 +325,7 @@
       "morph": "Gr,EA,,,,GMS,"
     },
     {
-      "word": "σωτῆρος",
+      "word": "Σωτῆρος",
       "lemma": "σωτήρ",
       "strongs": "G49900",
       "morph": "Gr,N,,,,,GMS,"
@@ -337,7 +337,7 @@
       "morph": "Gr,RP,,,1G,P,"
     },
     {
-      "word": "θεοῦ",
+      "word": "Θεοῦ",
       "lemma": "θεός",
       "strongs": "G23160",
       "morph": "Gr,N,,,,,GMS,"
@@ -348,7 +348,7 @@
       "word": "οὐκ",
       "lemma": "οὐ",
       "strongs": "G37560",
-      "morph": "Gr,D,,,,,,,,,"
+      "morph": "Gr,DO,,,,,,,,"
     },
     {
       "word": "ἐξ",
@@ -384,7 +384,7 @@
       "word": "ἃ",
       "lemma": "ὅς",
       "strongs": "G37390",
-      "morph": "Gr,RR,,,,ANP,"
+      "morph": "Gr,RD,,,,ANP,"
     },
     {
       "word": "ἐποιήσαμεν",
@@ -402,7 +402,7 @@
       "word": "ἀλλὰ",
       "lemma": "ἀλλά",
       "strongs": "G02350",
-      "morph": "Gr,CC,,,,,,,,"
+      "morph": "Gr,CO,,,,,,,,"
     },
     {
       "word": "κατὰ",
@@ -471,13 +471,13 @@
       "morph": "Gr,N,,,,,GFS,"
     },
     {
-      "word": "πνεύματος",
+      "word": "Πνεύματος",
       "lemma": "πνεῦμα",
       "strongs": "G41510",
       "morph": "Gr,N,,,,,GNS,"
     },
     {
-      "word": "ἁγίου",
+      "word": "Ἁγίου",
       "lemma": "ἅγιος",
       "strongs": "G00400",
       "morph": "Gr,AA,,,,GNS,"
@@ -528,7 +528,7 @@
     },
     {
       "word": "Χριστοῦ",
-      "lemma": "Χριστός",
+      "lemma": "χριστός",
       "strongs": "G55470",
       "morph": "Gr,N,,,,,GMS,"
     },
@@ -539,7 +539,7 @@
       "morph": "Gr,EA,,,,GMS,"
     },
     {
-      "word": "σωτῆρος",
+      "word": "Σωτῆρος",
       "lemma": "σωτήρ",
       "strongs": "G49900",
       "morph": "Gr,N,,,,,GMS,"
@@ -568,7 +568,7 @@
       "word": "τῇ",
       "lemma": "ὁ",
       "strongs": "G35880",
-      "morph": "Gr,RD,,,,DFS,"
+      "morph": "Gr,EA,,,,DFS,"
     },
     {
       "word": "ἐκείνου",
@@ -621,7 +621,7 @@
   ],
   "8": [
     {
-      "word": "Πιστὸς",
+      "word": "πιστὸς",
       "lemma": "πιστός",
       "strongs": "G41030",
       "morph": "Gr,NP,,,,NMS,"
@@ -674,6 +674,7 @@
       "strongs": "G12260",
       "morph": "Gr,VINPM,,,,,"
     },
+    "“",
     {
       "word": "ἵνα",
       "lemma": "ἵνα",
@@ -717,7 +718,7 @@
       "morph": "Gr,VTPEA,NMP,"
     },
     {
-      "word": "θεῷ",
+      "word": "Θεῷ",
       "lemma": "θεός",
       "strongs": "G23160",
       "morph": "Gr,N,,,,,DMS,"
@@ -971,7 +972,7 @@
   ],
   "12": [
     {
-      "word": "Ὅταν",
+      "word": "ὅταν",
       "lemma": "ὅταν",
       "strongs": "G37520",
       "morph": "Gr,CS,,,,,,,,"
@@ -1241,7 +1242,7 @@
   ],
   "15": [
     {
-      "word": "Ἀσπάζονταί",
+      "word": "ἀσπάζονταί",
       "lemma": "ἀσπάζομαι",
       "strongs": "G07820",
       "morph": "Gr,VTIPM3,,P,"
