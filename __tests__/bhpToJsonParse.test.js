@@ -10,7 +10,7 @@ import path from 'path-extra';
 const BHP_URL = 'https://git.door43.org/Door43/BHP/raw/master';
 const usfmPath = path.join('__tests__', 'output', 'bhp-sources');
 
-describe.skip('ParseBHP', function() {
+describe('ParseBHP', function() {
   it('should output BHP chapter files', function() {
     return new Promise((resolve) => {
       const book_name = '41-MAT';
