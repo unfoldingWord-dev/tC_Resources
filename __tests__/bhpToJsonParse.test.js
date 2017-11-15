@@ -8,6 +8,7 @@
  *    * verify url for bhp in `BHP_URL`
  *    * Run `npm install` inside tC_resources path to install node_modules
  *    * Run `jest __tests__/bhpToJsonParse.test.js` to download and generate bhp json files
+ *    * copy directories from __tests__/output/bhp/<version>/ to resources/grc/bibles/bhp/<version>/
  */
 
 import * as usfmToJsonHelpers from '../helpers/usfmToJsonHelpers';
