@@ -14,19 +14,20 @@
 import * as usfmToJsonHelpers from '../helpers/usfmToJsonHelpers';
 import fs from 'fs-extra';
 import path from 'path-extra';
+import * as bible from './fixtures/bible';
 
 const BHP_URL = 'https://git.door43.org/Door43/BHP/raw/master';
-const BIBLE_LIST_NT = ["41-MAT", "42-MRK", "43-LUK", "44-JHN", "45-ACT", "46-ROM", "47-1CO", "48-2CO", "49-GAL", "50-EPH",
-  "51-PHP", "52-COL", "53-1TH", "54-2TH", "55-1TI", "56-2TI", "57-TIT", "58-PHM", "59-HEB", "60-JAS",
-  "61-1PE", "62-2PE", "63-1JN", "64-2JN", "65-3JN", "66-JUD", "67-REV"];
+
 const version = 'v0';
 const usfmPath = path.join('__tests__', 'output', 'bhp-sources', version);
+const SOURCE = bible.BIBLE_LIST_NT;
 
 describe.skip('ParseBHP', function() {
   it('should output BHP chapter files', () => {
     return new Promise((resolve) => {
-      let books = BIBLE_LIST_NT.slice(0).reverse(); // make a reversed copy so we pop in book order
+      let books = SOURCE.slice(0).reverse(); // make a reversed copy so we pop in book order
       parseBhpToChapters(books, () => {
+        generateIndex(SOURCE);
         resolve(true);
       });
     });
@@ -38,7 +39,7 @@ describe.skip('ParseBHP', function() {
 
   /**
    * @description - reads BHP for each book from github and split into chapters.
-   * @param books {Array} books of the bible to download in format '41-MAT'
+   * @param {Array} books of the bible to download in format '41-MAT'
    * @param callback
    */
   function parseBhpToChapters(books, callback) {
@@ -67,12 +68,22 @@ describe.skip('ParseBHP', function() {
   }
 
   /**
+   * @description - split book code out of book name, for example 'mat' from '41-MAT'
+   * @param {string} bookName book in format '41-MAT'
+   * @return {string}
+   */
+  function getBookCode(bookName) {
+    const bookCode = bookName.split('-')[1].toLowerCase();
+    return bookCode;
+  }
+
+  /**
    * @description - downloads book usfm if it has not already been downloaded.
-   * @param bookName {String} book in format '41-MAT'
+   * @param {string} bookName book in format '41-MAT'
    * @param callback
    */
   function getBookUsfm(bookName, callback) {
-    const bookCode = bookName.split('-')[1].toLowerCase();
+    const bookCode = getBookCode(bookName);
     let bhpPath = path.join(usfmPath, bookCode + ".usfm");
     if(fs.existsSync(bhpPath)) { // if already downloaded, just do callback
       console.log("file already downloaded: " + bhpPath);
@@ -92,7 +103,7 @@ describe.skip('ParseBHP', function() {
 
   /**
    * @description - downloads usfm file
-   * @param url {String} url to download
+   * @param {string} url url to download
    * @param callback
    */
   function getUsfm(url, callback) {
@@ -107,5 +118,71 @@ describe.skip('ParseBHP', function() {
         callback(data);
       }
     });
+  }
+
+  /**
+   * @description - update index with chapter/verse/words for specified book code
+   * @param {Object} index
+   * @param {string} bookCode
+   */
+  function indexBook(index, bookCode) {
+    console.log("Indexing " + bookCode);
+    const expectedChapters = bible.BOOK_CHAPTER_VERSES[bookCode];
+    const bookPath = path.join('__tests__', 'output', 'bhp', version, bookCode);
+    const files = fs.readdirSync(bookPath);
+    const chapterCount = Object.keys(expectedChapters).length;
+    console.log(`${bookCode} - found ${chapterCount} chapters`);
+    expect(files.length).toEqual(chapterCount);
+    const bookIndex = {};
+    index[bookCode] = bookIndex;
+
+    // add chapters
+    for (let chapter of Object.keys(expectedChapters)) {
+      const chapterIndex = {};
+      bookIndex[chapter] = chapterIndex;
+      const expectedVerseCount = parseInt(expectedChapters[chapter]);
+      const chapterPath = path.join(bookPath, chapter + ".json");
+      const bhpChapter = JSON.parse(fs.readFileSync(chapterPath));
+      const bhpVerses = Object.keys(bhpChapter);
+      console.log(`${bookCode} - in chapter ${chapter}, found ${bhpVerses.length} verses`);
+      // expect(bhpVerses.length).toEqual(expectedVerseCount);
+      if (bhpVerses.length !== expectedVerseCount) {
+        console.warn(`WARNING: ${bookCode} - in chapter ${chapter}, found ${bhpVerses.length} verses but should be ${expectedVerseCount} verses`);
+      }
+
+      // add verses
+      for (let verse of bhpVerses) {
+        const words = bhpChapter[verse];
+        const wordCount = words.length;
+        chapterIndex[verse] = wordCount;
+      }
+    }
+  }
+
+  /**
+   * @description save index to index.json
+   * @param index
+   */
+  function saveIndex(index) {
+    const indexPath = path.join('__tests__', 'output', 'bhp', version, 'index.json');
+    if (fs.existsSync(indexPath)) {
+      fs.removeSync(indexPath);
+    }
+    const indexStr = JSON.stringify(index, null, 2);
+    fs.outputFileSync(indexPath, indexStr, 'UTF-8');
+    console.log(indexStr);
+  }
+
+  /**
+   * @description - make index of all the books
+   * @param {Array} books to index
+   */
+  function generateIndex(books) {
+    let index = {};
+    for (let book of books) {
+      const bookCode = getBookCode(book);
+      indexBook(index, bookCode);
+    }
+    saveIndex(index);
   }
 });
