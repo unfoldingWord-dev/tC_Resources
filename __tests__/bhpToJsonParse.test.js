@@ -1,6 +1,13 @@
 /**
- * bhpToJsonParse.test.js - not technically a test, but a bhp json parser/generator
- *   Remove .skip to run manually, intended to be skipped for unit tests
+ * bhpToJsonParse.test.js - this is a script to parse bhp USFM on git.door43.org and generate the json files
+ *    used by tC. Leave `.skip` on describe when committing so this will be skipped for unit testing.
+ *
+ *    To run script:
+ *    * remove `.skip` on describe
+ *    * update value for `version`
+ *    * verify url for bhp in `BHP_URL`
+ *    * Run `npm install` inside tC_resources path to install node_modules
+ *    * Run `jest __tests__/bhpToJsonParse.test.js` to download and generate bhp json files
  */
 
 import * as usfmToJsonHelpers from '../helpers/usfmToJsonHelpers';
@@ -15,23 +22,22 @@ const version = 'v0';
 const usfmPath = path.join('__tests__', 'output', 'bhp-sources', version);
 
 describe.skip('ParseBHP', function() {
-  it('should output BHP chapter files', function() {
+  it('should output BHP chapter files', () => {
     return new Promise((resolve) => {
-      let books = BIBLE_LIST_NT.slice(0).reverse();
+      let books = BIBLE_LIST_NT.slice(0).reverse(); // make a reversed copy so we pop in book order
       parseBhpToChapters(books, () => {
         resolve(true);
       });
     });
-  });
+  }, 100000); // max timeout (should be long enough, but may need to be increased on a slow connection)
 
   //
   // helpers
   //
 
   /**
-   * @description - reads BHP for each book from github and split into chapters.  Note this is a recursive function
-   *    due to async nature of url downloads
-   * @param books
+   * @description - reads BHP for each book from github and split into chapters.
+   * @param books {Array} books of the bible to download in format '41-MAT'
    * @param callback
    */
   function parseBhpToChapters(books, callback) {
@@ -43,6 +49,8 @@ describe.skip('ParseBHP', function() {
     let book_name = books.pop();
 
     getBookUsfm(book_name, (bhpPath, bookCode) => {
+      console.log("Parsing: " + book_name);
+
       const outputPath = path.join('__tests__', 'output', 'bhp', version, bookCode);
       if(fs.existsSync(outputPath)) {
         fs.removeSync(outputPath);
@@ -50,35 +58,42 @@ describe.skip('ParseBHP', function() {
       usfmToJsonHelpers.toChapterFiles(bhpPath, outputPath);
       const firstChapter = path.join(outputPath, '1.json');
       expect(fs.existsSync(firstChapter)).toBeTruthy();
-      parseBhpToChapters(books, callback); // start next book
+
+      setTimeout( () => {
+        parseBhpToChapters(books, callback); // start next book
+      }, 100);
     });
   }
 
   /**
    * @description - downloads book usfm if it has not already been downloaded.
-   * @param bookName
+   * @param bookName {String} book in format '41-MAT'
    * @param callback
    */
   function getBookUsfm(bookName, callback) {
     const bookCode = bookName.split('-')[1].toLowerCase();
     let bhpPath = path.join(usfmPath, bookCode + ".usfm");
     if(fs.existsSync(bhpPath)) { // if already downloaded, just do callback
+      console.log("file already downloaded: " + bhpPath);
       callback(bhpPath, bookCode);
       return;
     }
 
     const url = `${BHP_URL}/${bookName}.usfm`;
+    console.log("Downloading: " + url);
     getUsfm(url, (data) => {
-      if(data) {
-        fs.mkdirsSync(usfmPath);
-        fs.outputFileSync(bhpPath, data, 'UTF-8');
-      } else {
-        bhpPath = null;
-      }
+      expect(data).not.toBeNull();
+      fs.mkdirsSync(usfmPath);
+      fs.outputFileSync(bhpPath, data, 'UTF-8');
       callback(bhpPath,bookCode);
     });
   }
 
+  /**
+   * @description - downloads usfm file
+   * @param url {String} url to download
+   * @param callback
+   */
   function getUsfm(url, callback) {
     let request = require('request');
     request.get({
