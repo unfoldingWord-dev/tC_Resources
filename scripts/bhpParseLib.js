@@ -19,8 +19,10 @@ import assert from 'assert';
 
 const BHP_URL = 'https://git.door43.org/Door43/BHP/raw/master';
 
-const version = 'v0';
-const usfmPath = path.join('__tests__', 'output', 'bhp-sources', version);
+let bhpVersion = null;
+const bhpUsfmCachePath = path.join('__tests__', 'output', 'bhp-sources');
+const bhpOutputPath = path.join('resources', 'grc', 'bibles', 'bhp');
+
 const SOURCE = bible.BIBLE_LIST_NT;
 
 /**
@@ -30,6 +32,7 @@ const SOURCE = bible.BIBLE_LIST_NT;
  */
 export function generateBhpVersion(version, resolve) {
   console.log(`Using version: '${version}'`);
+  bhpVersion = version;
   let books = SOURCE.slice(0).reverse(); // make a reversed copy so we pop in book order
   parseBhpToChapters(books, () => {
     generateIndex(SOURCE, version);
@@ -49,11 +52,10 @@ function parseBhpToChapters(books, callback) {
   }
 
   let book_name = books.pop();
-
   getBookUsfm(book_name, (bhpPath, bookCode) => {
     console.log("Parsing: " + book_name);
 
-    const outputPath = path.join('__tests__', 'output', 'bhp', version, bookCode);
+    const outputPath = path.join(bhpOutputPath, bhpVersion, bookCode);
     if(fs.existsSync(outputPath)) {
       fs.removeSync(outputPath);
     }
@@ -73,8 +75,7 @@ function parseBhpToChapters(books, callback) {
  * @return {string}
  */
 function getBookCode(bookName) {
-  const bookCode = bookName.split('-')[1].toLowerCase();
-  return bookCode;
+  return bookName.split('-')[1].toLowerCase();
 }
 
 /**
@@ -84,10 +85,11 @@ function getBookCode(bookName) {
  */
 function getBookUsfm(bookName, callback) {
   const bookCode = getBookCode(bookName);
-  let bhpPath = path.join(usfmPath, bookCode + ".usfm");
-  if(fs.existsSync(bhpPath)) { // if already downloaded, just do callback
-    console.log("file already downloaded: " + bhpPath);
-    callback(bhpPath, bookCode);
+  const bhpFolder = path.join(bhpUsfmCachePath, bhpVersion);
+  const bhpFilePath = path.join(bhpFolder, bookCode + ".usfm");
+  if(fs.existsSync(bhpFilePath)) { // if already downloaded, just do callback
+    console.log("file already downloaded: " + bhpFilePath);
+    callback(bhpFilePath, bookCode);
     return;
   }
 
@@ -95,9 +97,9 @@ function getBookUsfm(bookName, callback) {
   console.log("Downloading: " + url);
   getUsfm(url, (data) => {
     assert.deepEqual(!!data,true);
-    fs.mkdirsSync(usfmPath);
-    fs.outputFileSync(bhpPath, data, 'UTF-8');
-    callback(bhpPath,bookCode);
+    fs.mkdirsSync(bhpFolder);
+    fs.outputFileSync(bhpFilePath, data, 'UTF-8');
+    callback(bhpFilePath,bookCode);
   });
 }
 
@@ -128,7 +130,7 @@ function getUsfm(url, callback) {
 function indexBook(index, bookCode) {
   console.log("Indexing " + bookCode);
   const expectedChapters = bible.BOOK_CHAPTER_VERSES[bookCode];
-  const bookPath = path.join('__tests__', 'output', 'bhp', version, bookCode);
+  const bookPath = path.join(bhpOutputPath, bhpVersion, bookCode);
   const files = fs.readdirSync(bookPath);
   const chapterCount = Object.keys(expectedChapters).length;
   console.log(`${bookCode} - found ${chapterCount} chapters`);
@@ -163,7 +165,7 @@ function indexBook(index, bookCode) {
  * @param index
  */
 function saveIndex(index) {
-  const indexPath = path.join('__tests__', 'output', 'bhp', version, 'index.json');
+  const indexPath = path.join(bhpOutputPath, bhpVersion, 'index.json');
   if (fs.existsSync(indexPath)) {
     fs.removeSync(indexPath);
   }
@@ -183,5 +185,7 @@ function generateIndex(books) {
     indexBook(index, bookCode);
   }
   saveIndex(index);
+  const bhpResultsPath = path.join(bhpOutputPath, bhpVersion);
+  console.log(`Updated BHP files are in: "${bhpResultsPath}"`);
 }
 
