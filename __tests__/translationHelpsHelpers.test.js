@@ -5,7 +5,7 @@ import { extractZipFile } from "../helpers/zipHelpers";
 
 
 describe('Translation Helps Helpers', () => {
-  const tempFilePath = './__tests__/output';
+  const tempFilePath = './__tests__/output/trans_help';
 
   afterEach(() => {
     if (tempFilePath) {

@@ -4,7 +4,7 @@ import { extractZipFile } from "../helpers/zipHelpers";
 import * as biblesHelpers from "../helpers/biblesHelpers";
 
 describe('Bible Helpers', () => {
-  const tempFilePath = './__tests__/output';
+  const tempFilePath = './__tests__/output/bible_help';
 
   afterEach(() => {
     if (tempFilePath) {
