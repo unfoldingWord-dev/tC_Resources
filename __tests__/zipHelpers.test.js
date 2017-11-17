@@ -1,5 +1,5 @@
 import fs from 'fs-extra';
-import { extractZipFile } from "../helpers/zipHelpers";
+import * as zipHelpers from "../helpers/zipHelpers";
 
 describe('Zip Helpers', () => {
   let zipfilepath = null;
@@ -53,7 +53,7 @@ describe('Zip Helpers', () => {
       if(resourceinputpath) {
         fs.removeSync(resourceinputpath);
       }
-      extractZipFile(zipfilepath, resourceinputpath);
+      zipHelpers.extractZipFile(zipfilepath, resourceinputpath);
       exception = false;
     } catch (e) {
       console.log("failure: " + e);
