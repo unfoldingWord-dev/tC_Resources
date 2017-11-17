@@ -5,7 +5,7 @@ describe('Door43 API Helper', () => {
   test('getUrl with valid url', () => {
       return new Promise((resolve, reject) => {
 
-        const mock_get = (url) => {
+        const mock_get = () => {
           return new Promise(resolve => {
             let catalog = fs.readFileSync('./__tests__/fixtures/catalog.json');
             catalog = JSON.parse(catalog);
