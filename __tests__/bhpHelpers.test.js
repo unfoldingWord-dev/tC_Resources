@@ -33,5 +33,5 @@ describe('ParseBHP', function() {
     }).then(() => {
       console.log('bhp processing completed!');
     });
-  }, 10000); // max timeout (should be long enough, but may need to be increased on a slow connection)
+  }, 30000); // max timeout (should be long enough, but may need to be increased on a slow connection)
 });
