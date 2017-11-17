@@ -11,7 +11,7 @@
  *    * copy directories from __tests__/output/bhp/<version>/ to resources/grc/bibles/bhp/<version>/
  */
 
-import * as usfmToJsonHelpers from '../helpers/usfmToJsonHelpers';
+import * as usfmToJsonHelpers from './usfmToJsonHelpers';
 import fs from 'fs-extra';
 import path from 'path-extra';
 import * as bible from '../scripts/bible';
@@ -171,7 +171,6 @@ function saveIndex(index) {
   }
   const indexStr = JSON.stringify(index, null, 2);
   fs.outputFileSync(indexPath, indexStr, 'UTF-8');
-  console.log(indexStr);
 }
 
 /**

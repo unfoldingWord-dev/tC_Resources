@@ -9,7 +9,7 @@
  *    * Run `npm run bhp-parse` to download and generate bhp json files
  */
 
-import * as bhpParseLib from '../scripts/bhpParseLib';
+import * as bhpHelpers from '../helpers/bhpHelpers';
 
 function main() {
   let version = getParameter('ver');
@@ -20,7 +20,7 @@ function main() {
   }
 
   return new Promise((resolve) => {
-    bhpParseLib.generateBhpVersion(version, resolve);
+    bhpHelpers.generateBhpVersion(version, resolve);
   }).then(() => {
     console.log('bhp processing completed!');
   }).catch((e) => {
