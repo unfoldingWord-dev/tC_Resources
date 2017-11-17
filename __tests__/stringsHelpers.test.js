@@ -10,7 +10,7 @@ describe('Strings Helpers', () => {
 
       test('with valid id helps', () => {
         const resourceId = 'tn';
-        const expectedResType = resourceId;
+        const expectedResType = 'translationHelps';
         expect(getResourceType(resourceId)).toEqual(expectedResType);
       });
 
