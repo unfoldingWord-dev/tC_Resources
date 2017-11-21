@@ -1,7 +1,14 @@
 import axios from 'axios';
 
-export const getUrl = async (languageId, resourceId) => {
-  let response = await axios.get('https://api.door43.org/v3/catalog.json');
+/**
+ * @description - does a lookup to find the URL for specified resource
+ * @param languageId
+ * @param resourceId
+ * @param get - optional get method to call (for testing)
+ * @return {Promise.<*>}
+ */
+export const getUrl = async (languageId, resourceId, get=axios.get) => {
+  let response = await get('https://api.door43.org/v3/catalog.json');
   let url;
   let languageResources = response.data.languages.filter(language => {
     // filter languages to match languageId

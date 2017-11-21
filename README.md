@@ -9,5 +9,9 @@ Helper methods and static resources for [translationCore].
 
 This repository should be included as a sub-module in [translationCore].
 
+## Scripts
+
+To update BHP chapter files, follow instructions given in `./script/bhpParse.js`.
+
 
 [translationCore]:https://github.com/unfoldingWord-dev/translationCore
