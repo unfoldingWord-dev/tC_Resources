@@ -1,14 +1,6 @@
 /**
- * bhpToJsonParse.test.js - this is a script to parse bhp USFM on git.door43.org and generate the json files
- *    used by tC. Leave `.skip` on describe when committing so this will be skipped for unit testing.
- *
- *    To run script:
- *    * remove `.skip` on describe
- *    * update value for `version`
- *    * verify url for bhp in `BHP_URL`
- *    * Run `npm install` inside tC_resources path to install node_modules
- *    * Run `jest __tests__/bhpToJsonParse.test.js` to download and generate bhp json files
- *    * copy directories from __tests__/output/bhp/<version>/ to resources/grc/bibles/bhp/<version>/
+ * bhpHelpers.js - this is the code called by bhpParse.js to download and convert greek resources (was BHP and now
+ *                  UGNT.
  */
 
 import * as usfmToJsonHelpers from './usfmToJsonHelpers';
@@ -17,7 +9,7 @@ import path from 'path-extra';
 import * as bible from '../scripts/bible';
 import assert from 'assert';
 
-const BHP_URL = 'https://git.door43.org/Door43/BHP/raw/master';
+const BHP_URL = 'https://git.door43.org/Door43/UGNT/raw/master';
 
 let bhpVersion = null;
 const bhpUsfmCachePath = path.join('__tests__', 'output', 'bhp-sources');
