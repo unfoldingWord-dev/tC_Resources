@@ -145,7 +145,10 @@ function indexBook(index, bookCode) {
 
     // add verses
     for (let verse of bhpVerses) {
-      const words = bhpChapter[verse];
+      let words = bhpChapter[verse];
+      if (words.verseObjects) { // check for new verse objects support
+        words = words.verseObjects;
+      }
       const wordCount = words.length;
       chapterIndex[verse] = wordCount;
     }
