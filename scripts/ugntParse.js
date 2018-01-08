@@ -1,16 +1,16 @@
 /**
- * bhpParse.js - this is a script to parse bhp USFM on git.door43.org and generate the json files
+ * ugntParse.js - this is a script to parse ugnt USFM on git.door43.org and generate the json files
  *    used by tC.
  *
  *    To run script:
- *    * update value for parameter `ver` in script `bhp-parse` in package.json
- *    * verify url for bhp sources in `bhpHelpers.BHP_URL`
+ *    * update value for parameter `ver` in script `ugnt-parse` in package.json
+ *    * verify url for ugnt sources in `ugntHelpers.UGNT_URL`
  *    * Run `npm install` inside tC_resources path to install node_modules
- *    * Run `npm run bhp-parse` to download and generate bhp json files
+ *    * Run `npm run ugnt-parse` to download and generate ugnt json files
  *    * json output will be in ./resources/grc/bibles/[version]/
  */
 
-import * as bhpHelpers from '../helpers/bhpHelpers';
+import * as ugntHelpers from '../helpers/ugntHelpers';
 
 function main() {
   let version = getParameter('ver');
@@ -21,9 +21,9 @@ function main() {
   }
 
   return new Promise((resolve) => {
-    bhpHelpers.generateBhpVersion(version, resolve);
+    ugntHelpers.generateUgntVersion(version, resolve);
   }).then(() => {
-    console.log('bhp processing completed!');
+    console.log('ugnt processing completed!');
   }).catch((e) => {
     console.log('Failed: ' + e);
   });

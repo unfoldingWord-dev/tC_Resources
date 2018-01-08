@@ -2,7 +2,7 @@ export function getResourceType(resourceId) {
   switch (resourceId) {
     case 'ulb':
     case 'udb':
-    case 'bhp':
+    case 'ugnt':
       return 'bibles';
     case 'tn':
     case 'ta':
@@ -17,7 +17,7 @@ export function getResourceId(resourceId) {
   switch (resourceId) {
     case 'ulb':
     case 'udb':
-    case 'bhp':
+    case 'ugnt':
       return resourceId;
     case 'tn':
       return 'translationNotes';

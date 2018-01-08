@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "eslint ./helpers ./index.js && jest",
-    "bhp-parse": "babel-node --presets node6 ./scripts/bhpParse.js --ver=v0",
+    "ugnt-parse": "babel-node --presets node6 ./scripts/ugntParse.js --ver=v0",
     "update-resource": "babel-node index.js",
     "update-en-resource": "babel-node index.js en",
     "prettier-resource": "prettier --single-quote --print-width 80 --trailing-comma all --write 'resources/**/*.json'"

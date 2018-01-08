@@ -11,7 +11,7 @@ This repository should be included as a sub-module in [translationCore].
 
 ## Scripts
 
-To update BHP chapter files, follow instructions given in `./script/bhpParse.js`.
+To update UGNT chapter files, follow instructions given in `./script/ugntParse.js`.
 
 
 [translationCore]:https://github.com/unfoldingWord-dev/translationCore
