@@ -33,38 +33,45 @@ export function generateTw(lang, resource, version) {
         json[verse].verseObjects.forEach( (verseObject) => {
           let groups = {};
           getQuotes(groups, verseObject);
-          for(let groupId in groups) {
-            if( ! tw[groupId] ) {
-              tw[groupId] = [];
+          for(let category in groups) {
+            if( ! tw[category] ) {
+              tw[category] = [];
             }
-            let occurrences = {};
-            groups[groupId].forEach( (item) => {
-              if(! occurrences[item['quote']]) {
-                occurrences[item['quote']] = 1;
+            for(let groupId in groups[category]) {
+              if( ! tw[category][groupId] ) {
+                tw[category][groupId] = [];
               }
-              tw[groupId].push({
-                "priority": 1,
-                "comments": false,
-                "reminders": false,
-                "selections": false,
-                "verseEdits": false,
-                "contextId": {
-                  "reference": {"bookId": bookId, "chapter": chapter, "verse": parseInt(verse)},
-                  "tool": "translationWords",
-                  "groupId": groupId,
-                  "quote": item['quote'],
-                  "strong": item['strong'],
-                  "occurrence": occurrences[item['quote']]++
+              let occurrences = {};
+              groups[category][groupId].forEach( (item) => {
+                if(! occurrences[item['quote']]) {
+                  occurrences[item['quote']] = 1;
                 }
+                tw[category][groupId].push({
+                  "priority": 1,
+                  "comments": false,
+                  "reminders": false,
+                  "selections": false,
+                  "verseEdits": false,
+                  "contextId": {
+                    "reference": {"bookId": bookId, "chapter": chapter, "verse": parseInt(verse)},
+                    "tool": "translationWords",
+                    "groupId": groupId,
+                    "quote": item['quote'],
+                    "strong": item['strong'],
+                    "occurrence": occurrences[item['quote']]++
+                  }
+                });
               });
-            });
+            }
           }
         });
       }
     }
-    for(let groupId in tw){
-      let groupPath = path.join(twOutputPath, bookId, groupId+".json");
-      fs.outputFileSync(groupPath, JSON.stringify(tw[groupId], (k, v)=>{if(v===undefined){return null}return v}, 2));
+    for(let category in tw){
+      for(let groupId in tw[category]){
+        let groupPath = path.join(twOutputPath, category, bookId, groupId+".json");
+        fs.outputFileSync(groupPath, JSON.stringify(tw[category][groupId], (k, v)=>{if(v===undefined){return null}return v}, 2));
+      }
     }
   });
 }
@@ -93,11 +100,16 @@ function getQuotes(groups, verseObject, milestone=null) {
     }
     if (text) {
       if(verseObject['tw']) {
-        const groupId = verseObject['tw'].split('/').pop();
-        if(! groups[groupId]) {
-          groups[groupId] = [];
+        const twLinkItems = verseObject['tw'].split('/');
+        const groupId = twLinkItems.pop();
+        const category = twLinkItems.pop();
+        if(! groups[category]) {
+          groups[category] = {};
         }
-        groups[groupId].push({
+        if(! groups[category][groupId]) {
+          groups[category][groupId] = [];
+        }
+        groups[category][groupId].push({
           quote: text,
           strong: verseObject['strong']
         });
