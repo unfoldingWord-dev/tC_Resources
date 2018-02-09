@@ -100,10 +100,6 @@ function getQuotes(groups, verseObject, milestone=null) {
           groups[groupId] = [];
         }
         groups[groupId].push(quote);
-        if(groupId == 'inchrist') {
-          console.log("HERE!");
-          console.log(groups[groupId]);
-        }
       }
     }
     return quote;
