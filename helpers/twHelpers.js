@@ -1,5 +1,5 @@
 /**
- * twHelpers.js - this is the code called by twGenerate.js to generate the tW from a given language, bible and version.
+ * twHelpers.js - this is the code called by scripts/buildTw.js to generate the tW from a given language, bible and version.
  */
 
 import fs from 'fs-extra';
