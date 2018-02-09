@@ -38,9 +38,9 @@ export function generateTw(lang, resource, version) {
               tw[groupId] = [];
             }
             let occurrences = {};
-            groups[groupId].forEach( (quote) => {
-              if(! occurrences[quote]) {
-                occurrences[quote] = 1;
+            groups[groupId].forEach( (item) => {
+              if(! occurrences[item['quote']]) {
+                occurrences[item['quote']] = 1;
               }
               tw[groupId].push({
                 "priority": 1,
@@ -52,8 +52,9 @@ export function generateTw(lang, resource, version) {
                   "reference": {"bookId": bookId, "chapter": chapter, "verse": parseInt(verse)},
                   "tool": "translationWords",
                   "groupId": groupId,
-                  "quote": quote,
-                  "occurrence": occurrences[quote]++
+                  "quote": item['quote'],
+                  "strong": item['strong'],
+                  "occurrence": occurrences[item['quote']]++
                 }
               });
             });
@@ -63,7 +64,7 @@ export function generateTw(lang, resource, version) {
     }
     for(let groupId in tw){
       let groupPath = path.join(twOutputPath, bookId, groupId+".json");
-      fs.outputFileSync(groupPath, JSON.stringify(tw[groupId], null, 2));
+      fs.outputFileSync(groupPath, JSON.stringify(tw[groupId], (k, v)=>{if(v===undefined){return null}return v}, 2));
     }
   });
 }
@@ -96,7 +97,10 @@ function getQuotes(groups, verseObject, milestone=null) {
         if(! groups[groupId]) {
           groups[groupId] = [];
         }
-        groups[groupId].push(text);
+        groups[groupId].push({
+          quote: text,
+          strong: verseObject['strong']
+        });
       }
     }
     return text;
