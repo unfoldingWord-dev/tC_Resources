@@ -1,0 +1,38 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "tit",
+        "chapter": 1,
+        "verse": 3
+      },
+      "tool": "translationWords",
+      "groupId": "wordofgod",
+      "quote": "λόγον",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "tit",
+        "chapter": 2,
+        "verse": 5
+      },
+      "tool": "translationWords",
+      "groupId": "wordofgod",
+      "quote": "λόγος τοῦ Θεοῦ",
+      "occurrence": 1
+    }
+  }
+]

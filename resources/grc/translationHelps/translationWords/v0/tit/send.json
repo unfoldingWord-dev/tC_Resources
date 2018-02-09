@@ -1,0 +1,38 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "tit",
+        "chapter": 3,
+        "verse": 12
+      },
+      "tool": "translationWords",
+      "groupId": "send",
+      "quote": "πέμψω",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "tit",
+        "chapter": 3,
+        "verse": 13
+      },
+      "tool": "translationWords",
+      "groupId": "send",
+      "quote": "πρόπεμψον",
+      "occurrence": 1
+    }
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "2ti",
+        "chapter": 1,
+        "verse": 8
+      },
+      "tool": "translationWords",
+      "groupId": "goodnews",
+      "quote": "εὐαγγελίῳ",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "2ti",
+        "chapter": 1,
+        "verse": 10
+      },
+      "tool": "translationWords",
+      "groupId": "goodnews",
+      "quote": "εὐαγγελίου",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "2ti",
+        "chapter": 2,
+        "verse": 8
+      },
+      "tool": "translationWords",
+      "groupId": "goodnews",
+      "quote": "εὐαγγέλιόν",
+      "occurrence": 1
+    }
+  }
+]

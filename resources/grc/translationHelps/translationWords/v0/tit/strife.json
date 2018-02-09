@@ -1,0 +1,38 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "tit",
+        "chapter": 3,
+        "verse": 9
+      },
+      "tool": "translationWords",
+      "groupId": "strife",
+      "quote": "ἔρεις",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "tit",
+        "chapter": 3,
+        "verse": 9
+      },
+      "tool": "translationWords",
+      "groupId": "strife",
+      "quote": "μάχας",
+      "occurrence": 1
+    }
+  }
+]

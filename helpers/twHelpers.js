@@ -5,13 +5,9 @@
 import fs from 'fs-extra';
 import path from 'path-extra';
 import * as bible from '../scripts/bible';
-import assert from 'assert';
-import util from 'util';
 
-let bibleVersion = null;
 let biblePath = null;
 let twOutputPath = null;
-let tw = {};
 
 const SOURCE = bible.BIBLE_LIST_NT;
 
@@ -22,14 +18,12 @@ const SOURCE = bible.BIBLE_LIST_NT;
  * @param version
  */
 export function generateTw(lang, resource, version) {
-  bibleVersion = version;
-  console.log(`Using version: '${version}'`);
   biblePath = path.join('resources', lang, 'bibles', resource, version);
-  twOutputPath = path.join('resources', 'grc', 'translationHelps', 'translationWords', version);
+  twOutputPath = path.join('resources', lang, 'translationHelps', 'translationWords', version);
   let books = SOURCE.slice(0);
   books.forEach( (bookName) => {
     const bookId = getbookId(bookName);
-    tw[bookId] = {};
+    let tw = {};
     const bookFolder = path.join(biblePath, bookId);
     const chapters = Object.keys(bible.BOOK_CHAPTER_VERSES[bookId]).length;
     for(let chapter = 1; chapter <= chapters; chapter++) {
@@ -40,22 +34,22 @@ export function generateTw(lang, resource, version) {
           let groups = {};
           getQuotes(groups, verseObject);
           for(let groupId in groups) {
-            if( ! tw[bookId][groupId] ) {
-              tw[bookId][groupId] = [];
+            if( ! tw[groupId] ) {
+              tw[groupId] = [];
             }
             let occurrences = {};
             groups[groupId].forEach( (quote) => {
               if(! occurrences[quote]) {
                 occurrences[quote] = 1;
               }
-              tw[bookId][groupId].push({
+              tw[groupId].push({
                 "priority": 1,
                 "comments": false,
                 "reminders": false,
                 "selections": false,
                 "verseEdits": false,
                 "contextId": {
-                  "reference": {"bookId": bookId, "chapter": chapter, "verse": verse},
+                  "reference": {"bookId": bookId, "chapter": chapter, "verse": parseInt(verse)},
                   "tool": "translationWords",
                   "groupId": groupId,
                   "quote": quote,
@@ -67,8 +61,11 @@ export function generateTw(lang, resource, version) {
         });
       }
     }
+    for(let groupId in tw){
+      let groupPath = path.join(twOutputPath, bookId, groupId+".json");
+      fs.outputFileSync(groupPath, JSON.stringify(tw[groupId], null, 2));
+    }
   });
-  console.log(util.inspect(tw, {showHidden: false, depth: null}));
 }
 
 /**
@@ -81,28 +78,28 @@ export function generateTw(lang, resource, version) {
  * @returns string
  */
 function getQuotes(groups, verseObject, milestone=null) {
-  var quote = '';
+  var text = '';
   if(verseObject['type'] == 'milestone' || (verseObject['type'] == 'word' && (verseObject['tw'] || milestone))) {
     if(verseObject['type'] == 'milestone') {
       if(verseObject['text']) {
-        quote = verseObject['text'];
+        text = verseObject['text'];
       }
       verseObject.children.forEach((childVerseObject) => {
-        quote += (quote?' ':'')+getQuotes(groups, childVerseObject, true);
+        text += (text?' ':'')+getQuotes(groups, childVerseObject, true);
       });
     } else if(verseObject['type'] == 'word') {
-      quote = verseObject['text'];
+      text = verseObject['text'];
     }
-    if (quote) {
+    if (text) {
       if(verseObject['tw']) {
         const groupId = verseObject['tw'].split('/').pop();
         if(! groups[groupId]) {
           groups[groupId] = [];
         }
-        groups[groupId].push(quote);
+        groups[groupId].push(text);
       }
     }
-    return quote;
+    return text;
   }
 }
 

@@ -1,0 +1,56 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "1th",
+        "chapter": 5,
+        "verse": 15
+      },
+      "tool": "translationWords",
+      "groupId": "evil",
+      "quote": "κακὸν",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "1th",
+        "chapter": 5,
+        "verse": 15
+      },
+      "tool": "translationWords",
+      "groupId": "evil",
+      "quote": "κακοῦ",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "1th",
+        "chapter": 5,
+        "verse": 22
+      },
+      "tool": "translationWords",
+      "groupId": "evil",
+      "quote": "πονηροῦ",
+      "occurrence": 1
+    }
+  }
+]

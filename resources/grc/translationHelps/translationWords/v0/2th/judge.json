@@ -1,0 +1,38 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "2th",
+        "chapter": 1,
+        "verse": 5
+      },
+      "tool": "translationWords",
+      "groupId": "judge",
+      "quote": "κρίσεως",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "2th",
+        "chapter": 2,
+        "verse": 12
+      },
+      "tool": "translationWords",
+      "groupId": "judge",
+      "quote": "κριθῶσιν",
+      "occurrence": 1
+    }
+  }
+]

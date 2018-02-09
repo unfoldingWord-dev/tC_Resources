@@ -1,0 +1,38 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "2ti",
+        "chapter": 2,
+        "verse": 20
+      },
+      "tool": "translationWords",
+      "groupId": "honor",
+      "quote": "τιμὴν",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "2ti",
+        "chapter": 2,
+        "verse": 21
+      },
+      "tool": "translationWords",
+      "groupId": "honor",
+      "quote": "τιμήν",
+      "occurrence": 1
+    }
+  }
+]

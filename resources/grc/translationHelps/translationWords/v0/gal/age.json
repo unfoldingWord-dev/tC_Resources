@@ -1,0 +1,56 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "gal",
+        "chapter": 1,
+        "verse": 4
+      },
+      "tool": "translationWords",
+      "groupId": "age",
+      "quote": "αἰῶνος",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "gal",
+        "chapter": 1,
+        "verse": 5
+      },
+      "tool": "translationWords",
+      "groupId": "age",
+      "quote": "αἰῶνας",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "gal",
+        "chapter": 1,
+        "verse": 5
+      },
+      "tool": "translationWords",
+      "groupId": "age",
+      "quote": "αἰώνων",
+      "occurrence": 1
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "gal",
+        "chapter": 5,
+        "verse": 21
+      },
+      "tool": "translationWords",
+      "groupId": "envy",
+      "quote": "φθόνοι",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "gal",
+        "chapter": 5,
+        "verse": 26
+      },
+      "tool": "translationWords",
+      "groupId": "envy",
+      "quote": "φθονοῦντες",
+      "occurrence": 1
+    }
+  }
+]

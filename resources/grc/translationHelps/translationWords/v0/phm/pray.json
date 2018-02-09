@@ -1,0 +1,38 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "phm",
+        "chapter": 1,
+        "verse": 4
+      },
+      "tool": "translationWords",
+      "groupId": "pray",
+      "quote": "προσευχῶν",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "phm",
+        "chapter": 1,
+        "verse": 22
+      },
+      "tool": "translationWords",
+      "groupId": "pray",
+      "quote": "προσευχῶν",
+      "occurrence": 1
+    }
+  }
+]

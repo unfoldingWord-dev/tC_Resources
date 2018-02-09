@@ -1,0 +1,38 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "1th",
+        "chapter": 5,
+        "verse": 2
+      },
+      "tool": "translationWords",
+      "groupId": "thief",
+      "quote": "κλέπτης",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "1th",
+        "chapter": 5,
+        "verse": 4
+      },
+      "tool": "translationWords",
+      "groupId": "thief",
+      "quote": "κλέπτας",
+      "occurrence": 1
+    }
+  }
+]

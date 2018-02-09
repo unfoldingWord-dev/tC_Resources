@@ -1,0 +1,56 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "1th",
+        "chapter": 2,
+        "verse": 4
+      },
+      "tool": "translationWords",
+      "groupId": "test",
+      "quote": "δεδοκιμάσμεθα",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "1th",
+        "chapter": 2,
+        "verse": 4
+      },
+      "tool": "translationWords",
+      "groupId": "test",
+      "quote": "δοκιμάζοντι",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "1th",
+        "chapter": 5,
+        "verse": 21
+      },
+      "tool": "translationWords",
+      "groupId": "test",
+      "quote": "δοκιμάζετε",
+      "occurrence": 1
+    }
+  }
+]

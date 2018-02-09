@@ -1,0 +1,38 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "1ti",
+        "chapter": 1,
+        "verse": 11
+      },
+      "tool": "translationWords",
+      "groupId": "bless",
+      "quote": "μακαρίου",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "1ti",
+        "chapter": 6,
+        "verse": 15
+      },
+      "tool": "translationWords",
+      "groupId": "bless",
+      "quote": "μακάριος",
+      "occurrence": 1
+    }
+  }
+]

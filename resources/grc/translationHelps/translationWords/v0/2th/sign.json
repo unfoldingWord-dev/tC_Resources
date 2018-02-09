@@ -1,0 +1,56 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "2th",
+        "chapter": 1,
+        "verse": 5
+      },
+      "tool": "translationWords",
+      "groupId": "sign",
+      "quote": "ἔνδειγμα",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "2th",
+        "chapter": 2,
+        "verse": 9
+      },
+      "tool": "translationWords",
+      "groupId": "sign",
+      "quote": "σημείοις",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "2th",
+        "chapter": 3,
+        "verse": 17
+      },
+      "tool": "translationWords",
+      "groupId": "sign",
+      "quote": "σημεῖον",
+      "occurrence": 1
+    }
+  }
+]

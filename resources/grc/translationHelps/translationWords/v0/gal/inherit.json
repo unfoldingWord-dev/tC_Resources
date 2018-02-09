@@ -1,0 +1,56 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "gal",
+        "chapter": 3,
+        "verse": 18
+      },
+      "tool": "translationWords",
+      "groupId": "inherit",
+      "quote": "κληρονομία",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "gal",
+        "chapter": 4,
+        "verse": 30
+      },
+      "tool": "translationWords",
+      "groupId": "inherit",
+      "quote": "κληρονομήσει",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "gal",
+        "chapter": 5,
+        "verse": 21
+      },
+      "tool": "translationWords",
+      "groupId": "inherit",
+      "quote": "κληρονομήσουσιν",
+      "occurrence": 1
+    }
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "gal",
+        "chapter": 2,
+        "verse": 2
+      },
+      "tool": "translationWords",
+      "groupId": "run",
+      "quote": "τρέχω",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "gal",
+        "chapter": 2,
+        "verse": 2
+      },
+      "tool": "translationWords",
+      "groupId": "run",
+      "quote": "ἔδραμον",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "gal",
+        "chapter": 5,
+        "verse": 7
+      },
+      "tool": "translationWords",
+      "groupId": "run",
+      "quote": "ἐτρέχετε",
+      "occurrence": 1
+    }
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "tit",
+        "chapter": 1,
+        "verse": 1
+      },
+      "tool": "translationWords",
+      "groupId": "godly",
+      "quote": "εὐσέβειαν",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "tit",
+        "chapter": 2,
+        "verse": 12
+      },
+      "tool": "translationWords",
+      "groupId": "godly",
+      "quote": "ἀσέβειαν",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "tit",
+        "chapter": 2,
+        "verse": 12
+      },
+      "tool": "translationWords",
+      "groupId": "godly",
+      "quote": "εὐσεβῶς",
+      "occurrence": 1
+    }
+  }
+]

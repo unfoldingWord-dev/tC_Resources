@@ -1,0 +1,38 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "gal",
+        "chapter": 1,
+        "verse": 2
+      },
+      "tool": "translationWords",
+      "groupId": "galatia",
+      "quote": "Γαλατίας",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "gal",
+        "chapter": 3,
+        "verse": 1
+      },
+      "tool": "translationWords",
+      "groupId": "galatia",
+      "quote": "Γαλάται",
+      "occurrence": 1
+    }
+  }
+]

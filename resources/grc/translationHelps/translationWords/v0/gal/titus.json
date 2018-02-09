@@ -1,0 +1,38 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "gal",
+        "chapter": 2,
+        "verse": 1
+      },
+      "tool": "translationWords",
+      "groupId": "titus",
+      "quote": "Τίτον",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "gal",
+        "chapter": 2,
+        "verse": 3
+      },
+      "tool": "translationWords",
+      "groupId": "titus",
+      "quote": "Τίτος",
+      "occurrence": 1
+    }
+  }
+]

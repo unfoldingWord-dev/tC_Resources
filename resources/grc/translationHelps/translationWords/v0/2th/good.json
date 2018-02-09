@@ -1,0 +1,56 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "2th",
+        "chapter": 1,
+        "verse": 11
+      },
+      "tool": "translationWords",
+      "groupId": "good",
+      "quote": "ἀγαθωσύνης",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "2th",
+        "chapter": 2,
+        "verse": 16
+      },
+      "tool": "translationWords",
+      "groupId": "good",
+      "quote": "ἀγαθὴν",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "2th",
+        "chapter": 2,
+        "verse": 17
+      },
+      "tool": "translationWords",
+      "groupId": "good",
+      "quote": "ἀγαθῷ",
+      "occurrence": 1
+    }
+  }
+]

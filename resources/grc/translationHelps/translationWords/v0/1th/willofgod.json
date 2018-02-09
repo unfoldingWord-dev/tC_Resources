@@ -1,0 +1,38 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "1th",
+        "chapter": 4,
+        "verse": 3
+      },
+      "tool": "translationWords",
+      "groupId": "willofgod",
+      "quote": "θέλημα τοῦ Θεοῦ",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "1th",
+        "chapter": 5,
+        "verse": 18
+      },
+      "tool": "translationWords",
+      "groupId": "willofgod",
+      "quote": "θέλημα Θεοῦ",
+      "occurrence": 1
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "tit",
+        "chapter": 2,
+        "verse": 5
+      },
+      "tool": "translationWords",
+      "groupId": "blasphemy",
+      "quote": "βλασφημῆται",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "tit",
+        "chapter": 3,
+        "verse": 2
+      },
+      "tool": "translationWords",
+      "groupId": "blasphemy",
+      "quote": "βλασφημεῖν",
+      "occurrence": 1
+    }
+  }
+]

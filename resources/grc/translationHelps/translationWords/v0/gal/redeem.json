@@ -1,0 +1,38 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "gal",
+        "chapter": 3,
+        "verse": 13
+      },
+      "tool": "translationWords",
+      "groupId": "redeem",
+      "quote": "ἐξηγόρασεν",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "gal",
+        "chapter": 4,
+        "verse": 5
+      },
+      "tool": "translationWords",
+      "groupId": "redeem",
+      "quote": "ἐξαγοράσῃ",
+      "occurrence": 1
+    }
+  }
+]

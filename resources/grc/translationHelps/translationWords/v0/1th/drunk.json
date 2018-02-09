@@ -1,0 +1,38 @@
+[
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "1th",
+        "chapter": 5,
+        "verse": 7
+      },
+      "tool": "translationWords",
+      "groupId": "drunk",
+      "quote": "μεθυσκόμενοι",
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "1th",
+        "chapter": 5,
+        "verse": 7
+      },
+      "tool": "translationWords",
+      "groupId": "drunk",
+      "quote": "μεθύουσιν",
+      "occurrence": 1
+    }
+  }
+]
