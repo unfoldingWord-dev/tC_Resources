@@ -6,11 +6,12 @@ import fs from 'fs-extra';
 import path from 'path-extra';
 import * as bible from '../scripts/bible';
 import assert from 'assert';
+import util from 'util';
 
 let bibleVersion = null;
 let biblePath = null;
 let twOutputPath = null;
-let quotes = {};
+let tw = {};
 
 const SOURCE = bible.BIBLE_LIST_NT;
 
@@ -27,50 +28,85 @@ export function generateTw(lang, resource, version) {
   twOutputPath = path.join('resources', 'grc', 'translationHelps', 'translationWords', version);
   let books = SOURCE.slice(0);
   books.forEach( (bookName) => {
-    const bookCode = getBookCode(bookName);
-    const bookFolder = path.join(biblePath, bookCode);
-    const chapters = Object.keys(bible.BOOK_CHAPTER_VERSES[bookCode]).length;
-    let terms = {};
-    for(let i = 1; i <= chapters; i++) {
-      const chapterFile = path.join(bookFolder, i+'.json');
+    const bookId = getbookId(bookName);
+    tw[bookId] = {};
+    const bookFolder = path.join(biblePath, bookId);
+    const chapters = Object.keys(bible.BOOK_CHAPTER_VERSES[bookId]).length;
+    for(let chapter = 1; chapter <= chapters; chapter++) {
+      const chapterFile = path.join(bookFolder, chapter+'.json');
       const json = JSON.parse(fs.readFileSync(chapterFile));
       for (let verse in json) {
         json[verse].verseObjects.forEach( (verseObject) => {
-          populateFromVerseObject(verseObject);
+          let groups = {};
+          getQuotes(groups, verseObject);
+          for(let groupId in groups) {
+            if( ! tw[bookId][groupId] ) {
+              tw[bookId][groupId] = [];
+            }
+            let occurrences = {};
+            groups[groupId].forEach( (quote) => {
+              if(! occurrences[quote]) {
+                occurrences[quote] = 1;
+              }
+              tw[bookId][groupId].push({
+                "priority": 1,
+                "comments": false,
+                "reminders": false,
+                "selections": false,
+                "verseEdits": false,
+                "contextId": {
+                  "reference": {"bookId": bookId, "chapter": chapter, "verse": verse},
+                  "tool": "translationWords",
+                  "groupId": groupId,
+                  "quote": quote,
+                  "occurrence": occurrences[quote]++
+                }
+              });
+            });
+          }
         });
       }
     }
   });
-  console.log(quotes);
+  console.log(util.inspect(tw, {showHidden: false, depth: null}));
 }
 
 /**
  * 
- * @param {*} verseObjects 
- * @param {*} terms 
+ * @param verseObjects 
+ * @param book
+ * @param chapter
+ * @param verse 
+ * @param text
  * @returns string
  */
-function populateFromVerseObject(verseObject) {
-  if(verseObject['tw'] !== undefined && (verseObject['text'] !== undefined || verseObject['children'] != undefined)) {
-    let tw = verseObject['tw'];
-    let text = verseObject['text'];
-    if( text === undefined && verseObject['children'] !== undefined) {
-      let words = [];
-      verseObject.children.forEach((child) => {
-        words.push(populateFromVerseObject(child));
+function getQuotes(groups, verseObject, milestone=null) {
+  var quote = '';
+  if(verseObject['type'] == 'milestone' || (verseObject['type'] == 'word' && (verseObject['tw'] || milestone))) {
+    if(verseObject['type'] == 'milestone') {
+      if(verseObject['text']) {
+        quote = verseObject['text'];
+      }
+      verseObject.children.forEach((childVerseObject) => {
+        quote += (quote?' ':'')+getQuotes(groups, childVerseObject, true);
       });
-      text = words.join(' ');
+    } else if(verseObject['type'] == 'word') {
+      quote = verseObject['text'];
     }
-    if ( text !== undefined ) {
-      if( typeof(quotes[tw]) === 'undefined') {
-        quotes[tw] = [];
+    if (quote) {
+      if(verseObject['tw']) {
+        const groupId = verseObject['tw'].split('/').pop();
+        if(! groups[groupId]) {
+          groups[groupId] = [];
+        }
+        groups[groupId].push(quote);
+        if(groupId == 'inchrist') {
+          console.log("HERE!");
+          console.log(groups[groupId]);
+        }
       }
-      if(quotes[tw].indexOf(text) < 0) {
-        quotes[tw].push(text);
-        quotes[tw].sort();
-      }
-      return text;
     }
+    return quote;
   }
 }
 
@@ -79,7 +115,7 @@ function populateFromVerseObject(verseObject) {
  * @param {string} bookName book in format '41-MAT'
  * @return {string}
  */
-function getBookCode(bookName) {
+function getbookId(bookName) {
   return bookName.split('-')[1].toLowerCase();
 }
 
