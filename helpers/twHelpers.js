@@ -69,7 +69,7 @@ export function generateTw(lang, resource, version) {
     }
     for(let category in tw){
       for(let groupId in tw[category]){
-        let groupPath = path.join(twOutputPath, category, bookId, groupId+".json");
+        let groupPath = path.join(twOutputPath, category, "groups", bookId, groupId+".json");
         fs.outputFileSync(groupPath, JSON.stringify(tw[category][groupId], (k, v)=>{if(v===undefined){return null}return v}, 2));
       }
     }
