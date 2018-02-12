@@ -1,8 +1,4 @@
-import fs from 'fs';
 import * as twHelpers from '../helpers/twHelpers';
-import path from 'path';
-
-var data = {};
 
 function main() {
   const version = getParameter('ver');
@@ -23,7 +19,7 @@ function main() {
     console.log("Invalid parameter, expect bible such as: '--bible=ugnt'");
     return;
   }
-  
+
   return new Promise((resolve) => {
     twHelpers.generateTw(lang, bible, version, resolve);
   }).then(() => {

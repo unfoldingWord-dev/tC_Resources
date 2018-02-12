@@ -19,9 +19,9 @@ const SOURCE = bible.BIBLE_LIST_NT;
  * @param resource
  * @param version
  */
-export function generateTw(lang, resource, version, resolve) {
-  biblePath = path.join('resources', lang, 'bibles', resource, version);
-  twOutputPath = path.join('resources', lang, 'translationHelps', 'translationWords', version);
+export function generateTw(lang, resource, version, resolve, baseDir='.') {
+  biblePath = path.join(baseDir, 'resources', lang, 'bibles', resource, version);
+  twOutputPath = path.join(baseDir, 'resources', lang, 'translationHelps', 'translationWords', version);
   let books = SOURCE.slice(0);
   books.forEach( (bookName) => {
     convertBookVerseObjectsToTwData(bookName);
