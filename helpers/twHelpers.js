@@ -8,6 +8,8 @@ import * as bible from '../scripts/bible';
 
 let biblePath = null;
 let twOutputPath = null;
+let twData = null;
+let groupData = null;
 
 const SOURCE = bible.BIBLE_LIST_NT;
 
@@ -17,63 +19,38 @@ const SOURCE = bible.BIBLE_LIST_NT;
  * @param resource
  * @param version
  */
-export function generateTw(lang, resource, version) {
+export function generateTw(lang, resource, version, resolve) {
   biblePath = path.join('resources', lang, 'bibles', resource, version);
   twOutputPath = path.join('resources', lang, 'translationHelps', 'translationWords', version);
   let books = SOURCE.slice(0);
   books.forEach( (bookName) => {
-    const bookId = getbookId(bookName);
-    let tw = {};
-    const bookFolder = path.join(biblePath, bookId);
-    const chapters = Object.keys(bible.BOOK_CHAPTER_VERSES[bookId]).length;
-    for(let chapter = 1; chapter <= chapters; chapter++) {
-      const chapterFile = path.join(bookFolder, chapter+'.json');
-      const json = JSON.parse(fs.readFileSync(chapterFile));
-      for (let verse in json) {
-        json[verse].verseObjects.forEach( (verseObject) => {
-          let groups = {};
-          getTextData(groups, verseObject);
-          for(let category in groups) {
-            if( ! tw[category] ) {
-              tw[category] = [];
-            }
-            for(let groupId in groups[category]) {
-              if( ! tw[category][groupId] ) {
-                tw[category][groupId] = [];
-              }
-              let occurrences = {};
-              groups[category][groupId].forEach( (item) => {
-                if(! occurrences[item.quote]) {
-                  occurrences[item.quote] = 1;
-                }
-                tw[category][groupId].push({
-                  "priority": 1,
-                  "comments": false,
-                  "reminders": false,
-                  "selections": false,
-                  "verseEdits": false,
-                  "contextId": {
-                    "reference": {"bookId": bookId, "chapter": chapter, "verse": parseInt(verse)},
-                    "tool": "translationWords",
-                    "groupId": groupId,
-                    "quote": item.quote,
-                    "strong": item.strong,
-                    "occurrence": occurrences[item.quote]++
-                  }
-                });
-              });
-            }
-          }
-        });
-      }
-    }
-    for(let category in tw){
-      for(let groupId in tw[category]){
-        let groupPath = path.join(twOutputPath, category, "groups", bookId, groupId+".json");
-        fs.outputFileSync(groupPath, JSON.stringify(tw[category][groupId], null, 2));
-      }
-    }
+    convertBookVerseObjectsToTwData(bookName);
   });
+  resolve(true);
+}
+
+function convertBookVerseObjectsToTwData(bookName) {
+  const bookId = getbookId(bookName);
+  twData = {};
+  const bookFolder = path.join(biblePath, bookId);
+  const chapters = Object.keys(bible.BOOK_CHAPTER_VERSES[bookId]).length;
+  for(let chapter = 1; chapter <= chapters; chapter++) {
+    const chapterFile = path.join(bookFolder, chapter+'.json');
+    const json = JSON.parse(fs.readFileSync(chapterFile));
+    for (let verse in json) {
+      json[verse].verseObjects.forEach( (verseObject) => {
+        groupData = [];
+        populateGroupDataFromVerseObject(verseObject);
+        populateTwDataFromGroupData(bookId, chapter, verse);
+      });
+    }
+  }
+  for(let category in twData){
+    for(let groupId in twData[category]){
+      let groupPath = path.join(twOutputPath, category, "groups", bookId, groupId+".json");
+      fs.outputFileSync(groupPath, JSON.stringify(twData[category][groupId], null, 2));
+    }
+  }
 }
 
 /**
@@ -85,46 +62,80 @@ export function generateTw(lang, resource, version) {
  * @param text
  * @returns string
  */
-function getTextData(groups, verseObject, milestone=null) {
-  var myData = {
+function populateGroupDataFromVerseObject(verseObject, isMilestone=false) {
+  var myGroupData = {
     quote: [],
     strong: []
   };
-  if(verseObject.type == 'milestone' || (verseObject.type == 'word' && (verseObject.tw || milestone))) {
+  if(verseObject.type == 'milestone' || (verseObject.type == 'word' && (verseObject.tw || isMilestone))) {
     if(verseObject.type == 'milestone') {
       if(verseObject.text) {
-        myData.text.push(verseObject.text);
+        myGroupData.text.push(verseObject.text);
       }
       verseObject.children.forEach((childVerseObject) => {
-        let childData = getTextData(groups, childVerseObject, true);
-        if(childData) {
-          myData.quote = myData.quote.concat(childData.quote);
-          myData.strong = myData.strong.concat(childData.strong);
+        let childGroupData = populateGroupDataFromVerseObject(childVerseObject, true);
+        if(childGroupData) {
+          myGroupData.quote = myGroupData.quote.concat(childGroupData.quote);
+          myGroupData.strong = myGroupData.strong.concat(childGroupData.strong);
         }
       });
     } else if(verseObject.type == 'word') {
-      myData.quote.push(verseObject.text);
-      myData.strong.push(verseObject.strong);
+      myGroupData.quote.push(verseObject.text);
+      myGroupData.strong.push(verseObject.strong);
     }
-    if (myData.quote.length) {
+    if (myGroupData.quote.length) {
       if(verseObject.tw) {
         const twLinkItems = verseObject.tw.split('/');
         const groupId = twLinkItems.pop();
         const category = twLinkItems.pop();
-        if(! groups[category]) {
-          groups[category] = {};
+        if(! groupData[category]) {
+          groupData[category] = {};
         }
-        if(! groups[category][groupId]) {
-          groups[category][groupId] = [];
+        if(! groupData[category][groupId]) {
+          groupData[category][groupId] = [];
         }
-        groups[category][groupId].push({
-          quote: myData.quote.join(' '),
-          strong: myData.strong
+        groupData[category][groupId].push({
+          quote: myGroupData.quote.join(' '),
+          strong: myGroupData.strong
         });
       }
     }
   }
-  return myData;
+  return myGroupData;
+}
+
+function populateTwDataFromGroupData(bookId, chapter, verse) {
+  for(let category in groupData) {
+    if( ! twData[category] ) {
+      twData[category] = [];
+    }
+    for(let groupId in groupData[category]) {
+      if( ! twData[category][groupId] ) {
+        twData[category][groupId] = [];
+      }
+      let occurrences = {};
+      groupData[category][groupId].forEach( (item) => {
+        if(! occurrences[item.quote]) {
+          occurrences[item.quote] = 1;
+        }
+        twData[category][groupId].push({
+          "priority": 1,
+          "comments": false,
+          "reminders": false,
+          "selections": false,
+          "verseEdits": false,
+          "contextId": {
+            "reference": {"bookId": bookId, "chapter": chapter, "verse": parseInt(verse)},
+            "tool": "translationWords",
+            "groupId": groupId,
+            "quote": item.quote,
+            "strong": item.strong,
+            "occurrence": occurrences[item.quote]++
+          }
+        });
+      });
+    }
+  }
 }
 
 /**
@@ -135,4 +146,3 @@ function getTextData(groups, verseObject, milestone=null) {
 function getbookId(bookName) {
   return bookName.split('-')[1].toLowerCase();
 }
-
