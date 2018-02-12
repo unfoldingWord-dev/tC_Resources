@@ -14,7 +14,9 @@
       "tool": "translationWords",
       "groupId": "satan",
       "quote": "Σατανᾶ",
-      "strong": "G45660",
+      "strong": [
+        "G45660"
+      ],
       "occurrence": 1
     }
   },
@@ -33,7 +35,10 @@
       "tool": "translationWords",
       "groupId": "satan",
       "quote": "τοῦ πονηροῦ",
-      "strong": null,
+      "strong": [
+        "G35880",
+        "G41900"
+      ],
       "occurrence": 1
     }
   }

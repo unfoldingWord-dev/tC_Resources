@@ -14,7 +14,9 @@
       "tool": "translationWords",
       "groupId": "lust",
       "quote": "ἐπιθυμίας",
-      "strong": "G19390",
+      "strong": [
+        "G19390"
+      ],
       "occurrence": 1
     }
   },
@@ -33,7 +35,10 @@
       "tool": "translationWords",
       "groupId": "lust",
       "quote": "πάθει ἐπιθυμίας",
-      "strong": null,
+      "strong": [
+        "G38060",
+        "G19390"
+      ],
       "occurrence": 1
     }
   }

@@ -13,8 +13,12 @@
       },
       "tool": "translationWords",
       "groupId": "pray",
-      "quote": "δεήσεις undefined προσευχάς undefined ἐντεύξεις",
-      "strong": null,
+      "quote": "δεήσεις προσευχάς ἐντεύξεις",
+      "strong": [
+        "G11620",
+        "G43350",
+        "G17830"
+      ],
       "occurrence": 1
     }
   },
@@ -33,7 +37,9 @@
       "tool": "translationWords",
       "groupId": "pray",
       "quote": "προσεύχεσθαι",
-      "strong": "G43360",
+      "strong": [
+        "G43360"
+      ],
       "occurrence": 1
     }
   },
@@ -52,7 +58,9 @@
       "tool": "translationWords",
       "groupId": "pray",
       "quote": "ἐντεύξεως",
-      "strong": "G17830",
+      "strong": [
+        "G17830"
+      ],
       "occurrence": 1
     }
   },
@@ -71,7 +79,9 @@
       "tool": "translationWords",
       "groupId": "pray",
       "quote": "δεήσεσιν",
-      "strong": "G11620",
+      "strong": [
+        "G11620"
+      ],
       "occurrence": 1
     }
   },
@@ -90,7 +100,9 @@
       "tool": "translationWords",
       "groupId": "pray",
       "quote": "προσευχαῖς",
-      "strong": "G43350",
+      "strong": [
+        "G43350"
+      ],
       "occurrence": 1
     }
   }

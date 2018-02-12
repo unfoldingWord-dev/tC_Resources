@@ -32,7 +32,7 @@ export function generateTw(lang, resource, version) {
       for (let verse in json) {
         json[verse].verseObjects.forEach( (verseObject) => {
           let groups = {};
-          getQuotes(groups, verseObject);
+          getTextData(groups, verseObject);
           for(let category in groups) {
             if( ! tw[category] ) {
               tw[category] = [];
@@ -43,8 +43,8 @@ export function generateTw(lang, resource, version) {
               }
               let occurrences = {};
               groups[category][groupId].forEach( (item) => {
-                if(! occurrences[item['quote']]) {
-                  occurrences[item['quote']] = 1;
+                if(! occurrences[item.quote]) {
+                  occurrences[item.quote] = 1;
                 }
                 tw[category][groupId].push({
                   "priority": 1,
@@ -56,9 +56,9 @@ export function generateTw(lang, resource, version) {
                     "reference": {"bookId": bookId, "chapter": chapter, "verse": parseInt(verse)},
                     "tool": "translationWords",
                     "groupId": groupId,
-                    "quote": item['quote'],
-                    "strong": item['strong'],
-                    "occurrence": occurrences[item['quote']]++
+                    "quote": item.quote,
+                    "strong": item.strong,
+                    "occurrence": occurrences[item.quote]++
                   }
                 });
               });
@@ -70,7 +70,7 @@ export function generateTw(lang, resource, version) {
     for(let category in tw){
       for(let groupId in tw[category]){
         let groupPath = path.join(twOutputPath, category, "groups", bookId, groupId+".json");
-        fs.outputFileSync(groupPath, JSON.stringify(tw[category][groupId], (k, v)=>{if(v===undefined){return null}return v}, 2));
+        fs.outputFileSync(groupPath, JSON.stringify(tw[category][groupId], null, 2));
       }
     }
   });
@@ -85,22 +85,30 @@ export function generateTw(lang, resource, version) {
  * @param text
  * @returns string
  */
-function getQuotes(groups, verseObject, milestone=null) {
-  var text = '';
-  if(verseObject['type'] == 'milestone' || (verseObject['type'] == 'word' && (verseObject['tw'] || milestone))) {
-    if(verseObject['type'] == 'milestone') {
-      if(verseObject['text']) {
-        text = verseObject['text'];
+function getTextData(groups, verseObject, milestone=null) {
+  var myData = {
+    quote: [],
+    strong: []
+  };
+  if(verseObject.type == 'milestone' || (verseObject.type == 'word' && (verseObject.tw || milestone))) {
+    if(verseObject.type == 'milestone') {
+      if(verseObject.text) {
+        myData.text.push(verseObject.text);
       }
       verseObject.children.forEach((childVerseObject) => {
-        text += (text?' ':'')+getQuotes(groups, childVerseObject, true);
+        let childData = getTextData(groups, childVerseObject, true);
+        if(childData) {
+          myData.quote = myData.quote.concat(childData.quote);
+          myData.strong = myData.strong.concat(childData.strong);
+        }
       });
-    } else if(verseObject['type'] == 'word') {
-      text = verseObject['text'];
+    } else if(verseObject.type == 'word') {
+      myData.quote.push(verseObject.text);
+      myData.strong.push(verseObject.strong);
     }
-    if (text) {
-      if(verseObject['tw']) {
-        const twLinkItems = verseObject['tw'].split('/');
+    if (myData.quote.length) {
+      if(verseObject.tw) {
+        const twLinkItems = verseObject.tw.split('/');
         const groupId = twLinkItems.pop();
         const category = twLinkItems.pop();
         if(! groups[category]) {
@@ -110,13 +118,13 @@ function getQuotes(groups, verseObject, milestone=null) {
           groups[category][groupId] = [];
         }
         groups[category][groupId].push({
-          quote: text,
-          strong: verseObject['strong']
+          quote: myData.quote.join(' '),
+          strong: myData.strong
         });
       }
     }
-    return text;
   }
+  return myData;
 }
 
 /**

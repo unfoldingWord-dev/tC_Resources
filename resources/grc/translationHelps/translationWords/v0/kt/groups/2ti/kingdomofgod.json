@@ -14,7 +14,9 @@
       "tool": "translationWords",
       "groupId": "kingdomofgod",
       "quote": "βασιλείαν",
-      "strong": "G09320",
+      "strong": [
+        "G09320"
+      ],
       "occurrence": 1
     }
   },
@@ -33,7 +35,12 @@
       "tool": "translationWords",
       "groupId": "kingdomofgod",
       "quote": "βασιλείαν αὐτοῦ τὴν ἐπουράνιον",
-      "strong": null,
+      "strong": [
+        "G09320",
+        "G08460",
+        "G35880",
+        "G20320"
+      ],
       "occurrence": 1
     }
   }

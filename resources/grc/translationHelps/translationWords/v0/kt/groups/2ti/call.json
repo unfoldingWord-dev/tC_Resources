@@ -14,7 +14,10 @@
       "tool": "translationWords",
       "groupId": "call",
       "quote": "καλέσαντος κλήσει",
-      "strong": null,
+      "strong": [
+        "G25640",
+        "G28210"
+      ],
       "occurrence": 1
     }
   },
@@ -33,7 +36,9 @@
       "tool": "translationWords",
       "groupId": "call",
       "quote": "ἐπικαλουμένων",
-      "strong": "G19410",
+      "strong": [
+        "G19410"
+      ],
       "occurrence": 1
     }
   }

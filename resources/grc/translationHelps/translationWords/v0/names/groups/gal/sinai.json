@@ -14,7 +14,10 @@
       "tool": "translationWords",
       "groupId": "sinai",
       "quote": "Ὄρους Σινά",
-      "strong": null,
+      "strong": [
+        "G37350",
+        "G46140"
+      ],
       "occurrence": 1
     }
   },
@@ -33,7 +36,10 @@
       "tool": "translationWords",
       "groupId": "sinai",
       "quote": "Σινά Ὄρος",
-      "strong": null,
+      "strong": [
+        "G46140",
+        "G37350"
+      ],
       "occurrence": 1
     }
   }

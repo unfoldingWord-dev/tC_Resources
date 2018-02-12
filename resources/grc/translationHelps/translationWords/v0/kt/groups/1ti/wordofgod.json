@@ -14,7 +14,10 @@
       "tool": "translationWords",
       "groupId": "wordofgod",
       "quote": "λόγου Θεοῦ",
-      "strong": null,
+      "strong": [
+        "G30560",
+        "G23160"
+      ],
       "occurrence": 1
     }
   },
@@ -33,7 +36,9 @@
       "tool": "translationWords",
       "groupId": "wordofgod",
       "quote": "Γραφή",
-      "strong": "G11240",
+      "strong": [
+        "G11240"
+      ],
       "occurrence": 1
     }
   }

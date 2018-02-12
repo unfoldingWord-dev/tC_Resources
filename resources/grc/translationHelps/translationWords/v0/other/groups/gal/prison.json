@@ -14,7 +14,9 @@
       "tool": "translationWords",
       "groupId": "prison",
       "quote": "συνέκλεισεν",
-      "strong": "G47880",
+      "strong": [
+        "G47880"
+      ],
       "occurrence": 1
     }
   },
@@ -32,8 +34,11 @@
       },
       "tool": "translationWords",
       "groupId": "prison",
-      "quote": "ἐφρουρούμεθα undefined συνκλειόμενοι",
-      "strong": null,
+      "quote": "ἐφρουρούμεθα συνκλειόμενοι",
+      "strong": [
+        "G54320",
+        "G47880"
+      ],
       "occurrence": 1
     }
   }

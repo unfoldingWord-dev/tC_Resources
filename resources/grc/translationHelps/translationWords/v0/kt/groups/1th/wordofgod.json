@@ -14,7 +14,11 @@
       "tool": "translationWords",
       "groupId": "wordofgod",
       "quote": "λόγος τοῦ Κυρίου",
-      "strong": null,
+      "strong": [
+        "G30560",
+        "G35880",
+        "G29620"
+      ],
       "occurrence": 1
     }
   },
@@ -33,7 +37,9 @@
       "tool": "translationWords",
       "groupId": "wordofgod",
       "quote": "λόγον",
-      "strong": "G30560",
+      "strong": [
+        "G30560"
+      ],
       "occurrence": 1
     }
   },
@@ -52,7 +58,10 @@
       "tool": "translationWords",
       "groupId": "wordofgod",
       "quote": "λόγον Θεοῦ",
-      "strong": null,
+      "strong": [
+        "G30560",
+        "G23160"
+      ],
       "occurrence": 1
     }
   },
@@ -71,7 +80,10 @@
       "tool": "translationWords",
       "groupId": "wordofgod",
       "quote": "λόγῳ Κυρίου",
-      "strong": null,
+      "strong": [
+        "G30560",
+        "G29620"
+      ],
       "occurrence": 1
     }
   }
