@@ -2,6 +2,7 @@ import fs from 'fs-extra';
 import path from 'path-extra';
 import { extractZipFile } from "../helpers/zipHelpers";
 import * as ugntHelpers from '../helpers/ugntHelpers';
+import * as EnglishUlbHelpers from "../helpers/englishUlbHelpers";
 
 describe('ParseUGNT', function() {
   const tempFilePath = './__tests__/output/ugnt_help';
@@ -22,7 +23,7 @@ describe('ParseUGNT', function() {
       if(resourceinputpath) {
         fs.removeSync(resourceinputpath);
       }
-      
+
       // extract zipped files, so new files are not downloaded
       extractZipFile(zipfilepath, resourceinputpath);
 
@@ -46,4 +47,14 @@ describe('ParseUGNT', function() {
   //     console.log('UGNT processing completed!');
   //   });
   // }, 300000); // max timeout (should be long enough, but may need to be increased on a slow connection)
+
+  // it('should download and output en_ULB chapter files', () => {
+  //   return new Promise((resolve) => {
+  //     const version = 'v0.0';
+  //     EnglishUlbHelpers.generateVersion(version, resolve);
+  //   }).then(() => {
+  //     console.log('en_ulb processing completed!');
+  //   });
+  // }, 300000); // max timeout (should be long enough, but may need to be increased on a slow connection)
+
 });
