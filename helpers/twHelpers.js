@@ -14,7 +14,7 @@ let groupData = null;
 const SOURCE = bible.BIBLE_LIST_NT;
 
 /**
- * @description - generates the tW
+ * @description - generates the tW files in resources/{lang}/translationHelps/translationWords/{version} from resources/{lang}/bibles/{resource}/{version}
  * @param {string} lang
  * @param {string} resource
  * @param {string} version
