@@ -7,6 +7,7 @@
     "test": "eslint ./helpers ./index.js && jest",
     "ugnt-parse": "babel-node --presets node6 ./scripts/ugntParse.js --ver=v0",
     "update-resource": "babel-node index.js",
+    "build-ugnt-tw": "babel-node --presets node6 ./scripts/buildTw.js --ver=v0 --lang=grc --bible=ugnt",
     "update-en-resource": "babel-node index.js en",
     "prettier-resource": "prettier --single-quote --print-width 80 --trailing-comma all --write 'resources/**/*.json'"
   },

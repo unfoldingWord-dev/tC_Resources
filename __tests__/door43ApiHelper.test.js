@@ -1,5 +1,6 @@
 import * as door43ApiHelper from "../helpers/door43ApiHelper";
 import fs from 'fs-extra';
+import path from 'path-extra';
 
 describe('Door43 API Helper', () => {
   test('getUrl with valid url', () => {
@@ -7,7 +8,7 @@ describe('Door43 API Helper', () => {
 
         const mock_get = () => {
           return new Promise(resolve => {
-            let catalog = fs.readFileSync('./__tests__/fixtures/catalog.json');
+            let catalog = fs.readFileSync(path.join('.', '__tests__', 'fixtures', 'catalog.json'));
             catalog = JSON.parse(catalog);
             resolve({
               data: catalog

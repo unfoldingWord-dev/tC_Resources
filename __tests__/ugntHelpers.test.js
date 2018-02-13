@@ -4,10 +4,16 @@ import { extractZipFile } from "../helpers/zipHelpers";
 import * as ugntHelpers from '../helpers/ugntHelpers';
 
 describe('ParseUGNT', function() {
-  const tempFilePath = './__tests__/output/ugnt_help';
+  const tempFilePath = path.join('.', '__tests__', 'output', 'ugnt_help_test');
+
+  beforeEach(() => {
+    if (fs.existsSync(tempFilePath)) {
+      fs.removeSync(tempFilePath);
+    }
+  });
 
   afterEach(() => {
-    if (tempFilePath) {
+    if (fs.existsSync(tempFilePath)) {
       fs.removeSync(tempFilePath);
     }
   });
@@ -17,7 +23,7 @@ describe('ParseUGNT', function() {
       const version = 'v0.0';
       const zipFileName = 'ugnt.zip';
       const zipfilepath = path.join(tempFilePath, zipFileName);
-      fs.copySync(path.join('./__tests__/fixtures/ugnt', zipFileName), zipfilepath); // copy zip to new location since it will be deleted
+      fs.copySync(path.join('.', '__tests__', 'fixtures', 'ugnt', zipFileName), zipfilepath); // copy zip to new location since it will be deleted
       const resourceinputpath = path.join(tempFilePath,'dummyDestinationFolder');
       if(resourceinputpath) {
         fs.removeSync(resourceinputpath);
