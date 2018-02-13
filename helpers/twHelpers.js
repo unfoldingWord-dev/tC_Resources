@@ -15,9 +15,11 @@ const SOURCE = bible.BIBLE_LIST_NT;
 
 /**
  * @description - generates the tW
- * @param lang
- * @param resource
- * @param version
+ * @param {string} lang
+ * @param {string} resource
+ * @param {string} version
+ * @param {func} resolve
+ * @param {string} baseDir - for tests to change resource dir
  */
 export function generateTw(lang, resource, version, resolve, baseDir='.') {
   biblePath = path.join(baseDir, 'resources', lang, 'bibles', resource, version);
@@ -29,6 +31,10 @@ export function generateTw(lang, resource, version, resolve, baseDir='.') {
   resolve(true);
 }
 
+/**
+ * @description - gets verseObjects of a book and converts to a tW data object to save to file
+ * @param {string} bookName - in the form of 41-MAT
+ */
 function convertBookVerseObjectsToTwData(bookName) {
   const bookId = getbookId(bookName);
   twData = {};
@@ -54,13 +60,10 @@ function convertBookVerseObjectsToTwData(bookName) {
 }
 
 /**
- * 
- * @param verseObjects 
- * @param book
- * @param chapter
- * @param verse 
- * @param text
- * @returns string
+ * @description Populates the groupData array with this verseObject and returns its own groupData for milestones
+ * @param {object} verseObject
+ * @param {bool} isMilestone - if true, all word objects will be added to the group data
+ * @return {object}
  */
 function populateGroupDataFromVerseObject(verseObject, isMilestone=false) {
   var myGroupData = {
@@ -104,6 +107,12 @@ function populateGroupDataFromVerseObject(verseObject, isMilestone=false) {
   return myGroupData;
 }
 
+/**
+ * @description Takes what is in the groupData array and populates the tWData
+ * @param {string} bookId
+ * @param {int} chatper
+ * @param {int} verse
+ */
 function populateTwDataFromGroupData(bookId, chapter, verse) {
   for(let category in groupData) {
     if( ! twData[category] ) {
@@ -140,7 +149,7 @@ function populateTwDataFromGroupData(bookId, chapter, verse) {
 
 /**
  * @description - split book code out of book name, for example 'mat' from '41-MAT'
- * @param {string} bookName book in format '41-MAT'
+ * @param {string} bookName - book in format '41-MAT'
  * @return {string}
  */
 function getbookId(bookName) {
