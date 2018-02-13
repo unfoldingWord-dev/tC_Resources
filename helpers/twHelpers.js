@@ -33,7 +33,7 @@ export function generateTw(lang, resource, version, resolve, baseDir='.') {
 
 /**
  * @description - gets verseObjects of a book and converts to a tW data object to save to file
- * @param {string} bookName - in the form of 41-MAT
+ * @param {string} bookName - book in format '41-MAT'
  */
 function convertBookVerseObjectsToTwData(bookName) {
   const bookId = getbookId(bookName);
