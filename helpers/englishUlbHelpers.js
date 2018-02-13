@@ -19,12 +19,15 @@ const SOURCE = bible.BIBLE_LIST_NT;
  * @description - generates UGNT for each book from github and split into chapters and saves under version.
  * @param {string} version
  * @param {function} resolve - callback when finished
+ * @param {boolean} index - if false indexing is skipped
  */
-export function generateVersion(version, resolve) {
+export function generateVersion(version, resolve, index=true) {
   console.log(`Using version: '${version}'`);
   let books = ['57-TIT'];
   UsfmParseHelpers.parseUsfmToChapters(EN_ULB_URL, version, books, 'en-ulb-sources', ugntOutputPath, () => {
-    UsfmParseHelpers.generateIndex(SOURCE, version);
+    if (index) {
+      UsfmParseHelpers.generateIndex(SOURCE, version);
+    }
     resolve(true);
   });
 }
