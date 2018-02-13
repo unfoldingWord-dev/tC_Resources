@@ -8,8 +8,6 @@ import * as bible from '../scripts/bible';
 
 let biblePath = null;
 let twOutputPath = null;
-let twData = null;
-let groupData = null;
 
 const SOURCE = bible.BIBLE_LIST_NT;
 
@@ -37,7 +35,7 @@ export function generateTw(lang, resource, version, resolve, baseDir='.') {
  */
 function convertBookVerseObjectsToTwData(bookName) {
   const bookId = getbookId(bookName);
-  twData = {};
+  let twData = {};
   const bookFolder = path.join(biblePath, bookId);
   const chapters = Object.keys(bible.BOOK_CHAPTER_VERSES[bookId]).length;
   for(let chapter = 1; chapter <= chapters; chapter++) {
@@ -45,9 +43,9 @@ function convertBookVerseObjectsToTwData(bookName) {
     const json = JSON.parse(fs.readFileSync(chapterFile));
     for (let verse in json) {
       json[verse].verseObjects.forEach( (verseObject) => {
-        groupData = [];
-        populateGroupDataFromVerseObject(verseObject);
-        populateTwDataFromGroupData(bookId, chapter, verse);
+        let groupData = [];
+        populateGroupDataFromVerseObject(groupData, verseObject);
+        populateTwDataFromGroupData(twData, groupData, bookId, chapter, verse);
       });
     }
   }
@@ -61,11 +59,12 @@ function convertBookVerseObjectsToTwData(bookName) {
 
 /**
  * @description Populates the groupData array with this verseObject and returns its own groupData for milestones
+ * @param {object} groupData
  * @param {object} verseObject
  * @param {bool} isMilestone - if true, all word objects will be added to the group data
  * @return {object}
  */
-function populateGroupDataFromVerseObject(verseObject, isMilestone=false) {
+function populateGroupDataFromVerseObject(groupData, verseObject, isMilestone=false) {
   var myGroupData = {
     quote: [],
     strong: []
@@ -76,7 +75,7 @@ function populateGroupDataFromVerseObject(verseObject, isMilestone=false) {
         myGroupData.text.push(verseObject.text);
       }
       verseObject.children.forEach((childVerseObject) => {
-        let childGroupData = populateGroupDataFromVerseObject(childVerseObject, true);
+        let childGroupData = populateGroupDataFromVerseObject(groupData, childVerseObject, true);
         if(childGroupData) {
           myGroupData.quote = myGroupData.quote.concat(childGroupData.quote);
           myGroupData.strong = myGroupData.strong.concat(childGroupData.strong);
@@ -109,11 +108,13 @@ function populateGroupDataFromVerseObject(verseObject, isMilestone=false) {
 
 /**
  * @description Takes what is in the groupData array and populates the tWData
+ * @param {object} twData
+ * @param {object} groupData
  * @param {string} bookId
  * @param {int} chatper
  * @param {int} verse
  */
-function populateTwDataFromGroupData(bookId, chapter, verse) {
+function populateTwDataFromGroupData(twData, groupData, bookId, chapter, verse) {
   for(let category in groupData) {
     if( ! twData[category] ) {
       twData[category] = [];
