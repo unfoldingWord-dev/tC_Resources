@@ -3,11 +3,11 @@
  *                  UGNT.
  */
 
-//TODO: EN_ULB_URL path is a temporary repo, needs to be updated to final location.
-
 import path from 'path-extra';
 import * as bible from '../scripts/bible';
 import * as UsfmParseHelpers from './usfmParseHelpers';
+
+//TODO: EN_ULB_URL path is a temporary repo, needs to be updated to final location.
 
 const EN_ULB_URL = 'https://git.door43.org/photonomad0/AlignedUlb_en/raw/master';
 
