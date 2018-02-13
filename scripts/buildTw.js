@@ -19,15 +19,8 @@ function main() {
     console.log("Invalid parameter, expect bible such as: '--bible=ugnt'");
     return;
   }
-
-  return new Promise((resolve) => {
-    twHelpers.generateTw(lang, bible, version, resolve);
-  }).then(() => {
-    console.log('tw processing completed!');
-  }).catch((e) => {
-    console.log('Failed: ' + e);
-  });
-
+  twHelpers.generateTw(lang, bible, version);
+  console.log('tw processing completed!');
 }
 
 function getParameter(param, dflt=null) {

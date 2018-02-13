@@ -4,10 +4,16 @@ import { extractZipFile } from "../helpers/zipHelpers";
 import * as ugntHelpers from '../helpers/ugntHelpers';
 
 describe('ParseUGNT', function() {
-  const tempFilePath = path.join('.', '__tests__', 'output', 'ugnt_help');
+  const tempFilePath = path.join('.', '__tests__', 'output', 'ugnt_help_test');
+
+  beforeEach(() => {
+    if (fs.existsSync(tempFilePath)) {
+      fs.removeSync(tempFilePath);
+    }
+  });
 
   afterEach(() => {
-    if (tempFilePath) {
+    if (fs.existsSync(tempFilePath)) {
       fs.removeSync(tempFilePath);
     }
   });

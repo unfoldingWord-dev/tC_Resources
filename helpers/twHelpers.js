@@ -19,14 +19,14 @@ const SOURCE = bible.BIBLE_LIST_NT;
  * @param {func} resolve
  * @param {string} baseDir - for tests to change resource dir
  */
-export function generateTw(lang, resource, version, resolve, baseDir='.') {
+export function generateTw(lang, resource, version, baseDir='.') {
   biblePath = path.join(baseDir, 'resources', lang, 'bibles', resource, version);
   twOutputPath = path.join(baseDir, 'resources', lang, 'translationHelps', 'translationWords', version);
   let books = SOURCE.slice(0);
   books.forEach( (bookName) => {
     convertBookVerseObjectsToTwData(bookName);
   });
-  resolve(true);
+  return true;
 }
 
 /**
