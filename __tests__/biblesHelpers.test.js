@@ -4,7 +4,7 @@ import { extractZipFile } from "../helpers/zipHelpers";
 import * as biblesHelpers from "../helpers/biblesHelpers";
 
 describe('Bible Helpers', () => {
-  const tempFilePath = './__tests__/output/bible_help';
+  const tempFilePath = path.join('.', '__tests__', 'output', 'bible_help');
 
   afterEach(() => {
     if (tempFilePath) {
@@ -15,7 +15,7 @@ describe('Bible Helpers', () => {
   test('generateBibles with good input', () => {
     const zipFileName = 'en_ulb.zip';
     const zipfilepath = path.join(tempFilePath, zipFileName);
-    fs.copySync(path.join('./__tests__/fixtures/bible', zipFileName), zipfilepath); // copy zip to new location since it will be deleted
+    fs.copySync(path.join('.', '__tests__', 'fixtures', 'bible', zipFileName), zipfilepath); // copy zip to new location since it will be deleted
     const resourceinputpath = path.join(tempFilePath,'dummyDestinationFolder');
     if(resourceinputpath) {
       fs.removeSync(resourceinputpath);

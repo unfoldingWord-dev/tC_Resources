@@ -7,7 +7,7 @@ describe('ParseUGNT', function() {
   const tempFilePath = path.join('.', '__tests__', 'output', 'ugnt_help');
 
   afterEach(() => {
-    if (tempFilePath) {
+    if (fs.existsSync(tempFilePath)) {
       fs.removeSync(tempFilePath);
     }
   });
