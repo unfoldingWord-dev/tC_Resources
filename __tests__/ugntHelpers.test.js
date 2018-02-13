@@ -4,13 +4,7 @@ import { extractZipFile } from "../helpers/zipHelpers";
 import * as ugntHelpers from '../helpers/ugntHelpers';
 
 describe('ParseUGNT', function() {
-  const tempFilePath = path.join('.', '__tests__', 'output', 'ugnt_help_test');
-
-  beforeEach(() => {
-    if (fs.existsSync(tempFilePath)) {
-      fs.removeSync(tempFilePath);
-    }
-  });
+  const tempFilePath = path.join('.', '__tests__', 'output', 'ugnt_help');
 
   afterEach(() => {
     if (fs.existsSync(tempFilePath)) {
@@ -28,7 +22,7 @@ describe('ParseUGNT', function() {
       if(resourceinputpath) {
         fs.removeSync(resourceinputpath);
       }
-      
+
       // extract zipped files, so new files are not downloaded
       extractZipFile(zipfilepath, resourceinputpath);
 
