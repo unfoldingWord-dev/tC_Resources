@@ -3,11 +3,11 @@
  *    used by tC.
  *
  *    To run script:
- *    * update value for parameter `ver` in script `ugnt-parse` in package.json
- *    * verify url for ugnt sources in `ugntHelpers.UGNT_URL`
+ *    * update value for parameter `ver` in script `hi-ulb-parse` in package.json
+ *    * verify url for ugnt sources in `hindiUlbHelpers.UGNT_URL`
  *    * Run `npm install` inside tC_resources path to install node_modules
- *    * Run `npm run ugnt-parse` to download and generate ugnt json files
- *    * json output will be in ./resources/grc/bibles/[version]/
+ *    * Run `npm run hi-ulb-parse` to download and generate hindi ULB json files
+ *    * json output will be in ./resources/hi/bibles/ulb/[version]/
  */
 
 import * as hindiUlbHelpers from '../helpers/hindiUlbHelpers';

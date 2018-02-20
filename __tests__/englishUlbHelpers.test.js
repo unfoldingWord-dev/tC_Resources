@@ -13,8 +13,8 @@ describe('ParseUGNT', function() {
 
   it('should output ULB chapter files', () => {
     return new Promise((resolve) => {
-      const version = 'v-1';
-      const resourceinputpath = path.join('__tests__','fixtures','bible', 'aligned');
+      const version = 'v0.0';
+      const resourceinputpath = path.join('__tests__','fixtures','bible', 'en_aligned');
 
       const UGNTOutputPath = path.join('__tests__', 'output', 'en-ulb-sources', version);
       fs.removeSync(UGNTOutputPath);
@@ -29,7 +29,7 @@ describe('ParseUGNT', function() {
 
   // it('should download and output en_ULB chapter files', () => {
   //   return new Promise((resolve) => {
-  //     const version = 'v-1';
+  //     const version = 'v0.0';
   //     EnglishUlbHelpers.generateVersion(version, resolve);
   //   }).then(() => {
   //     console.log('en_ulb processing completed!');

@@ -1,13 +1,13 @@
 /**
- * englishUlbParse.js - this is a script to parse english on git.door43.org and generate the json files
+ * englishUlbParse.js - this is a script to parse english ULB on git.door43.org and generate the json files
  *    used by tC.
  *
  *    To run script:
- *    * update value for parameter `ver` in script `ugnt-parse` in package.json
- *    * verify url for ugnt sources in `ugntHelpers.UGNT_URL`
+ *    * update value for parameter `ver` in script `en-ulb-parse` in package.json
+ *    * verify url for ugnt sources in `englishUlbHelpers.UGNT_URL`
  *    * Run `npm install` inside tC_resources path to install node_modules
- *    * Run `npm run ugnt-parse` to download and generate ugnt json files
- *    * json output will be in ./resources/grc/bibles/[version]/
+ *    * Run `npm run en-ulb-parse` to download and generate english ULB json files
+ *    * json output will be in ./resources/en/bibles/ulb/[version]/
  */
 
 import * as EnglishUlbHelpers from '../helpers/englishUlbHelpers';
