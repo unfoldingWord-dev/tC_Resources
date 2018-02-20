@@ -1,5 +1,5 @@
 /**
- * englishUlbParse.js - this is a script to parse english on git.door43.org and generate the json files
+ * hindiUlbParse.js - this is a script to parse hindi ULB on git.door43.org and generate the json files
  *    used by tC.
  *
  *    To run script:
@@ -10,7 +10,7 @@
  *    * json output will be in ./resources/grc/bibles/[version]/
  */
 
-import * as EnglishUlbHelpers from '../helpers/englishUlbHelpers';
+import * as hindiUlbHelpers from '../helpers/hindiUlbHelpers';
 
 function main() {
   let version = getParameter('ver');
@@ -21,7 +21,7 @@ function main() {
   }
 
   return new Promise((resolve) => {
-    EnglishUlbHelpers.generateVersion(version, resolve);
+    hindiUlbHelpers.generateVersion(version, resolve);
   }).then(() => {
     console.log('en_ulb processing completed!');
   }).catch((e) => {

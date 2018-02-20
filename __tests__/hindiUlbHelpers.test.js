@@ -1,9 +1,9 @@
 import fs from 'fs-extra';
 import path from 'path-extra';
-import * as EnglishUlbHelpers from "../helpers/englishUlbHelpers";
+import * as hindiUlbHelpers from "../helpers/hindiUlbHelpers";
 
 describe('ParseUGNT', function() {
-  const tempFilePath = './__tests__/output/en-ulb-sources';
+  const tempFilePath = './__tests__/output/hi-ulb-sources';
 
   afterEach(() => {
     if (tempFilePath) {
@@ -16,12 +16,12 @@ describe('ParseUGNT', function() {
       const version = 'v-1';
       const resourceinputpath = path.join('__tests__','fixtures','bible', 'aligned');
 
-      const UGNTOutputPath = path.join('__tests__', 'output', 'en-ulb-sources', version);
+      const UGNTOutputPath = path.join('__tests__', 'output', 'hi-ulb-sources', version);
       fs.removeSync(UGNTOutputPath);
       fs.ensureDir(UGNTOutputPath);
       fs.copySync(resourceinputpath, UGNTOutputPath);
 
-      EnglishUlbHelpers.generateVersion(version, resolve, false);
+      hindiUlbHelpers.generateVersion(version, resolve, false);
     }).then(() => {
       console.log('ULB processing completed!');
     });
@@ -30,9 +30,9 @@ describe('ParseUGNT', function() {
   // it('should download and output en_ULB chapter files', () => {
   //   return new Promise((resolve) => {
   //     const version = 'v-1';
-  //     EnglishUlbHelpers.generateVersion(version, resolve);
+  //     hindiUlbHelpers.generateVersion(version, resolve);
   //   }).then(() => {
-  //     console.log('en_ulb processing completed!');
+  //     console.log('hi_ulb processing completed!');
   //   });
   // }, 300000); // max timeout (should be long enough, but may need to be increased on a slow connection)
 

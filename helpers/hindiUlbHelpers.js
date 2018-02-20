@@ -1,5 +1,5 @@
 /**
- * englishUlbHelpers.js - this is the code called by englishUlbParse.js to download and convert greek resources (was BHP and now
+ * hindiUlbHelpers.js - this is the code called by hindiUlbParse.js to download and convert greek resources (was BHP and now
  *                  UGNT.
  */
 
@@ -7,10 +7,10 @@ import path from 'path-extra';
 import * as bible from '../scripts/bible';
 import * as UsfmParseHelpers from './usfmParseHelpers';
 
-//TODO: EN_ULB_URL path is a temporary repo, needs to be updated to final location.
-const EN_ULB_URL = 'https://git.door43.org/photonomad0/AlignedUlb_en/raw/master';
+//TODO: HI_ULB_URL path is a temporary repo, needs to be updated to final location.
+const HI_ULB_URL = 'https://git.door43.org/photonomad0/AlignedUlb_hi/raw/master';
 
-const ugntOutputPath = path.join('resources', 'en', 'bibles', 'ulb');
+const ugntOutputPath = path.join('resources', 'hi', 'bibles', 'ulb');
 
 const SOURCE = bible.BIBLE_LIST_NT;
 
@@ -23,7 +23,7 @@ const SOURCE = bible.BIBLE_LIST_NT;
 export function generateVersion(version, resolve, index=true) {
   console.log(`Using version: '${version}'`);
   let books = ['57-TIT']; // TODO add other books as completed
-  UsfmParseHelpers.parseUsfmToChapters(EN_ULB_URL, version, books, 'en-ulb-sources', ugntOutputPath, () => {
+  UsfmParseHelpers.parseUsfmToChapters(HI_ULB_URL, version, books, 'hi-ulb-sources', ugntOutputPath, () => {
     if (index) {
       UsfmParseHelpers.generateIndex(SOURCE, version);
     }
