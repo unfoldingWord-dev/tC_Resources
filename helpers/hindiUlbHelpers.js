@@ -1,6 +1,5 @@
 /**
- * hindiUlbHelpers.js - this is the code called by hindiUlbParse.js to download and convert greek resources (was BHP and now
- *                  UGNT.
+ * hindiUlbHelpers.js - this is the code called by hindiUlbParse.js to download and convert hindi ULB.
  */
 
 import path from 'path-extra';

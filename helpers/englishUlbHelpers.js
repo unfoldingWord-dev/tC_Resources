@@ -1,6 +1,5 @@
 /**
- * englishUlbHelpers.js - this is the code called by englishUlbParse.js to download and convert greek resources (was BHP and now
- *                  UGNT.
+ * englishUlbHelpers.js - this is the code called by englishUlbParse.js to download and convert english ULB resources
  */
 
 import path from 'path-extra';
