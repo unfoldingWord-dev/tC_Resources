@@ -3,7 +3,7 @@ import path from 'path-extra';
 import { extractZipFile } from "../helpers/zipHelpers";
 import * as ugntHelpers from '../helpers/ugntHelpers';
 
-describe('ParseUGNT', function() {
+describe('ugntHelpers', function() {
   const tempFilePath = path.join('.', '__tests__', 'output', 'ugnt_help');
 
   afterEach(() => {

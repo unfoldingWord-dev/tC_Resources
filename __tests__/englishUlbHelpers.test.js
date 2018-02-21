@@ -2,7 +2,7 @@ import fs from 'fs-extra';
 import path from 'path-extra';
 import * as EnglishUlbHelpers from "../helpers/englishUlbHelpers";
 
-describe('ParseUGNT', function() {
+describe('englishUlbHelpers', function() {
   const tempFilePath = './__tests__/output/en-ulb-sources';
 
   afterEach(() => {

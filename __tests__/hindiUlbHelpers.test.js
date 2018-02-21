@@ -2,7 +2,7 @@ import fs from 'fs-extra';
 import path from 'path-extra';
 import * as hindiUlbHelpers from "../helpers/hindiUlbHelpers";
 
-describe('ParseUGNT', function() {
+describe('hindiUlbHelpers', function() {
   const tempFilePath = './__tests__/output/hi-ulb-sources';
 
   afterEach(() => {
