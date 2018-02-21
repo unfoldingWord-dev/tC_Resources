@@ -1,16 +1,16 @@
 /**
- * englishUlbParse.js - this is a script to parse english ULB on git.door43.org and generate the json files
+ * hindiUlbParse.js - this is a script to parse hindi ULB on git.door43.org and generate the json files
  *    used by tC.
  *
  *    To run script:
- *    * update value for parameter `ver` in script `en-ulb-parse` in package.json
- *    * verify url for ugnt sources in `englishUlbHelpers.UGNT_URL`
+ *    * update value for parameter `ver` in script `hi-ulb-parse` in package.json
+ *    * verify url for ugnt sources in `hindiUlbHelpers.UGNT_URL`
  *    * Run `npm install` inside tC_resources path to install node_modules
- *    * Run `npm run en-ulb-parse` to download and generate english ULB json files
- *    * json output will be in ./resources/en/bibles/ulb/[version]/
+ *    * Run `npm run hi-ulb-parse` to download and generate hindi ULB json files
+ *    * json output will be in ./resources/hi/bibles/ulb/[version]/
  */
 
-import * as EnglishUlbHelpers from '../helpers/englishUlbHelpers';
+import * as hindiUlbHelpers from '../helpers/hindiUlbHelpers';
 
 function main() {
   let version = getParameter('ver');
@@ -21,7 +21,7 @@ function main() {
   }
 
   return new Promise((resolve) => {
-    EnglishUlbHelpers.generateVersion(version, resolve);
+    hindiUlbHelpers.generateVersion(version, resolve);
   }).then(() => {
     console.log('en_ulb processing completed!');
   }).catch((e) => {

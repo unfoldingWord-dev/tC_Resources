@@ -8,7 +8,7 @@ import usfm from 'usfm-js';
  */
 export const toChapterFiles = (usfmPath, outputPath) => {
   const usfmData = fs.readFileSync(usfmPath, 'UTF-8').toString();
-  const converted = usfm.toJSON(usfmData);
+  const converted = usfm.toJSON(usfmData, {convertToInt: ["occurrence", "occurrences"]});
   const {chapters} = converted;
   Object.keys(chapters).forEach(chapter => {
     fs.outputFileSync(path.join(outputPath, chapter + '.json'), JSON.stringify(chapters[chapter], null, 2));
