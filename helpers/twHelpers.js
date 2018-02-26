@@ -9,20 +9,21 @@ import * as bible from '../scripts/bible';
 let biblePath = null;
 let twOutputPath = null;
 
-const SOURCE = bible.BIBLE_LIST_NT;
+const NT_BOOKS = bible.BIBLE_LIST_NT;
+const CHAPTERS = bible.BOOK_CHAPTER_VERSES;
 
 /**
  * @description - generates the tW files in resources/{lang}/translationHelps/translationWords/{version} from resources/{lang}/bibles/{resource}/{version}
  * @param {string} lang
- * @param {string} resource
+ * @param {string} bible
  * @param {string} version
  * @param {func} resolve
  * @param {string} baseDir - for tests to change resource dir
  */
-export function generateTw(lang, resource, version, baseDir='.') {
-  biblePath = path.join(baseDir, 'resources', lang, 'bibles', resource, version);
+export function generateTw(lang, bible, version, baseDir='.') {
+  biblePath = path.join(baseDir, 'resources', lang, 'bibles', bible, version);
   twOutputPath = path.join(baseDir, 'resources', lang, 'translationHelps', 'translationWords', version);
-  let books = SOURCE.slice(0);
+  let books = NT_BOOKS.slice(0);
   books.forEach( (bookName) => {
     convertBookVerseObjectsToTwData(bookName);
   });
@@ -36,25 +37,29 @@ export function generateTw(lang, resource, version, baseDir='.') {
 function convertBookVerseObjectsToTwData(bookName) {
   const bookId = getbookId(bookName);
   let twData = {};
-  const bookFolder = path.join(biblePath, bookId);
-  const chapters = Object.keys(bible.BOOK_CHAPTER_VERSES[bookId]).length;
-  for(let chapter = 1; chapter <= chapters; chapter++) {
-    const chapterFile = path.join(bookFolder, chapter+'.json');
-    const json = JSON.parse(fs.readFileSync(chapterFile));
-    for (let verse in json) {
-      json[verse].verseObjects.forEach( (verseObject) => {
-        let groupData = [];
-        populateGroupDataFromVerseObject(groupData, verseObject);
-        populateTwDataFromGroupData(twData, groupData, bookId, chapter, verse);
-      });
+  const bookDir = path.join(biblePath, bookId);
+  if (fs.existsSync(bookDir)) {
+    const chapters = Object.keys(CHAPTERS[bookId]).length;
+    for(let chapter = 1; chapter <= chapters; chapter++) {
+      const chapterFile = path.join(bookDir, chapter+'.json');
+      if (fs.existsSync(chapterFile)) {
+        const json = JSON.parse(fs.readFileSync(chapterFile));
+        for (let verse in json) {
+          json[verse].verseObjects.forEach( (verseObject) => {
+            let groupData = [];
+            populateGroupDataFromVerseObject(groupData, verseObject);
+            populateTwDataFromGroupData(twData, groupData, bookId, chapter, verse);
+          });
+        }
+      }
     }
-  }
-  for(let category in twData){
-    for(let groupId in twData[category]){
-      let groupPath = path.join(twOutputPath, category, "groups", bookId, groupId+".json");
-      fs.outputFileSync(groupPath, JSON.stringify(twData[category][groupId], null, 2));
+    for(let category in twData){
+      for(let groupId in twData[category]){
+        let groupPath = path.join(twOutputPath, category, "groups", bookId, groupId+".json");
+        fs.outputFileSync(groupPath, JSON.stringify(twData[category][groupId], null, 2));
+      }
     }
-  }
+  }  
 }
 
 /**
