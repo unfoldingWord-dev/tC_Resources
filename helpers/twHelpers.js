@@ -38,30 +38,25 @@ function convertBookVerseObjectsToTwData(bookName) {
   const bookId = getbookId(bookName);
   let twData = {};
   const bookDir = path.join(biblePath, bookId);
-  console.log(bookDir);
   if (fs.existsSync(bookDir)) {
     const chapters = Object.keys(CHAPTERS[bookId]).length;
     for(let chapter = 1; chapter <= chapters; chapter++) {
       const chapterFile = path.join(bookDir, chapter+'.json');
-      console.log(chapterFile);
       if (fs.existsSync(chapterFile)) {
         const json = JSON.parse(fs.readFileSync(chapterFile));
         for (let verse in json) {
           json[verse].verseObjects.forEach( (verseObject) => {
             let groupData = [];
-            console.log(verseObject);
             populateGroupDataFromVerseObject(groupData, verseObject);
             populateTwDataFromGroupData(twData, groupData, bookId, chapter, verse);
           });
         }
       }
     }
-    console.log(twData);
     for(let category in twData){
       for(let groupId in twData[category]){
         let groupPath = path.join(twOutputPath, category, "groups", bookId, groupId+".json");
         fs.outputFileSync(groupPath, JSON.stringify(twData[category][groupId], null, 2));
-        console.log(groupPath);
       }
     }
   }  
