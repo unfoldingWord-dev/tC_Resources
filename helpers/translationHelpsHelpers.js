@@ -8,8 +8,9 @@ import * as biblesHelpers from './biblesHelpers';
  * 
  * @param {String} extractedFilePath 
  * @param {String} RESOURCE_OUTPUT_PATH 
+ * @param {String} languageId
  */
-export function getTranslationHelps(extractedFilePath, RESOURCE_OUTPUT_PATH) {
+export function getTranslationHelps(extractedFilePath, RESOURCE_OUTPUT_PATH, languageId) {
   console.log(
     '\x1b[33m%s\x1b[0m',
     'Generating tC compatible resource data structure ...',
@@ -17,8 +18,8 @@ export function getTranslationHelps(extractedFilePath, RESOURCE_OUTPUT_PATH) {
   const resourceManifest = biblesHelpers.getResourceManifestFromYaml(
     extractedFilePath,
   );
-  const folders = ['kt', 'other'];
-  const occurrences = getOccurences(extractedFilePath);
+  const folders = ['kt', 'names', 'other'];
+  const occurrences = (languageId == 'grc'?getOccurrences(extractedFilePath):[]);
 
   folders.forEach(folderName => {
     const filesPath = path.join(extractedFilePath, 'bible', folderName);
@@ -38,7 +39,9 @@ export function getTranslationHelps(extractedFilePath, RESOURCE_OUTPUT_PATH) {
       );
       fs.copySync(sourcePath, destinationPath);
 
-      generateGroupsData(occurrences, fileName, RESOURCE_OUTPUT_PATH, groupsIndex, folderName, resourceVersion);
+      if (occurrences.length) {
+        generateGroupsData(occurrences, fileName, RESOURCE_OUTPUT_PATH, groupsIndex, folderName, resourceVersion);
+      }
     });
   });
 }
@@ -47,7 +50,7 @@ export function getTranslationHelps(extractedFilePath, RESOURCE_OUTPUT_PATH) {
  * 
  * @param {String} extractedFilePath 
  */
-function getOccurences(extractedFilePath) {
+function getOccurrences(extractedFilePath) {
   const filePath = path.join(extractedFilePath, 'bible', 'config.yaml');
   let yamlOccurences = fs.readFileSync(filePath, 'utf8');
   return yaml.parse(yamlOccurences);
@@ -69,11 +72,18 @@ function generateGroupsIndex(filesPath, RESOURCE_OUTPUT_PATH, resourceVersion, f
     const articleFile = fs.readFileSync(filePath, 'utf8');
 
     const groupId = fileName.replace('.md', '');
-    const groupName = articleFile.split('\n')[0].replace(/ #|# /gi, '');
+    // get the article's first line and remove #'s and spaces from beginning/end
+    const groupName = articleFile.split('\n')[0].replace(/(^\s*#\s*|\s*#\s*$)/gi, '');
 
     groupObjet.id = groupId;
     groupObjet.name = groupName;
     groupsIndex.push(groupObjet);
+  });
+
+  groupsIndex.sort((a, b)=>{
+    const nameA = a.name.toUpperCase();
+    const nameB = b.name.toUpperCase();
+    return (nameA < nameB) ? -1 : (nameA > nameB) ? 1 : 0;
   });
 
   const groupsIndexOutputPath = path.join(
@@ -83,7 +93,7 @@ function generateGroupsIndex(filesPath, RESOURCE_OUTPUT_PATH, resourceVersion, f
     'index.json',
   );
 
-  fs.outputJsonSync(groupsIndexOutputPath, groupsIndex);
+  fs.outputJsonSync(groupsIndexOutputPath, groupsIndex, {spaces:2});
 
   return groupsIndex;
 }
