@@ -89,8 +89,7 @@ door43ApiHelper
         } else {
           translationHelpsHelpers.getTranslationHelps(
             extractedFilePath,
-            RESOURCE_OUTPUT_PATH,
-            LANGUAGE_ID
+            RESOURCE_OUTPUT_PATH
           );
         }
       });
