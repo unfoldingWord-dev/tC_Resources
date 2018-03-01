@@ -29,7 +29,7 @@ describe('englishUlbHelpers', function() {
 
   // it('should download and output en_ULB chapter files', () => {
   //   return new Promise((resolve) => {
-  //     const version = 'v0.0';
+  //     const version = 'v-1';
   //     EnglishUlbHelpers.generateVersion(version, resolve);
   //   }).then(() => {
   //     console.log('en_ulb processing completed!');

@@ -5330,12 +5330,12 @@
       {
         "tag": "zaln",
         "type": "milestone",
-        "lemma": "μιαίνω",
-        "morph": "Gr,VIPEP,DMP,",
+        "lemma": "καθαρός",
+        "morph": "Gr,NS,,,,DMP,",
         "occurrence": 1,
         "occurrences": 1,
-        "strong": "G33920",
-        "content": "μεμιαμμένοις",
+        "strong": "G25130",
+        "content": "καθαροῖς",
         "children": [
           {
             "text": "who",
@@ -5480,25 +5480,6 @@
       {
         "tag": "zaln",
         "type": "milestone",
-        "lemma": "καθαρός",
-        "morph": "Gr,NS,,,,DMP,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G25130",
-        "content": "καθαροῖς",
-        "children": [
-          {
-            "text": "who",
-            "tag": "w",
-            "type": "word",
-            "occurrence": 2,
-            "occurrences": 2
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
         "lemma": "μιαίνω",
         "morph": "Gr,VIPEP,DMP,",
         "occurrence": 1,
@@ -5506,6 +5487,13 @@
         "strong": "G33920",
         "content": "μεμιαμμένοις",
         "children": [
+          {
+            "text": "who",
+            "tag": "w",
+            "type": "word",
+            "occurrence": 2,
+            "occurrences": 2
+          },
           {
             "text": "are",
             "tag": "w",

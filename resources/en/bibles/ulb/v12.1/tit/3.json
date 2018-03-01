@@ -711,25 +711,6 @@
       {
         "tag": "zaln",
         "type": "milestone",
-        "lemma": "εἰμί",
-        "morph": "Gr,VLIIA1,,P,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G15100",
-        "content": "ἦμεν",
-        "children": [
-          {
-            "text": "were",
-            "tag": "w",
-            "type": "word",
-            "occurrence": 1,
-            "occurrences": 3
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
         "lemma": "ἀνόητος",
         "morph": "Gr,NS,,,,NMP,",
         "occurrence": 1,
@@ -737,6 +718,13 @@
         "strong": "G04530",
         "content": "ἀνόητοι",
         "children": [
+          {
+            "text": "were",
+            "tag": "w",
+            "type": "word",
+            "occurrence": 1,
+            "occurrences": 3
+          },
           {
             "text": "thoughtless",
             "tag": "w",
@@ -810,25 +798,6 @@
       {
         "tag": "zaln",
         "type": "milestone",
-        "lemma": "ἀνόητος",
-        "morph": "Gr,NS,,,,NMP,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G04530",
-        "content": "ἀνόητοι",
-        "children": [
-          {
-            "text": "were",
-            "tag": "w",
-            "type": "word",
-            "occurrence": 2,
-            "occurrences": 3
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
         "lemma": "πλανάω",
         "morph": "Gr,VIPPP,NMP,",
         "occurrence": 1,
@@ -836,6 +805,13 @@
         "strong": "G41050",
         "content": "πλανώμενοι",
         "children": [
+          {
+            "text": "were",
+            "tag": "w",
+            "type": "word",
+            "occurrence": 2,
+            "occurrences": 3
+          },
           {
             "text": "led",
             "tag": "w",
@@ -1117,25 +1093,6 @@
       {
         "tag": "zaln",
         "type": "milestone",
-        "lemma": "πλανάω",
-        "morph": "Gr,VIPPP,NMP,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G41050",
-        "content": "πλανώμενοι",
-        "children": [
-          {
-            "text": "were",
-            "tag": "w",
-            "type": "word",
-            "occurrence": 3,
-            "occurrences": 3
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
         "lemma": "στυγητός",
         "morph": "Gr,NS,,,,NMP,",
         "occurrence": 1,
@@ -1143,6 +1100,13 @@
         "strong": "G47670",
         "content": "στυγητοί",
         "children": [
+          {
+            "text": "were",
+            "tag": "w",
+            "type": "word",
+            "occurrence": 3,
+            "occurrences": 3
+          },
           {
             "text": "detestable",
             "tag": "w",
@@ -2899,11 +2863,11 @@
         "tag": "zaln",
         "type": "milestone",
         "lemma": "καλός",
-        "morph": "Gr,NP,,,,NNP,",
+        "morph": "Gr,AA,,,,GNP,",
         "occurrence": 1,
         "occurrences": 1,
         "strong": "G25700",
-        "content": "καλὰ",
+        "content": "καλῶν",
         "children": [
           {
             "text": "good",
@@ -2998,11 +2962,11 @@
         "tag": "zaln",
         "type": "milestone",
         "lemma": "καλός",
-        "morph": "Gr,AA,,,,GNP,",
+        "morph": "Gr,NP,,,,NNP,",
         "occurrence": 1,
         "occurrences": 1,
         "strong": "G25700",
-        "content": "καλῶν",
+        "content": "καλὰ",
         "children": [
           {
             "text": "good",
