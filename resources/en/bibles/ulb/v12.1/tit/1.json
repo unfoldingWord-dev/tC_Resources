@@ -5343,38 +5343,14 @@
             "type": "word",
             "occurrence": 1,
             "occurrences": 2
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
-        "lemma": "καθαρός",
-        "morph": "Gr,NP,,,,NNP,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G25130",
-        "content": "καθαρὰ",
-        "children": [
+          },
           {
             "text": "are",
             "tag": "w",
             "type": "word",
             "occurrence": 1,
             "occurrences": 3
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
-        "lemma": "καθαρός",
-        "morph": "Gr,NS,,,,DMP,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G25130",
-        "content": "καθαροῖς",
-        "children": [
+          },
           {
             "text": "pure",
             "tag": "w",
@@ -5418,11 +5394,11 @@
         "tag": "zaln",
         "type": "milestone",
         "lemma": "καθαρός",
-        "morph": "Gr,NS,,,,DMP,",
+        "morph": "Gr,NP,,,,NNP,",
         "occurrence": 1,
         "occurrences": 1,
         "strong": "G25130",
-        "content": "καθαροῖς",
+        "content": "καθαρὰ",
         "children": [
           {
             "text": "are",
@@ -5430,19 +5406,7 @@
             "type": "word",
             "occurrence": 2,
             "occurrences": 3
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
-        "lemma": "καθαρός",
-        "morph": "Gr,NP,,,,NNP,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G25130",
-        "content": "καθαρὰ",
-        "children": [
+          },
           {
             "text": "pure",
             "tag": "w",
