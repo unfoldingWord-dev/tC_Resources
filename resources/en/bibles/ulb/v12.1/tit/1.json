@@ -192,25 +192,6 @@
       {
         "tag": "zaln",
         "type": "milestone",
-        "lemma": "ἐπίγνωσις",
-        "morph": "Gr,N,,,,,AFS,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G19220",
-        "content": "ἐπίγνωσιν",
-        "children": [
-          {
-            "text": "the",
-            "tag": "w",
-            "type": "word",
-            "occurrence": 1,
-            "occurrences": 3
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
         "lemma": "πίστις",
         "morph": "Gr,N,,,,,AFS,",
         "occurrence": 1,
@@ -218,6 +199,13 @@
         "strong": "G41020",
         "content": "πίστιν",
         "children": [
+          {
+            "text": "the",
+            "tag": "w",
+            "type": "word",
+            "occurrence": 1,
+            "occurrences": 3
+          },
           {
             "text": "faith",
             "tag": "w",
@@ -336,25 +324,6 @@
       {
         "tag": "zaln",
         "type": "milestone",
-        "lemma": "πίστις",
-        "morph": "Gr,N,,,,,AFS,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G41020",
-        "content": "πίστιν",
-        "children": [
-          {
-            "text": "the",
-            "tag": "w",
-            "type": "word",
-            "occurrence": 2,
-            "occurrences": 3
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
         "lemma": "ἐπίγνωσις",
         "morph": "Gr,N,,,,,AFS,",
         "occurrence": 1,
@@ -362,6 +331,13 @@
         "strong": "G19220",
         "content": "ἐπίγνωσιν",
         "children": [
+          {
+            "text": "the",
+            "tag": "w",
+            "type": "word",
+            "occurrence": 2,
+            "occurrences": 3
+          },
           {
             "text": "knowledge",
             "tag": "w",
@@ -470,7 +446,7 @@
       },
       {
         "type": "text",
-        "text": ", "
+        "text": ", \n"
       }
     ]
   },
@@ -737,38 +713,14 @@
             "type": "word",
             "occurrence": 1,
             "occurrences": 1
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
-        "lemma": "ζωή",
-        "morph": "Gr,N,,,,,GFS,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G22220",
-        "content": "ζωῆς",
-        "children": [
+          },
           {
             "text": "the",
             "tag": "w",
             "type": "word",
             "occurrence": 2,
             "occurrences": 2
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
-        "lemma": "αἰώνιος",
-        "morph": "Gr,AA,,,,GMP,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G01660",
-        "content": "αἰωνίων",
-        "children": [
+          },
           {
             "text": "ages",
             "tag": "w",
@@ -806,7 +758,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -978,25 +930,6 @@
       {
         "tag": "zaln",
         "type": "milestone",
-        "lemma": "ἐπιταγή",
-        "morph": "Gr,N,,,,,AFS,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G20030",
-        "content": "ἐπιταγὴν",
-        "children": [
-          {
-            "text": "the",
-            "tag": "w",
-            "type": "word",
-            "occurrence": 2,
-            "occurrences": 3
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
         "lemma": "κήρυγμα",
         "morph": "Gr,N,,,,,DNS,",
         "occurrence": 1,
@@ -1004,6 +937,13 @@
         "strong": "G27820",
         "content": "κηρύγματι",
         "children": [
+          {
+            "text": "the",
+            "tag": "w",
+            "type": "word",
+            "occurrence": 2,
+            "occurrences": 3
+          },
           {
             "text": "message",
             "tag": "w",
@@ -1141,25 +1081,6 @@
       {
         "tag": "zaln",
         "type": "milestone",
-        "lemma": "ὁ",
-        "morph": "Gr,EA,,,,GMS,",
-        "occurrence": 1,
-        "occurrences": 2,
-        "strong": "G35880",
-        "content": "τοῦ",
-        "children": [
-          {
-            "text": "the",
-            "tag": "w",
-            "type": "word",
-            "occurrence": 3,
-            "occurrences": 3
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
         "lemma": "ἐπιταγή",
         "morph": "Gr,N,,,,,AFS,",
         "occurrence": 1,
@@ -1167,6 +1088,13 @@
         "strong": "G20030",
         "content": "ἐπιταγὴν",
         "children": [
+          {
+            "text": "the",
+            "tag": "w",
+            "type": "word",
+            "occurrence": 3,
+            "occurrences": 3
+          },
           {
             "text": "command",
             "tag": "w",
@@ -1254,7 +1182,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -1645,7 +1573,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -2105,7 +2033,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -2472,7 +2400,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -3069,7 +2997,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -3344,7 +3272,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -3847,7 +3775,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -4136,7 +4064,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -4470,7 +4398,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -4775,7 +4703,7 @@
       },
       {
         "type": "text",
-        "text": ".\" "
+        "text": ".\" \n"
       }
     ]
   },
@@ -5106,7 +5034,7 @@
       },
       {
         "type": "text",
-        "text": ", "
+        "text": ", \n"
       }
     ]
   },
@@ -5161,19 +5089,7 @@
             "type": "word",
             "occurrence": 1,
             "occurrences": 1
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
-        "lemma": "ἐντολή",
-        "morph": "Gr,N,,,,,DFP,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G17850",
-        "content": "ἐντολαῖς",
-        "children": [
+          },
           {
             "text": "to",
             "tag": "w",
@@ -5243,25 +5159,6 @@
       {
         "tag": "zaln",
         "type": "milestone",
-        "lemma": "προσέχω",
-        "morph": "Gr,VIPPA,NMP,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G43370",
-        "content": "προσέχοντες",
-        "children": [
-          {
-            "text": "to",
-            "tag": "w",
-            "type": "word",
-            "occurrence": 2,
-            "occurrences": 2
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
         "lemma": "ἐντολή",
         "morph": "Gr,N,,,,,DFP,",
         "occurrence": 1,
@@ -5269,6 +5166,13 @@
         "strong": "G17850",
         "content": "ἐντολαῖς",
         "children": [
+          {
+            "text": "to",
+            "tag": "w",
+            "type": "word",
+            "occurrence": 2,
+            "occurrences": 2
+          },
           {
             "text": "the",
             "tag": "w",
@@ -5391,7 +5295,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -5439,13 +5343,6 @@
             "type": "word",
             "occurrence": 1,
             "occurrences": 2
-          },
-          {
-            "text": "are",
-            "tag": "w",
-            "type": "word",
-            "occurrence": 1,
-            "occurrences": 3
           }
         ]
       },
@@ -5459,6 +5356,13 @@
         "strong": "G25130",
         "content": "καθαρὰ",
         "children": [
+          {
+            "text": "are",
+            "tag": "w",
+            "type": "word",
+            "occurrence": 1,
+            "occurrences": 3
+          },
           {
             "text": "pure",
             "tag": "w",
@@ -5595,25 +5499,6 @@
       {
         "tag": "zaln",
         "type": "milestone",
-        "lemma": "καθαρός",
-        "morph": "Gr,NP,,,,NNP,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G25130",
-        "content": "καθαρὰ",
-        "children": [
-          {
-            "text": "are",
-            "tag": "w",
-            "type": "word",
-            "occurrence": 3,
-            "occurrences": 3
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
         "lemma": "μιαίνω",
         "morph": "Gr,VIPEP,DMP,",
         "occurrence": 1,
@@ -5621,6 +5506,13 @@
         "strong": "G33920",
         "content": "μεμιαμμένοις",
         "children": [
+          {
+            "text": "are",
+            "tag": "w",
+            "type": "word",
+            "occurrence": 3,
+            "occurrences": 3
+          },
           {
             "text": "corrupt",
             "tag": "w",
@@ -5901,7 +5793,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -6290,7 +6182,7 @@
       },
       {
         "type": "text",
-        "text": "."
+        "text": ".\n"
       }
     ]
   }

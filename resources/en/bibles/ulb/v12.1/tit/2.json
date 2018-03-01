@@ -159,7 +159,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -455,7 +455,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -826,7 +826,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -1030,7 +1030,7 @@
       },
       {
         "type": "text",
-        "text": ", "
+        "text": ", \n"
       }
     ]
   },
@@ -1409,7 +1409,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -1589,7 +1589,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -1872,7 +1872,7 @@
       },
       {
         "type": "text",
-        "text": ", "
+        "text": ", \n"
       }
     ]
   },
@@ -2258,7 +2258,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -2526,7 +2526,7 @@
       },
       {
         "type": "text",
-        "text": ", "
+        "text": ", \n"
       }
     ]
   },
@@ -2966,7 +2966,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -2994,12 +2994,12 @@
       {
         "tag": "zaln",
         "type": "milestone",
-        "lemma": "σωτήριος",
-        "morph": "Gr,NS,,,,NMS,",
+        "lemma": "ὁ",
+        "morph": "Gr,EA,,,,NFS,",
         "occurrence": 1,
         "occurrences": 1,
-        "strong": "G49920",
-        "content": "σωτήριος",
+        "strong": "G35880",
+        "content": "ἡ",
         "children": [
           {
             "text": "the",
@@ -3121,38 +3121,14 @@
             "type": "word",
             "occurrence": 1,
             "occurrences": 1
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
-        "lemma": "ὁ",
-        "morph": "Gr,EA,,,,NFS,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G35880",
-        "content": "ἡ",
-        "children": [
+          },
           {
             "text": "the",
             "tag": "w",
             "type": "word",
             "occurrence": 2,
             "occurrences": 2
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
-        "lemma": "σωτήριος",
-        "morph": "Gr,NS,,,,NMS,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G49920",
-        "content": "σωτήριος",
-        "children": [
+          },
           {
             "text": "salvation",
             "tag": "w",
@@ -3233,7 +3209,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -3656,7 +3632,7 @@
       },
       {
         "type": "text",
-        "text": ", "
+        "text": ", \n"
       }
     ]
   },
@@ -4014,7 +3990,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -4473,7 +4449,7 @@
       },
       {
         "type": "text",
-        "text": ". "
+        "text": ". \n"
       }
     ]
   },
@@ -4789,7 +4765,7 @@
       },
       {
         "type": "text",
-        "text": "."
+        "text": ".\n"
       }
     ]
   }
