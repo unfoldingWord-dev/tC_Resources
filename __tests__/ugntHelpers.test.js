@@ -5,16 +5,21 @@ import * as ugntHelpers from '../helpers/ugntHelpers';
 
 describe('ugntHelpers', function() {
   const tempFilePath = path.join('.', '__tests__', 'output', 'ugnt_help');
+  const version = 'v0.0';
+  const outputFilePath = path.join('.', 'resources', 'grc', 'bibles', 'ugnt', version);
+
+  beforeEach(() => {
+    deletePath(tempFilePath);
+    deletePath(outputFilePath);
+  });
 
   afterEach(() => {
-    if (fs.existsSync(tempFilePath)) {
-      fs.removeSync(tempFilePath);
-    }
+    deletePath(tempFilePath);
+    deletePath(outputFilePath);
   });
 
   it('should output UGNT chapter files', () => {
     return new Promise((resolve) => {
-      const version = 'v0.0';
       const zipFileName = 'ugnt.zip';
       const zipfilepath = path.join(tempFilePath, zipFileName);
       fs.copySync(path.join('.', '__tests__', 'fixtures', 'ugnt', zipFileName), zipfilepath); // copy zip to new location since it will be deleted
@@ -40,10 +45,18 @@ describe('ugntHelpers', function() {
   // for debugging
   // it('should download and output UGNT chapter files', () => {
   //   return new Promise((resolve) => {
-  //     const version = 'v0.0';
   //     ugntHelpers.generateUgntVersion(version, resolve);
   //   }).then(() => {
   //     console.log('UGNT processing completed!');
   //   });
   // }, 300000); // max timeout (should be long enough, but may need to be increased on a slow connection)
 });
+
+//
+// helpers
+//
+function deletePath(filePath) {
+  if (fs.existsSync(filePath)) {
+    fs.removeSync(filePath);
+  }
+}
