@@ -27,20 +27,28 @@
         "morph": "Gr,N,,,,,GFS,"
       },
       {
-        "text": "Ἰησοῦ",
-        "tag": "w",
-        "type": "word",
-        "lemma": "Ἰησοῦς",
-        "strong": "G24240",
-        "morph": "Gr,N,,,,,GMS,"
-      },
-      {
-        "text": "Χριστοῦ",
-        "tag": "w",
-        "type": "word",
-        "lemma": "χριστός",
-        "strong": "G55470",
-        "morph": "Gr,N,,,,,GMS,"
+        "tag": "k",
+        "type": "milestone",
+        "tw": "rc://*/tw/dict/bible/kt/jesus",
+        "children": [
+          {
+            "text": "Ἰησοῦ",
+            "tag": "w",
+            "type": "word",
+            "lemma": "Ἰησοῦς",
+            "strong": "G24240",
+            "morph": "Gr,N,,,,,GMS,"
+          },
+          {
+            "text": "Χριστοῦ",
+            "tag": "w",
+            "type": "word",
+            "lemma": "χριστός",
+            "strong": "G55470",
+            "morph": "Gr,N,,,,,GMS,",
+            "tw": "rc://*/tw/dict/bible/kt/christ"
+          }
+        ]
       },
       {
         "type": "text",
@@ -52,7 +60,8 @@
         "type": "word",
         "lemma": "υἱός",
         "strong": "G52070",
-        "morph": "Gr,N,,,,,GMS,"
+        "morph": "Gr,N,,,,,GMS,",
+        "tw": "rc://*/tw/dict/bible/kt/son"
       },
       {
         "text": "Δαυεὶδ",
@@ -60,7 +69,8 @@
         "type": "word",
         "lemma": "Δαυείδ",
         "strong": "G11380",
-        "morph": "Gr,N,,,,,GMSI"
+        "morph": "Gr,N,,,,,GMSI",
+        "tw": "rc://*/tw/dict/bible/names/david"
       },
       {
         "type": "text",
@@ -72,7 +82,8 @@
         "type": "word",
         "lemma": "υἱός",
         "strong": "G52070",
-        "morph": "Gr,N,,,,,GMS,"
+        "morph": "Gr,N,,,,,GMS,",
+        "tw": "rc://*/tw/dict/bible/kt/son"
       },
       {
         "text": "Ἀβραάμ",
@@ -80,7 +91,8 @@
         "type": "word",
         "lemma": "Ἀβραάμ",
         "strong": "G00110",
-        "morph": "Gr,N,,,,,GMSI"
+        "morph": "Gr,N,,,,,GMSI",
+        "tw": "rc://*/tw/dict/bible/names/abraham"
       },
       {
         "type": "text",
@@ -105,7 +117,8 @@
         "type": "word",
         "lemma": "Ἀβραάμ",
         "strong": "G00110",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/abraham"
       },
       {
         "text": "ἐγέννησεν",
@@ -113,7 +126,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -129,7 +143,8 @@
         "type": "word",
         "lemma": "Ἰσαάκ",
         "strong": "G24640",
-        "morph": "Gr,N,,,,,AMSI"
+        "morph": "Gr,N,,,,,AMSI",
+        "tw": "rc://*/tw/dict/bible/names/isaac"
       },
       {
         "type": "text",
@@ -141,7 +156,8 @@
         "type": "word",
         "lemma": "Ἰσαάκ",
         "strong": "G24640",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/isaac"
       },
       {
         "text": "δὲ",
@@ -157,7 +173,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -173,7 +190,8 @@
         "type": "word",
         "lemma": "Ἰακώβ",
         "strong": "G23840",
-        "morph": "Gr,N,,,,,AMSI"
+        "morph": "Gr,N,,,,,AMSI",
+        "tw": "rc://*/tw/dict/bible/names/jacob"
       },
       {
         "type": "text",
@@ -185,7 +203,8 @@
         "type": "word",
         "lemma": "Ἰακώβ",
         "strong": "G23840",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/jacob"
       },
       {
         "text": "δὲ",
@@ -201,7 +220,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -217,7 +237,8 @@
         "type": "word",
         "lemma": "Ἰούδας",
         "strong": "G24550",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/names/judah"
       },
       {
         "text": "καὶ",
@@ -241,7 +262,8 @@
         "type": "word",
         "lemma": "ἀδελφός",
         "strong": "G00800",
-        "morph": "Gr,N,,,,,AMP,"
+        "morph": "Gr,N,,,,,AMP,",
+        "tw": "rc://*/tw/dict/bible/kt/brother"
       },
       {
         "text": "αὐτοῦ",
@@ -269,7 +291,8 @@
         "type": "word",
         "lemma": "Ἰούδας",
         "strong": "G24550",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/names/judah"
       },
       {
         "text": "δὲ",
@@ -285,7 +308,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -349,7 +373,8 @@
         "type": "word",
         "lemma": "Θαμάρ",
         "strong": "G22830",
-        "morph": "Gr,N,,,,,GFSI"
+        "morph": "Gr,N,,,,,GFSI",
+        "tw": "rc://*/tw/dict/bible/names/tamar"
       },
       {
         "type": "text",
@@ -377,7 +402,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -421,7 +447,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -473,7 +500,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -517,7 +545,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -561,7 +590,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -613,7 +643,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -629,7 +660,8 @@
         "type": "word",
         "lemma": "Βόες",
         "strong": "G10030",
-        "morph": "Gr,N,,,,,AMSI"
+        "morph": "Gr,N,,,,,AMSI",
+        "tw": "rc://*/tw/dict/bible/names/boaz"
       },
       {
         "text": "ἐκ",
@@ -653,7 +685,8 @@
         "type": "word",
         "lemma": "Ῥαχάβ",
         "strong": "G44770",
-        "morph": "Gr,N,,,,,GFSI"
+        "morph": "Gr,N,,,,,GFSI",
+        "tw": "rc://*/tw/dict/bible/names/rahab"
       },
       {
         "type": "text",
@@ -665,7 +698,8 @@
         "type": "word",
         "lemma": "Βόες",
         "strong": "G10030",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/boaz"
       },
       {
         "text": "δὲ",
@@ -681,7 +715,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -721,7 +756,8 @@
         "type": "word",
         "lemma": "Ῥούθ",
         "strong": "G45030",
-        "morph": "Gr,N,,,,,GFSI"
+        "morph": "Gr,N,,,,,GFSI",
+        "tw": "rc://*/tw/dict/bible/names/ruth"
       },
       {
         "type": "text",
@@ -749,7 +785,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -765,7 +802,8 @@
         "type": "word",
         "lemma": "Ἰεσσαί",
         "strong": "G24210",
-        "morph": "Gr,N,,,,,AMSI"
+        "morph": "Gr,N,,,,,AMSI",
+        "tw": "rc://*/tw/dict/bible/names/jesse"
       },
       {
         "type": "text",
@@ -785,7 +823,8 @@
         "type": "word",
         "lemma": "Ἰεσσαί",
         "strong": "G24210",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/jesse"
       },
       {
         "text": "δὲ",
@@ -801,7 +840,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -817,7 +857,8 @@
         "type": "word",
         "lemma": "Δαυείδ",
         "strong": "G11380",
-        "morph": "Gr,N,,,,,AMSI"
+        "morph": "Gr,N,,,,,AMSI",
+        "tw": "rc://*/tw/dict/bible/names/david"
       },
       {
         "text": "τὸν",
@@ -833,7 +874,8 @@
         "type": "word",
         "lemma": "βασιλεύς",
         "strong": "G09350",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/other/king"
       },
       {
         "type": "text",
@@ -850,7 +892,8 @@
         "type": "word",
         "lemma": "Δαυείδ",
         "strong": "G11380",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/david"
       },
       {
         "text": "δὲ",
@@ -866,7 +909,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -882,7 +926,8 @@
         "type": "word",
         "lemma": "Σολομών",
         "strong": "G46720",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/names/solomon"
       },
       {
         "text": "ἐκ",
@@ -914,7 +959,8 @@
         "type": "word",
         "lemma": "Οὐρίας",
         "strong": "G37740",
-        "morph": "Gr,N,,,,,GMS,"
+        "morph": "Gr,N,,,,,GMS,",
+        "tw": "rc://*/tw/dict/bible/names/uriah"
       },
       {
         "type": "text",
@@ -934,7 +980,8 @@
         "type": "word",
         "lemma": "Σολομών",
         "strong": "G46720",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/names/solomon"
       },
       {
         "text": "δὲ",
@@ -950,7 +997,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -966,7 +1014,8 @@
         "type": "word",
         "lemma": "Ῥοβοάμ",
         "strong": "G44970",
-        "morph": "Gr,N,,,,,AMSI"
+        "morph": "Gr,N,,,,,AMSI",
+        "tw": "rc://*/tw/dict/bible/names/rehoboam"
       },
       {
         "type": "text",
@@ -978,7 +1027,8 @@
         "type": "word",
         "lemma": "Ῥοβοάμ",
         "strong": "G44970",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/rehoboam"
       },
       {
         "text": "δὲ",
@@ -994,7 +1044,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1010,7 +1061,8 @@
         "type": "word",
         "lemma": "Ἀβιά",
         "strong": "G00070",
-        "morph": "Gr,N,,,,,AMSI"
+        "morph": "Gr,N,,,,,AMSI",
+        "tw": "rc://*/tw/dict/bible/names/abijah"
       },
       {
         "type": "text",
@@ -1022,7 +1074,8 @@
         "type": "word",
         "lemma": "Ἀβιά",
         "strong": "G00070",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/abijah"
       },
       {
         "text": "δὲ",
@@ -1038,7 +1091,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1054,7 +1108,8 @@
         "type": "word",
         "lemma": "Ἀσάφ",
         "strong": "G07600",
-        "morph": "Gr,N,,,,,AMSI"
+        "morph": "Gr,N,,,,,AMSI",
+        "tw": "rc://*/tw/dict/bible/names/asa"
       },
       {
         "type": "text",
@@ -1074,7 +1129,8 @@
         "type": "word",
         "lemma": "Ἀσάφ",
         "strong": "G07600",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/asa"
       },
       {
         "text": "δὲ",
@@ -1090,7 +1146,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1106,7 +1163,8 @@
         "type": "word",
         "lemma": "Ἰωσαφάτ",
         "strong": "G24980",
-        "morph": "Gr,N,,,,,AMSI"
+        "morph": "Gr,N,,,,,AMSI",
+        "tw": "rc://*/tw/dict/bible/names/jehoshaphat"
       },
       {
         "type": "text",
@@ -1118,7 +1176,8 @@
         "type": "word",
         "lemma": "Ἰωσαφάτ",
         "strong": "G24980",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/jehoshaphat"
       },
       {
         "text": "δὲ",
@@ -1134,7 +1193,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1150,7 +1210,8 @@
         "type": "word",
         "lemma": "Ἰωράμ",
         "strong": "G24960",
-        "morph": "Gr,N,,,,,AMSI"
+        "morph": "Gr,N,,,,,AMSI",
+        "tw": "rc://*/tw/dict/bible/names/jehoram"
       },
       {
         "type": "text",
@@ -1162,7 +1223,8 @@
         "type": "word",
         "lemma": "Ἰωράμ",
         "strong": "G24960",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/jehoram"
       },
       {
         "text": "δὲ",
@@ -1178,7 +1240,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1194,7 +1257,8 @@
         "type": "word",
         "lemma": "Ὀζείας",
         "strong": "G36040",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/names/uzziah"
       },
       {
         "type": "text",
@@ -1214,7 +1278,8 @@
         "type": "word",
         "lemma": "Ὀζείας",
         "strong": "G36040",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/names/uzziah"
       },
       {
         "text": "δὲ",
@@ -1230,7 +1295,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1246,7 +1312,8 @@
         "type": "word",
         "lemma": "Ἰωαθάμ",
         "strong": "G24880",
-        "morph": "Gr,N,,,,,AMSI"
+        "morph": "Gr,N,,,,,AMSI",
+        "tw": "rc://*/tw/dict/bible/names/jotham"
       },
       {
         "type": "text",
@@ -1258,7 +1325,8 @@
         "type": "word",
         "lemma": "Ἰωαθάμ",
         "strong": "G24880",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/jotham"
       },
       {
         "text": "δὲ",
@@ -1274,7 +1342,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1290,7 +1359,8 @@
         "type": "word",
         "lemma": "Ἀχάζ",
         "strong": "G08810",
-        "morph": "Gr,N,,,,,AMSI"
+        "morph": "Gr,N,,,,,AMSI",
+        "tw": "rc://*/tw/dict/bible/names/ahaz"
       },
       {
         "type": "text",
@@ -1302,7 +1372,8 @@
         "type": "word",
         "lemma": "Ἀχάζ",
         "strong": "G08810",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/ahaz"
       },
       {
         "text": "δὲ",
@@ -1318,7 +1389,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1334,7 +1406,8 @@
         "type": "word",
         "lemma": "Ἑζεκίας",
         "strong": "G14780",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/names/hezekiah"
       },
       {
         "type": "text",
@@ -1354,7 +1427,8 @@
         "type": "word",
         "lemma": "Ἑζεκίας",
         "strong": "G14780",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/names/hezekiah"
       },
       {
         "text": "δὲ",
@@ -1370,7 +1444,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1386,7 +1461,8 @@
         "type": "word",
         "lemma": "Μανασσῆς",
         "strong": "G31280",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/names/manasseh"
       },
       {
         "type": "text",
@@ -1398,7 +1474,8 @@
         "type": "word",
         "lemma": "Μανασσῆς",
         "strong": "G31280",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/names/manasseh"
       },
       {
         "text": "δὲ",
@@ -1414,7 +1491,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1458,7 +1536,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1474,7 +1553,8 @@
         "type": "word",
         "lemma": "Ἰωσίας",
         "strong": "G25020",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/names/josiah"
       },
       {
         "type": "text",
@@ -1494,7 +1574,8 @@
         "type": "word",
         "lemma": "Ἰωσίας",
         "strong": "G25020",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/names/josiah"
       },
       {
         "text": "δὲ",
@@ -1510,7 +1591,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1550,7 +1632,8 @@
         "type": "word",
         "lemma": "ἀδελφός",
         "strong": "G00800",
-        "morph": "Gr,N,,,,,AMP,"
+        "morph": "Gr,N,,,,,AMP,",
+        "tw": "rc://*/tw/dict/bible/kt/brother"
       },
       {
         "text": "αὐτοῦ",
@@ -1594,7 +1677,8 @@
         "type": "word",
         "lemma": "Βαβυλών",
         "strong": "G08970",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/names/babylon"
       },
       {
         "type": "text",
@@ -1651,7 +1735,8 @@
         "type": "word",
         "lemma": "Βαβυλών",
         "strong": "G08970",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/names/babylon"
       },
       {
         "type": "text",
@@ -1671,7 +1756,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1715,7 +1801,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1731,7 +1818,8 @@
         "type": "word",
         "lemma": "Ζοροβαβέλ",
         "strong": "G22160",
-        "morph": "Gr,N,,,,,AMSI"
+        "morph": "Gr,N,,,,,AMSI",
+        "tw": "rc://*/tw/dict/bible/names/zerubbabel"
       },
       {
         "type": "text",
@@ -1751,7 +1839,8 @@
         "type": "word",
         "lemma": "Ζοροβαβέλ",
         "strong": "G22160",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/zerubbabel"
       },
       {
         "text": "δὲ",
@@ -1767,7 +1856,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1811,7 +1901,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1827,7 +1918,8 @@
         "type": "word",
         "lemma": "Ἐλιακείμ",
         "strong": "G16620",
-        "morph": "Gr,N,,,,,AMSI"
+        "morph": "Gr,N,,,,,AMSI",
+        "tw": "rc://*/tw/dict/bible/names/eliakim"
       },
       {
         "type": "text",
@@ -1839,7 +1931,8 @@
         "type": "word",
         "lemma": "Ἐλιακείμ",
         "strong": "G16620",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/eliakim"
       },
       {
         "text": "δὲ",
@@ -1855,7 +1948,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1907,7 +2001,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1923,7 +2018,8 @@
         "type": "word",
         "lemma": "Σαδώκ",
         "strong": "G45240",
-        "morph": "Gr,N,,,,,AMSI"
+        "morph": "Gr,N,,,,,AMSI",
+        "tw": "rc://*/tw/dict/bible/names/zadok"
       },
       {
         "type": "text",
@@ -1935,7 +2031,8 @@
         "type": "word",
         "lemma": "Σαδώκ",
         "strong": "G45240",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/zadok"
       },
       {
         "text": "δὲ",
@@ -1951,7 +2048,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -1995,7 +2093,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -2047,7 +2146,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -2063,7 +2163,8 @@
         "type": "word",
         "lemma": "Ἐλεάζαρ",
         "strong": "G16480",
-        "morph": "Gr,N,,,,,AMSI"
+        "morph": "Gr,N,,,,,AMSI",
+        "tw": "rc://*/tw/dict/bible/names/eleazar"
       },
       {
         "type": "text",
@@ -2075,7 +2176,8 @@
         "type": "word",
         "lemma": "Ἐλεάζαρ",
         "strong": "G16480",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/eleazar"
       },
       {
         "text": "δὲ",
@@ -2091,7 +2193,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -2135,7 +2238,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -2151,7 +2255,8 @@
         "type": "word",
         "lemma": "Ἰακώβ",
         "strong": "G23840",
-        "morph": "Gr,N,,,,,AMSI"
+        "morph": "Gr,N,,,,,AMSI",
+        "tw": "rc://*/tw/dict/bible/names/jacob"
       },
       {
         "type": "text",
@@ -2171,7 +2276,8 @@
         "type": "word",
         "lemma": "Ἰακώβ",
         "strong": "G23840",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/jacob"
       },
       {
         "text": "δὲ",
@@ -2187,7 +2293,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/father"
       },
       {
         "text": "τὸν",
@@ -2203,7 +2310,8 @@
         "type": "word",
         "lemma": "Ἰωσήφ",
         "strong": "G25010",
-        "morph": "Gr,N,,,,,AMSI"
+        "morph": "Gr,N,,,,,AMSI",
+        "tw": "rc://*/tw/dict/bible/names/josephnt"
       },
       {
         "text": "τὸν",
@@ -2227,7 +2335,8 @@
         "type": "word",
         "lemma": "Μαρία",
         "strong": "G31370",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/names/mary"
       },
       {
         "type": "text",
@@ -2263,7 +2372,8 @@
         "type": "word",
         "lemma": "Ἰησοῦς",
         "strong": "G24240",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/kt/jesus"
       },
       {
         "type": "text",
@@ -2283,7 +2393,8 @@
         "type": "word",
         "lemma": "λέγω",
         "strong": "G30040",
-        "morph": "Gr,V,PPP,NMS,"
+        "morph": "Gr,V,PPP,NMS,",
+        "tw": "rc://*/tw/dict/bible/kt/call"
       },
       {
         "text": "Χριστός",
@@ -2291,7 +2402,8 @@
         "type": "word",
         "lemma": "χριστός",
         "strong": "G55470",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/kt/christ"
       },
       {
         "type": "text",
@@ -2340,7 +2452,8 @@
         "type": "word",
         "lemma": "γενεά",
         "strong": "G10740",
-        "morph": "Gr,N,,,,,NFP,"
+        "morph": "Gr,N,,,,,NFP,",
+        "tw": "rc://*/tw/dict/bible/other/generation"
       },
       {
         "text": "ἀπὸ",
@@ -2356,7 +2469,8 @@
         "type": "word",
         "lemma": "Ἀβραάμ",
         "strong": "G00110",
-        "morph": "Gr,N,,,,,GMSI"
+        "morph": "Gr,N,,,,,GMSI",
+        "tw": "rc://*/tw/dict/bible/names/abraham"
       },
       {
         "text": "ἕως",
@@ -2372,7 +2486,8 @@
         "type": "word",
         "lemma": "Δαυείδ",
         "strong": "G11380",
-        "morph": "Gr,N,,,,,GMSI"
+        "morph": "Gr,N,,,,,GMSI",
+        "tw": "rc://*/tw/dict/bible/names/david"
       },
       {
         "text": "γενεαὶ",
@@ -2380,7 +2495,8 @@
         "type": "word",
         "lemma": "γενεά",
         "strong": "G10740",
-        "morph": "Gr,N,,,,,NFP,"
+        "morph": "Gr,N,,,,,NFP,",
+        "tw": "rc://*/tw/dict/bible/other/generation"
       },
       {
         "text": "δεκατέσσαρες",
@@ -2416,7 +2532,8 @@
         "type": "word",
         "lemma": "Δαυείδ",
         "strong": "G11380",
-        "morph": "Gr,N,,,,,GMSI"
+        "morph": "Gr,N,,,,,GMSI",
+        "tw": "rc://*/tw/dict/bible/names/david"
       },
       {
         "text": "ἕως",
@@ -2448,7 +2565,8 @@
         "type": "word",
         "lemma": "Βαβυλών",
         "strong": "G08970",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/names/babylon"
       },
       {
         "text": "γενεαὶ",
@@ -2456,7 +2574,8 @@
         "type": "word",
         "lemma": "γενεά",
         "strong": "G10740",
-        "morph": "Gr,N,,,,,NFP,"
+        "morph": "Gr,N,,,,,NFP,",
+        "tw": "rc://*/tw/dict/bible/other/generation"
       },
       {
         "text": "δεκατέσσαρες",
@@ -2508,7 +2627,8 @@
         "type": "word",
         "lemma": "Βαβυλών",
         "strong": "G08970",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/names/babylon"
       },
       {
         "text": "ἕως",
@@ -2532,7 +2652,8 @@
         "type": "word",
         "lemma": "χριστός",
         "strong": "G55470",
-        "morph": "Gr,N,,,,,GMS,"
+        "morph": "Gr,N,,,,,GMS,",
+        "tw": "rc://*/tw/dict/bible/kt/christ"
       },
       {
         "text": "γενεαὶ",
@@ -2540,7 +2661,8 @@
         "type": "word",
         "lemma": "γενεά",
         "strong": "G10740",
-        "morph": "Gr,N,,,,,NFP,"
+        "morph": "Gr,N,,,,,NFP,",
+        "tw": "rc://*/tw/dict/bible/other/generation"
       },
       {
         "text": "δεκατέσσαρες",
@@ -2584,20 +2706,28 @@
         "morph": "Gr,CC,,,,,,,,"
       },
       {
-        "text": "Ἰησοῦ",
-        "tag": "w",
-        "type": "word",
-        "lemma": "Ἰησοῦς",
-        "strong": "G24240",
-        "morph": "Gr,N,,,,,GMS,"
-      },
-      {
-        "text": "Χριστοῦ",
-        "tag": "w",
-        "type": "word",
-        "lemma": "χριστός",
-        "strong": "G55470",
-        "morph": "Gr,N,,,,,GMS,"
+        "tag": "k",
+        "type": "milestone",
+        "tw": "rc://*/tw/dict/bible/kt/jesus",
+        "children": [
+          {
+            "text": "Ἰησοῦ",
+            "tag": "w",
+            "type": "word",
+            "lemma": "Ἰησοῦς",
+            "strong": "G24240",
+            "morph": "Gr,N,,,,,GMS,"
+          },
+          {
+            "text": "Χριστοῦ",
+            "tag": "w",
+            "type": "word",
+            "lemma": "χριστός",
+            "strong": "G55470",
+            "morph": "Gr,N,,,,,GMS,",
+            "tw": "rc://*/tw/dict/bible/kt/christ"
+          }
+        ]
       },
       {
         "text": "ἡ",
@@ -2673,7 +2803,8 @@
         "type": "word",
         "lemma": "Μαρία",
         "strong": "G31370",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/names/mary"
       },
       {
         "text": "τῷ",
@@ -2689,7 +2820,8 @@
         "type": "word",
         "lemma": "Ἰωσήφ",
         "strong": "G25010",
-        "morph": "Gr,N,,,,,DMSI"
+        "morph": "Gr,N,,,,,DMSI",
+        "tw": "rc://*/tw/dict/bible/names/josephnt"
       },
       {
         "type": "text",
@@ -2753,7 +2885,8 @@
         "type": "word",
         "lemma": "γαστήρ",
         "strong": "G10640",
-        "morph": "Gr,N,,,,,DFS,"
+        "morph": "Gr,N,,,,,DFS,",
+        "tw": "rc://*/tw/dict/bible/other/womb"
       },
       {
         "text": "ἔχουσα",
@@ -2761,7 +2894,8 @@
         "type": "word",
         "lemma": "ἔχω",
         "strong": "G21920",
-        "morph": "Gr,V,PPA,NFS,"
+        "morph": "Gr,V,PPA,NFS,",
+        "tw": "rc://*/tw/dict/bible/other/conceive"
       },
       {
         "text": "ἐκ",
@@ -2772,20 +2906,28 @@
         "morph": "Gr,P,,,,,G,,,"
       },
       {
-        "text": "Πνεύματος",
-        "tag": "w",
-        "type": "word",
-        "lemma": "πνεῦμα",
-        "strong": "G41510",
-        "morph": "Gr,N,,,,,GNS,"
-      },
-      {
-        "text": "Ἁγίου",
-        "tag": "w",
-        "type": "word",
-        "lemma": "ἅγιος",
-        "strong": "G00400",
-        "morph": "Gr,AA,,,,GNS,"
+        "tag": "k",
+        "type": "milestone",
+        "tw": "rc://*/tw/dict/bible/kt/holyspirit",
+        "children": [
+          {
+            "text": "Πνεύματος",
+            "tag": "w",
+            "type": "word",
+            "lemma": "πνεῦμα",
+            "strong": "G41510",
+            "morph": "Gr,N,,,,,GNS,"
+          },
+          {
+            "text": "Ἁγίου",
+            "tag": "w",
+            "type": "word",
+            "lemma": "ἅγιος",
+            "strong": "G00400",
+            "morph": "Gr,AA,,,,GNS,",
+            "tw": "rc://*/tw/dict/bible/kt/holy"
+          }
+        ]
       },
       {
         "type": "text",
@@ -2805,7 +2947,8 @@
         "type": "word",
         "lemma": "Ἰωσήφ",
         "strong": "G25010",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/josephnt"
       },
       {
         "text": "δὲ",
@@ -2849,7 +2992,8 @@
         "type": "word",
         "lemma": "δίκαιος",
         "strong": "G13420",
-        "morph": "Gr,NP,,,,NMS,"
+        "morph": "Gr,NP,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/kt/righteous"
       },
       {
         "text": "ὢν",
@@ -2925,7 +3069,8 @@
         "type": "word",
         "lemma": "ἀπολύω",
         "strong": "G06300",
-        "morph": "Gr,V,NAA,,,,,"
+        "morph": "Gr,V,NAA,,,,,",
+        "tw": "rc://*/tw/dict/bible/other/divorce"
       },
       {
         "text": "αὐτήν",
@@ -3001,7 +3146,8 @@
         "type": "word",
         "lemma": "ἄγγελος",
         "strong": "G00320",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/kt/angel"
       },
       {
         "text": "Κυρίου",
@@ -3009,7 +3155,8 @@
         "type": "word",
         "lemma": "κύριος",
         "strong": "G29620",
-        "morph": "Gr,N,,,,,GMS,"
+        "morph": "Gr,N,,,,,GMS,",
+        "tw": "rc://*/tw/dict/bible/kt/lord"
       },
       {
         "text": "κατ’",
@@ -3025,7 +3172,8 @@
         "type": "word",
         "lemma": "ὄναρ",
         "strong": "G36770",
-        "morph": "Gr,N,,,,,ANSI"
+        "morph": "Gr,N,,,,,ANSI",
+        "tw": "rc://*/tw/dict/bible/other/dream"
       },
       {
         "text": "ἐφάνη",
@@ -3061,7 +3209,8 @@
         "type": "word",
         "lemma": "Ἰωσήφ",
         "strong": "G25010",
-        "morph": "Gr,N,,,,,VMSI"
+        "morph": "Gr,N,,,,,VMSI",
+        "tw": "rc://*/tw/dict/bible/names/josephnt"
       },
       {
         "type": "text",
@@ -3073,7 +3222,8 @@
         "type": "word",
         "lemma": "υἱός",
         "strong": "G52070",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/kt/son"
       },
       {
         "text": "Δαυείδ",
@@ -3081,7 +3231,8 @@
         "type": "word",
         "lemma": "Δαυείδ",
         "strong": "G11380",
-        "morph": "Gr,N,,,,,GMSI"
+        "morph": "Gr,N,,,,,GMSI",
+        "tw": "rc://*/tw/dict/bible/names/david"
       },
       {
         "type": "text",
@@ -3101,7 +3252,8 @@
         "type": "word",
         "lemma": "φοβέω",
         "strong": "G53990",
-        "morph": "Gr,V,SAP2,,S,"
+        "morph": "Gr,V,SAP2,,S,",
+        "tw": "rc://*/tw/dict/bible/kt/fear"
       },
       {
         "text": "παραλαβεῖν",
@@ -3117,7 +3269,8 @@
         "type": "word",
         "lemma": "Μαρία",
         "strong": "G31370",
-        "morph": "Gr,N,,,,,AFS,"
+        "morph": "Gr,N,,,,,AFS,",
+        "tw": "rc://*/tw/dict/bible/names/mary"
       },
       {
         "text": "τὴν",
@@ -3185,7 +3338,8 @@
         "type": "word",
         "lemma": "γεννάω",
         "strong": "G10800",
-        "morph": "Gr,V,PAP,NNS,"
+        "morph": "Gr,V,PAP,NNS,",
+        "tw": "rc://*/tw/dict/bible/other/conceive"
       },
       {
         "text": "ἐκ",
@@ -3201,7 +3355,8 @@
         "type": "word",
         "lemma": "πνεῦμα",
         "strong": "G41510",
-        "morph": "Gr,N,,,,,GNS,"
+        "morph": "Gr,N,,,,,GNS,",
+        "tw": "rc://*/tw/dict/bible/kt/holyspirit"
       },
       {
         "text": "ἐστιν",
@@ -3217,7 +3372,8 @@
         "type": "word",
         "lemma": "ἅγιος",
         "strong": "G00400",
-        "morph": "Gr,AA,,,,GNS,"
+        "morph": "Gr,AA,,,,GNS,",
+        "tw": "rc://*/tw/dict/bible/kt/holy"
       },
       {
         "type": "text",
@@ -3237,7 +3393,8 @@
         "type": "word",
         "lemma": "τίκτω",
         "strong": "G50880",
-        "morph": "Gr,V,IFM3,,S,"
+        "morph": "Gr,V,IFM3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/bear"
       },
       {
         "text": "δὲ",
@@ -3253,7 +3410,8 @@
         "type": "word",
         "lemma": "υἱός",
         "strong": "G52070",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/kt/son"
       },
       {
         "type": "text",
@@ -3273,7 +3431,8 @@
         "type": "word",
         "lemma": "καλέω",
         "strong": "G25640",
-        "morph": "Gr,V,IFA2,,S,"
+        "morph": "Gr,V,IFA2,,S,",
+        "tw": "rc://*/tw/dict/bible/kt/call"
       },
       {
         "text": "τὸ",
@@ -3289,7 +3448,8 @@
         "type": "word",
         "lemma": "ὄνομα",
         "strong": "G36860",
-        "morph": "Gr,N,,,,,ANS,"
+        "morph": "Gr,N,,,,,ANS,",
+        "tw": "rc://*/tw/dict/bible/kt/name"
       },
       {
         "text": "αὐτοῦ",
@@ -3305,7 +3465,8 @@
         "type": "word",
         "lemma": "Ἰησοῦς",
         "strong": "G24240",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/kt/jesus"
       },
       {
         "type": "text",
@@ -3333,7 +3494,8 @@
         "type": "word",
         "lemma": "σῴζω",
         "strong": "G49820",
-        "morph": "Gr,V,IFA3,,S,"
+        "morph": "Gr,V,IFA3,,S,",
+        "tw": "rc://*/tw/dict/bible/kt/save"
       },
       {
         "text": "τὸν",
@@ -3344,20 +3506,28 @@
         "morph": "Gr,EA,,,,AMS,"
       },
       {
-        "text": "λαὸν",
-        "tag": "w",
-        "type": "word",
-        "lemma": "λαός",
-        "strong": "G29920",
-        "morph": "Gr,N,,,,,AMS,"
-      },
-      {
-        "text": "αὐτοῦ",
-        "tag": "w",
-        "type": "word",
-        "lemma": "αὐτός",
-        "strong": "G08460",
-        "morph": "Gr,RP,,,3GMS,"
+        "tag": "k",
+        "type": "milestone",
+        "tw": "rc://*/tw/dict/bible/kt/peopleofgod",
+        "children": [
+          {
+            "text": "λαὸν",
+            "tag": "w",
+            "type": "word",
+            "lemma": "λαός",
+            "strong": "G29920",
+            "morph": "Gr,N,,,,,AMS,",
+            "tw": "rc://*/tw/dict/bible/other/peoplegroup"
+          },
+          {
+            "text": "αὐτοῦ",
+            "tag": "w",
+            "type": "word",
+            "lemma": "αὐτός",
+            "strong": "G08460",
+            "morph": "Gr,RP,,,3GMS,"
+          }
+        ]
       },
       {
         "text": "ἀπὸ",
@@ -3381,7 +3551,8 @@
         "type": "word",
         "lemma": "ἁμαρτία",
         "strong": "G02660",
-        "morph": "Gr,N,,,,,GFP,"
+        "morph": "Gr,N,,,,,GFP,",
+        "tw": "rc://*/tw/dict/bible/kt/sin"
       },
       {
         "text": "αὐτῶν",
@@ -3449,7 +3620,8 @@
         "type": "word",
         "lemma": "πληρόω",
         "strong": "G41370",
-        "morph": "Gr,V,SAP3,,S,"
+        "morph": "Gr,V,SAP3,,S,",
+        "tw": "rc://*/tw/dict/bible/kt/fulfill"
       },
       {
         "text": "τὸ",
@@ -3481,7 +3653,8 @@
         "type": "word",
         "lemma": "κύριος",
         "strong": "G29620",
-        "morph": "Gr,N,,,,,GMS,"
+        "morph": "Gr,N,,,,,GMS,",
+        "tw": "rc://*/tw/dict/bible/kt/lord"
       },
       {
         "text": "διὰ",
@@ -3505,7 +3678,8 @@
         "type": "word",
         "lemma": "προφήτης",
         "strong": "G43960",
-        "morph": "Gr,N,,,,,GMS,"
+        "morph": "Gr,N,,,,,GMS,",
+        "tw": "rc://*/tw/dict/bible/kt/prophet"
       },
       {
         "text": "λέγοντος",
@@ -3553,7 +3727,8 @@
         "type": "word",
         "lemma": "παρθένος",
         "strong": "G39330",
-        "morph": "Gr,N,,,,,NFS,"
+        "morph": "Gr,N,,,,,NFS,",
+        "tw": "rc://*/tw/dict/bible/other/virgin"
       },
       {
         "text": "ἐν",
@@ -3569,7 +3744,8 @@
         "type": "word",
         "lemma": "γαστήρ",
         "strong": "G10640",
-        "morph": "Gr,N,,,,,DFS,"
+        "morph": "Gr,N,,,,,DFS,",
+        "tw": "rc://*/tw/dict/bible/other/womb"
       },
       {
         "text": "ἕξει",
@@ -3577,7 +3753,8 @@
         "type": "word",
         "lemma": "ἔχω",
         "strong": "G21920",
-        "morph": "Gr,V,IFA3,,S,"
+        "morph": "Gr,V,IFA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/conceive"
       },
       {
         "text": "καὶ",
@@ -3593,7 +3770,8 @@
         "type": "word",
         "lemma": "τίκτω",
         "strong": "G50880",
-        "morph": "Gr,V,IFM3,,S,"
+        "morph": "Gr,V,IFM3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/bear"
       },
       {
         "text": "υἱόν",
@@ -3601,7 +3779,8 @@
         "type": "word",
         "lemma": "υἱός",
         "strong": "G52070",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/kt/son"
       },
       {
         "type": "text",
@@ -3621,7 +3800,8 @@
         "type": "word",
         "lemma": "καλέω",
         "strong": "G25640",
-        "morph": "Gr,V,IFA3,,P,"
+        "morph": "Gr,V,IFA3,,P,",
+        "tw": "rc://*/tw/dict/bible/kt/call"
       },
       {
         "text": "τὸ",
@@ -3637,7 +3817,8 @@
         "type": "word",
         "lemma": "ὄνομα",
         "strong": "G36860",
-        "morph": "Gr,N,,,,,ANS,"
+        "morph": "Gr,N,,,,,ANS,",
+        "tw": "rc://*/tw/dict/bible/kt/name"
       },
       {
         "text": "αὐτοῦ",
@@ -3681,7 +3862,8 @@
         "type": "word",
         "lemma": "μεθερμηνεύω",
         "strong": "G31770",
-        "morph": "Gr,V,PPP,NNS,"
+        "morph": "Gr,V,PPP,NNS,",
+        "tw": "rc://*/tw/dict/bible/other/interpret"
       },
       {
         "type": "text",
@@ -3717,7 +3899,8 @@
         "type": "word",
         "lemma": "θεός",
         "strong": "G23160",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/kt/god"
       },
       {
         "type": "text",
@@ -3737,7 +3920,8 @@
         "type": "word",
         "lemma": "ἐγείρω",
         "strong": "G14530",
-        "morph": "Gr,V,PAP,NMS,"
+        "morph": "Gr,V,PAP,NMS,",
+        "tw": "rc://*/tw/dict/bible/other/raise"
       },
       {
         "text": "δὲ",
@@ -3761,7 +3945,8 @@
         "type": "word",
         "lemma": "Ἰωσήφ",
         "strong": "G25010",
-        "morph": "Gr,N,,,,,NMSI"
+        "morph": "Gr,N,,,,,NMSI",
+        "tw": "rc://*/tw/dict/bible/names/josephnt"
       },
       {
         "text": "ἀπὸ",
@@ -3785,7 +3970,8 @@
         "type": "word",
         "lemma": "ὕπνος",
         "strong": "G52580",
-        "morph": "Gr,N,,,,,GMS,"
+        "morph": "Gr,N,,,,,GMS,",
+        "tw": "rc://*/tw/dict/bible/other/sleep"
       },
       {
         "type": "text",
@@ -3805,7 +3991,8 @@
         "type": "word",
         "lemma": "ὡς",
         "strong": "G56130",
-        "morph": "Gr,CS,,,,,,,,"
+        "morph": "Gr,CS,,,,,,,,",
+        "tw": "rc://*/tw/dict/bible/other/like"
       },
       {
         "text": "προσέταξεν",
@@ -3813,7 +4000,8 @@
         "type": "word",
         "lemma": "προστάσσω",
         "strong": "G43670",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/kt/command"
       },
       {
         "text": "αὐτῷ",
@@ -3837,7 +4025,8 @@
         "type": "word",
         "lemma": "ἄγγελος",
         "strong": "G00320",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/kt/angel"
       },
       {
         "text": "Κυρίου",
@@ -3845,7 +4034,8 @@
         "type": "word",
         "lemma": "κύριος",
         "strong": "G29620",
-        "morph": "Gr,N,,,,,GMS,"
+        "morph": "Gr,N,,,,,GMS,",
+        "tw": "rc://*/tw/dict/bible/kt/lord"
       },
       {
         "type": "text",
@@ -3925,7 +4115,8 @@
         "type": "word",
         "lemma": "γινώσκω",
         "strong": "G10970",
-        "morph": "Gr,V,IIA3,,S,"
+        "morph": "Gr,V,IIA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/know"
       },
       {
         "text": "αὐτὴν",
@@ -3965,7 +4156,8 @@
         "type": "word",
         "lemma": "υἱός",
         "strong": "G52070",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/kt/son"
       },
       {
         "type": "text",
@@ -3985,7 +4177,8 @@
         "type": "word",
         "lemma": "καλέω",
         "strong": "G25640",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/kt/call"
       },
       {
         "text": "τὸ",
@@ -4001,7 +4194,8 @@
         "type": "word",
         "lemma": "ὄνομα",
         "strong": "G36860",
-        "morph": "Gr,N,,,,,ANS,"
+        "morph": "Gr,N,,,,,ANS,",
+        "tw": "rc://*/tw/dict/bible/kt/name"
       },
       {
         "text": "αὐτοῦ",
@@ -4021,7 +4215,8 @@
         "type": "word",
         "lemma": "Ἰησοῦς",
         "strong": "G24240",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/kt/jesus"
       },
       {
         "type": "text",

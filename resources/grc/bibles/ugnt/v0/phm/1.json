@@ -129,7 +129,7 @@
         "lemma": "ἀγαπητός",
         "strong": "G00270",
         "morph": "Gr,AR,,,,DMS,",
-        "tw": "rc://*/tw/dict/bible/kt/love"
+        "tw": "rc://*/tw/dict/bible/kt/beloved"
       },
       {
         "text": "καὶ",
@@ -145,7 +145,8 @@
         "type": "word",
         "lemma": "συνεργός",
         "strong": "G49040",
-        "morph": "Gr,NS,,,,DMS,"
+        "morph": "Gr,NS,,,,DMS,",
+        "tw": "rc://*/tw/dict/bible/other/companion"
       },
       {
         "text": "ἡμῶν",
@@ -707,8 +708,7 @@
         "type": "word",
         "lemma": "εἰς",
         "strong": "G15190",
-        "morph": "Gr,P,,,,,A,,,",
-        "tw": "rc://*/tw/dict/bible/kt/inchrist"
+        "morph": "Gr,P,,,,,A,,,"
       },
       {
         "text": "πάντας",
@@ -2068,7 +2068,7 @@
         "lemma": "ὥρα",
         "strong": "G56100",
         "morph": "Gr,N,,,,,AFS,",
-        "tw": "rc://*/tw/dict/bible/other/time"
+        "tw": "rc://*/tw/dict/bible/other/hour"
       },
       {
         "type": "text",
@@ -2195,7 +2195,7 @@
         "lemma": "ἀγαπητός",
         "strong": "G00270",
         "morph": "Gr,AA,,,,AMS,",
-        "tw": "rc://*/tw/dict/bible/kt/love"
+        "tw": "rc://*/tw/dict/bible/kt/beloved"
       },
       {
         "type": "text",
@@ -3263,7 +3263,8 @@
         "type": "word",
         "lemma": "συνεργός",
         "strong": "G49040",
-        "morph": "Gr,NS,,,,NMP,"
+        "morph": "Gr,NS,,,,NMP,",
+        "tw": "rc://*/tw/dict/bible/other/companion"
       },
       {
         "text": "μου",

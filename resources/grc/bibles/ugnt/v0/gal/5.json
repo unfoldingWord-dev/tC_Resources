@@ -541,10 +541,6 @@
         "tw": "rc://*/tw/dict/bible/kt/faith"
       },
       {
-        "type": "text",
-        "text": "+"
-      },
-      {
         "text": "ἐλπίδα",
         "tag": "w",
         "type": "word",
@@ -657,7 +653,8 @@
         "type": "word",
         "lemma": "ἰσχύω",
         "strong": "G24800",
-        "morph": "Gr,V,IPA3,,S,"
+        "morph": "Gr,V,IPA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/strength"
       },
       {
         "type": "text",
@@ -2261,7 +2258,8 @@
         "type": "word",
         "lemma": "φανερός",
         "strong": "G53180",
-        "morph": "Gr,NP,,,,NNP,"
+        "morph": "Gr,NP,,,,NNP,",
+        "tw": "rc://*/tw/dict/bible/kt/reveal"
       },
       {
         "text": "δέ",
@@ -2519,7 +2517,8 @@
         "type": "word",
         "lemma": "μέθη",
         "strong": "G31780",
-        "morph": "Gr,N,,,,,NFP,"
+        "morph": "Gr,N,,,,,NFP,",
+        "tw": "rc://*/tw/dict/bible/other/drunk"
       },
       {
         "type": "text",
@@ -2679,7 +2678,8 @@
             "type": "word",
             "lemma": "βασιλεία",
             "strong": "G09320",
-            "morph": "Gr,N,,,,,AFS,"
+            "morph": "Gr,N,,,,,AFS,",
+            "tw": "rc://*/tw/dict/bible/other/kingdom"
           },
           {
             "text": "Θεοῦ",
@@ -2861,7 +2861,7 @@
         "lemma": "πίστις",
         "strong": "G41020",
         "morph": "Gr,N,,,,,NFS,",
-        "tw": "rc://*/tw/dict/bible/kt/faith"
+        "tw": "rc://*/tw/dict/bible/kt/faithful"
       },
       {
         "type": "text",
@@ -3065,7 +3065,8 @@
         "type": "word",
         "lemma": "πάθημα",
         "strong": "G38040",
-        "morph": "Gr,N,,,,,DNP,"
+        "morph": "Gr,N,,,,,DNP,",
+        "tw": "rc://*/tw/dict/bible/other/suffer"
       },
       {
         "text": "καὶ",

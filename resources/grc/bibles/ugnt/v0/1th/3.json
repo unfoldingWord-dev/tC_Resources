@@ -33,7 +33,7 @@
         "lemma": "στέγω",
         "strong": "G47220",
         "morph": "Gr,V,PPA,NMP,",
-        "tw": "rc://*/tw/dict/bible/other/endure"
+        "tw": "rc://*/tw/dict/bible/other/bear"
       },
       {
         "type": "text",
@@ -45,8 +45,7 @@
         "type": "word",
         "lemma": "εὐδοκέω",
         "strong": "G21060",
-        "morph": "Gr,V,IAA1,,P,",
-        "tw": "rc://*/tw/dict/bible/kt/good"
+        "morph": "Gr,V,IAA1,,P,"
       },
       {
         "text": "καταλειφθῆναι",
@@ -568,7 +567,8 @@
         "type": "word",
         "lemma": "καθώς",
         "strong": "G25310",
-        "morph": "Gr,D,,,,,,,,,"
+        "morph": "Gr,D,,,,,,,,,",
+        "tw": "rc://*/tw/dict/bible/other/like"
       },
       {
         "text": "καὶ",
@@ -654,7 +654,7 @@
         "lemma": "στέγω",
         "strong": "G47220",
         "morph": "Gr,V,PPA,NMS,",
-        "tw": "rc://*/tw/dict/bible/other/endure"
+        "tw": "rc://*/tw/dict/bible/other/bear"
       },
       {
         "type": "text",
@@ -1416,8 +1416,7 @@
         "type": "word",
         "lemma": "δύναμαι",
         "strong": "G14100",
-        "morph": "Gr,V,IPM1,,P,",
-        "tw": "rc://*/tw/dict/bible/kt/power"
+        "morph": "Gr,V,IPM1,,P,"
       },
       {
         "text": "τῷ",
@@ -1601,7 +1600,8 @@
         "type": "word",
         "lemma": "ἡμέρα",
         "strong": "G22500",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/other/biblicaltimeday"
       },
       {
         "type": "text",
@@ -2002,7 +2002,8 @@
         "type": "word",
         "lemma": "περισσεύω",
         "strong": "G40520",
-        "morph": "Gr,V,OAA3,,S,"
+        "morph": "Gr,V,OAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/multiply"
       },
       {
         "text": "τῇ",

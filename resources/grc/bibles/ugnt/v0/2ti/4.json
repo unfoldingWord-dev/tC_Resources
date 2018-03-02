@@ -284,8 +284,7 @@
         "type": "word",
         "lemma": "ἐλέγχω",
         "strong": "G16510",
-        "morph": "Gr,V,MAA2,,S,",
-        "tw": "rc://*/tw/dict/bible/other/rebuke"
+        "morph": "Gr,V,MAA2,,S,"
       },
       {
         "type": "text",
@@ -297,7 +296,8 @@
         "type": "word",
         "lemma": "ἐπιτιμάω",
         "strong": "G20080",
-        "morph": "Gr,V,MAA2,,S,"
+        "morph": "Gr,V,MAA2,,S,",
+        "tw": "rc://*/tw/dict/bible/other/rebuke"
       },
       {
         "type": "text",
@@ -1870,7 +1870,8 @@
         "type": "word",
         "lemma": "βιβλίον",
         "strong": "G09750",
-        "morph": "Gr,N,,,,,ANP,"
+        "morph": "Gr,N,,,,,ANP,",
+        "tw": "rc://*/tw/dict/bible/other/scroll"
       },
       {
         "type": "text",
@@ -2643,7 +2644,8 @@
             "type": "word",
             "lemma": "βασιλεία",
             "strong": "G09320",
-            "morph": "Gr,N,,,,,AFS,"
+            "morph": "Gr,N,,,,,AFS,",
+            "tw": "rc://*/tw/dict/bible/other/kingdom"
           },
           {
             "text": "αὐτοῦ",

@@ -190,7 +190,8 @@
             "type": "word",
             "lemma": "ἡμέρα",
             "strong": "G22500",
-            "morph": "Gr,N,,,,,NFS,"
+            "morph": "Gr,N,,,,,NFS,",
+            "tw": "rc://*/tw/dict/bible/other/biblicaltimeday"
           },
           {
             "text": "Κυρίου",
@@ -803,8 +804,7 @@
         "type": "word",
         "lemma": "λοιπός",
         "strong": "G30620",
-        "morph": "Gr,RI,,,,NMP,",
-        "tw": "rc://*/tw/dict/bible/other/rest"
+        "morph": "Gr,RI,,,,NMP,"
       },
       {
         "type": "text",
@@ -1018,7 +1018,8 @@
         "type": "word",
         "lemma": "ἐνδύω",
         "strong": "G17460",
-        "morph": "Gr,V,PAM,NMP,"
+        "morph": "Gr,V,PAM,NMP,",
+        "tw": "rc://*/tw/dict/bible/other/clothed"
       },
       {
         "text": "θώρακα",
@@ -1493,7 +1494,8 @@
         "type": "word",
         "lemma": "καθώς",
         "strong": "G25310",
-        "morph": "Gr,D,,,,,,,,,"
+        "morph": "Gr,D,,,,,,,,,",
+        "tw": "rc://*/tw/dict/bible/other/like"
       },
       {
         "text": "καὶ",

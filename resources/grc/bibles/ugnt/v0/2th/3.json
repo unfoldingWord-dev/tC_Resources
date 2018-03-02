@@ -24,8 +24,7 @@
         "type": "word",
         "lemma": "λοιπός",
         "strong": "G30620",
-        "morph": "Gr,RI,,,,ANS,",
-        "tw": "rc://*/tw/dict/bible/other/rest"
+        "morph": "Gr,RI,,,,ANS,"
       },
       {
         "type": "text",
@@ -104,8 +103,7 @@
             "type": "word",
             "lemma": "λόγος",
             "strong": "G30560",
-            "morph": "Gr,N,,,,,NMS,",
-            "tw": "rc://*/tw/dict/bible/other/word"
+            "morph": "Gr,N,,,,,NMS,"
           },
           {
             "text": "τοῦ",
@@ -161,7 +159,8 @@
         "type": "word",
         "lemma": "καθώς",
         "strong": "G25310",
-        "morph": "Gr,D,,,,,,,,,"
+        "morph": "Gr,D,,,,,,,,,",
+        "tw": "rc://*/tw/dict/bible/other/like"
       },
       {
         "text": "καὶ",
@@ -1607,7 +1606,8 @@
         "type": "word",
         "lemma": "ἐργάζομαι",
         "strong": "G20380",
-        "morph": "Gr,V,NPM,,,,,"
+        "morph": "Gr,V,NPM,,,,,",
+        "tw": "rc://*/tw/dict/bible/other/labor"
       },
       {
         "type": "text",
@@ -1716,7 +1716,8 @@
         "type": "word",
         "lemma": "ἐργάζομαι",
         "strong": "G20380",
-        "morph": "Gr,V,PPM,AMP,"
+        "morph": "Gr,V,PPM,AMP,",
+        "tw": "rc://*/tw/dict/bible/other/labor"
       },
       {
         "type": "text",
@@ -1876,7 +1877,8 @@
         "type": "word",
         "lemma": "ἐργάζομαι",
         "strong": "G20380",
-        "morph": "Gr,V,PPM,NMP,"
+        "morph": "Gr,V,PPM,NMP,",
+        "tw": "rc://*/tw/dict/bible/other/labor"
       },
       {
         "type": "text",
