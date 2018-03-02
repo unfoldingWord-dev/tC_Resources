@@ -13,7 +13,7 @@ describe('englishUlbHelpers', function() {
 
   it('should output ULB chapter files', () => {
     return new Promise((resolve) => {
-      const version = 'v';
+      const version = 'u0';
       const resourceinputpath = path.join('__tests__','fixtures','bible', 'en_aligned');
 
       const UGNTOutputPath = path.join('__tests__', 'output', 'en-ulb-sources', version);
@@ -29,7 +29,7 @@ describe('englishUlbHelpers', function() {
 
   // it('should download and output en_ULB chapter files', () => {
   //   return new Promise((resolve) => {
-  //     const version = 'v';
+  //     const version = 'u0';
   //     EnglishUlbHelpers.generateVersion(version, resolve);
   //   }).then(() => {
   //     console.log('en_ulb processing completed!');
