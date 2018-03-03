@@ -22,7 +22,9 @@ export function getTranslationHelps(extractedFilePath, RESOURCE_OUTPUT_PATH) {
   folders.forEach(folderName => {
     const filesPath = path.join(extractedFilePath, 'bible', folderName);
     const resourceVersion = 'v' + resourceManifest.dublin_core.version;
-    const files = fs.readdirSync(filesPath);
+    const files = fs.readdirSync(filesPath).filter(filename => {
+      return filename.split('.').pop() == 'md';
+    });
 
     generateGroupsIndex(filesPath, RESOURCE_OUTPUT_PATH, resourceVersion, folderName);
 
@@ -49,7 +51,9 @@ export function getTranslationHelps(extractedFilePath, RESOURCE_OUTPUT_PATH) {
  */
 function generateGroupsIndex(filesPath, RESOURCE_OUTPUT_PATH, resourceVersion, folderName) {
   let groupsIndex = [];
-  let groupIds = fs.readdirSync(filesPath);
+  let groupIds = fs.readdirSync(filesPath).filter(filename => {
+    return filename.split('.').pop() == 'md';
+  });
   groupIds.forEach(fileName => {
     let groupObject = {};
     const filePath = path.join(filesPath, fileName);
