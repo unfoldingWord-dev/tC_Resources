@@ -92,7 +92,7 @@ export function compareByFirstUniqueWord(a, b) {
     let aWord = aWords.shift().trim();
     let bWord = bWords.shift().trim();
     if (aWord != bWord)
-      return (aWord < bWord?-1:1);
+      return (aWord<bWord?-1:1);
   }
   return 0; // both lists are the same
 }
