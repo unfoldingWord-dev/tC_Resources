@@ -64,7 +64,7 @@ function generateGroupsIndex(filesPath, RESOURCE_OUTPUT_PATH, resourceVersion, f
     groupsIndex.push(groupObject);
   });
 
-  groupsIndex.sort((a, b)=>{return a.name.toUpperCase().localeCompare(b.name.toUpperCase())});
+  groupsIndex.sort((a, b)=>{return a.name.split(',')[0].toUpperCase().localeCompare(b.name.toUpperCase().split(',')[0])});
 
   const groupsIndexOutputPath = path.join(
     RESOURCE_OUTPUT_PATH,
