@@ -45,11 +45,11 @@ function convertBookVerseObjectsToTwData(bookName) {
       if (fs.existsSync(chapterFile)) {
         const json = JSON.parse(fs.readFileSync(chapterFile));
         for (let verse in json) {
+          let groupData = [];
           json[verse].verseObjects.forEach( (verseObject) => {
-            let groupData = [];
             populateGroupDataFromVerseObject(groupData, verseObject);
-            populateTwDataFromGroupData(twData, groupData, bookId, chapter, verse);
           });
+          populateTwDataFromGroupData(twData, groupData, bookId, chapter, verse);
         }
       }
     }
