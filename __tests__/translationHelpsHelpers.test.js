@@ -40,3 +40,40 @@ describe('Translation Helps Helpers', () => {
   });
 
 });
+
+describe('translationHelpsHelpers.compareByFirstUniqueWord() tests', () => {
+  test('Compare two strings with first word the same', ()=>{
+    const aString = {name:'god, gods'};
+    const bString = {name:'god, false gods'};
+    const expectedResult = 1;
+    expect(translationHelpsHelpers.compareByFirstUniqueWord(aString, bString)).toEqual(expectedResult);
+  });
+
+  test('Compare two strings with first word different', ()=>{
+    const aString = {name:'faith, faithful'};
+    const bString = {name:'god, false gods'};
+    const expectedResult = -1;
+    expect(translationHelpsHelpers.compareByFirstUniqueWord(aString, bString)).toEqual(expectedResult);
+  });
+
+  test('Compare two strings with one having only one word', ()=>{
+    const aString = {name:'god, father god'};
+    const bString = {name:'god'};
+    const expectedResult = 1;
+    expect(translationHelpsHelpers.compareByFirstUniqueWord(aString, bString)).toEqual(expectedResult);
+  });
+
+  test('Compare where both strings are the same', ()=>{
+    const aString = {name:'hour, hours'};
+    const bString = {name:'hour, hours'};
+    const expectedResult = 0;
+    expect(translationHelpsHelpers.compareByFirstUniqueWord(aString, bString)).toEqual(expectedResult);
+  });
+
+  test('Test that case does not matter', ()=>{
+    const aString = {name:'Zebra'};
+    const bString = {name:'ant'};
+    const expectedResult = 1;
+    expect(translationHelpsHelpers.compareByFirstUniqueWord(aString, bString)).toEqual(expectedResult);
+  });
+});

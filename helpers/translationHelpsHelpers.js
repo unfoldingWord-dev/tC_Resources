@@ -64,7 +64,7 @@ function generateGroupsIndex(filesPath, RESOURCE_OUTPUT_PATH, resourceVersion, f
     groupsIndex.push(groupObject);
   });
 
-  groupsIndex.sort((a, b)=>a.name.split(',')[0].toUpperCase().localeCompare(b.name.split(',')[0].toUpperCase()));
+  groupsIndex.sort(compareByFirstUniqueWord);
 
   const groupsIndexOutputPath = path.join(
     RESOURCE_OUTPUT_PATH,
@@ -74,4 +74,25 @@ function generateGroupsIndex(filesPath, RESOURCE_OUTPUT_PATH, resourceVersion, f
   );
 
   fs.outputJsonSync(groupsIndexOutputPath, groupsIndex, {spaces:2});
+}
+
+/**
+ * Splits the string into words delimited by commas and compares the first unique word
+ * @param {String} a 
+ * @param {String} b 
+ */
+export function compareByFirstUniqueWord(a, b) {
+  let aWords = a.name.toUpperCase().split(',');
+  let bWords = b.name.toUpperCase().split(',');
+  while (aWords.length || bWords.length) {
+    if (! aWords.length) 
+      return -1;
+    if (! bWords.length)
+      return 1;
+    let aWord = aWords.shift().trim();
+    let bWord = bWords.shift().trim();
+    if (aWord != bWord)
+      return (aWord < bWord?-1:1);
+  }
+  return 0; // both lists are the same
 }
