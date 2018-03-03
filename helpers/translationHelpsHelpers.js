@@ -51,7 +51,7 @@ function generateGroupsIndex(filesPath, RESOURCE_OUTPUT_PATH, resourceVersion, f
   let groupsIndex = [];
   let groupIds = fs.readdirSync(filesPath);
   groupIds.forEach(fileName => {
-    let groupObjet = {};
+    let groupObject = {};
     const filePath = path.join(filesPath, fileName);
     const articleFile = fs.readFileSync(filePath, 'utf8');
 
@@ -59,16 +59,12 @@ function generateGroupsIndex(filesPath, RESOURCE_OUTPUT_PATH, resourceVersion, f
     // get the article's first line and remove #'s and spaces from beginning/end
     const groupName = articleFile.split('\n')[0].replace(/(^\s*#\s*|\s*#\s*$)/gi, '');
 
-    groupObjet.id = groupId;
-    groupObjet.name = groupName;
-    groupsIndex.push(groupObjet);
+    groupObject.id = groupId;
+    groupObject.name = groupName;
+    groupsIndex.push(groupObject);
   });
 
-  groupsIndex.sort((a, b)=>{
-    const nameA = a.name.toUpperCase();
-    const nameB = b.name.toUpperCase();
-    return (nameA < nameB) ? -1 : (nameA > nameB) ? 1 : 0;
-  });
+  groupsIndex.sort((a, b)=>{return a.name.toUpperCase().localeCompare(b.name.toUpperCase())});
 
   const groupsIndexOutputPath = path.join(
     RESOURCE_OUTPUT_PATH,
