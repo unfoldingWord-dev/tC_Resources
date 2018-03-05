@@ -200,7 +200,8 @@
         "type": "word",
         "lemma": "μάρτυρος",
         "strong": "G31440",
-        "morph": "Gr,N,,,,,GMP,"
+        "morph": "Gr,N,,,,,GMP,",
+        "tw": "rc://*/tw/dict/bible/kt/testimony"
       },
       {
         "type": "text",
@@ -864,7 +865,7 @@
         "lemma": "σπέρμα",
         "strong": "G46900",
         "morph": "Gr,N,,,,,GNS,",
-        "tw": "rc://*/tw/dict/bible/other/seed"
+        "tw": "rc://*/tw/dict/bible/other/descendant"
       },
       {
         "text": "Δαυείδ",
@@ -1755,7 +1756,8 @@
         "type": "word",
         "lemma": "ἐργάτης",
         "strong": "G20400",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/other/labor"
       },
       {
         "text": "ἀνεπαίσχυντον",
@@ -2659,7 +2661,8 @@
         "type": "word",
         "lemma": "ἀτιμία",
         "strong": "G08190",
-        "morph": "Gr,N,,,,,AFS,"
+        "morph": "Gr,N,,,,,AFS,",
+        "tw": "rc://*/tw/dict/bible/other/dishonor"
       },
       {
         "type": "text",
@@ -3320,7 +3323,7 @@
         "lemma": "παιδεύω",
         "strong": "G38110",
         "morph": "Gr,V,PPA,AMS,",
-        "tw": "rc://*/tw/dict/bible/other/instruct"
+        "tw": "rc://*/tw/dict/bible/kt/discipline"
       },
       {
         "text": "τοὺς",

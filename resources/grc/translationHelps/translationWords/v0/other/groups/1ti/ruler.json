@@ -19,5 +19,47 @@
       ],
       "occurrence": 1
     }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "1ti",
+        "chapter": 6,
+        "verse": 15
+      },
+      "tool": "translationWords",
+      "groupId": "ruler",
+      "quote": "Δυνάστης",
+      "strong": [
+        "G14130"
+      ],
+      "occurrence": 1
+    }
+  },
+  {
+    "priority": 1,
+    "comments": false,
+    "reminders": false,
+    "selections": false,
+    "verseEdits": false,
+    "contextId": {
+      "reference": {
+        "bookId": "1ti",
+        "chapter": 6,
+        "verse": 15
+      },
+      "tool": "translationWords",
+      "groupId": "ruler",
+      "quote": "κυριευόντων",
+      "strong": [
+        "G29610"
+      ],
+      "occurrence": 1
+    }
   }
 ]

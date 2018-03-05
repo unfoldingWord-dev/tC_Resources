@@ -2211,7 +2211,8 @@
         "type": "word",
         "lemma": "βοῦς",
         "strong": "G10160",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/other/cow"
       },
       {
         "text": "ἀλοῶντα",
@@ -2219,7 +2220,8 @@
         "type": "word",
         "lemma": "ἀλοάω",
         "strong": "G02480",
-        "morph": "Gr,V,PPA,AMS,"
+        "morph": "Gr,V,PPA,AMS,",
+        "tw": "rc://*/tw/dict/bible/other/thresh"
       },
       {
         "text": "οὐ",
@@ -2293,7 +2295,8 @@
         "type": "word",
         "lemma": "μισθός",
         "strong": "G34080",
-        "morph": "Gr,N,,,,,GMS,"
+        "morph": "Gr,N,,,,,GMS,",
+        "tw": "rc://*/tw/dict/bible/other/reward"
       },
       {
         "text": "αὐτοῦ",
@@ -2321,8 +2324,7 @@
         "type": "word",
         "lemma": "κατά",
         "strong": "G25960",
-        "morph": "Gr,P,,,,,G,,,",
-        "tw": "rc://*/tw/dict/bible/other/accuse"
+        "morph": "Gr,P,,,,,G,,,"
       },
       {
         "text": "πρεσβυτέρου",
@@ -2425,7 +2427,8 @@
         "type": "word",
         "lemma": "μάρτυρος",
         "strong": "G31440",
-        "morph": "Gr,N,,,,,GMP,"
+        "morph": "Gr,N,,,,,GMP,",
+        "tw": "rc://*/tw/dict/bible/kt/testimony"
       },
       {
         "type": "text",
@@ -2519,8 +2522,7 @@
         "type": "word",
         "lemma": "λοιπός",
         "strong": "G30620",
-        "morph": "Gr,RI,,,,NMP,",
-        "tw": "rc://*/tw/dict/bible/other/rest"
+        "morph": "Gr,RI,,,,NMP,"
       },
       {
         "text": "φόβον",
@@ -3245,8 +3247,7 @@
         "type": "word",
         "lemma": "δύναμαι",
         "strong": "G14100",
-        "morph": "Gr,V,IPM3,,S,",
-        "tw": "rc://*/tw/dict/bible/kt/power"
+        "morph": "Gr,V,IPM3,,S,"
       },
       {
         "type": "text",

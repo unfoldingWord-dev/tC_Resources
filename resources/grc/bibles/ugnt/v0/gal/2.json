@@ -697,7 +697,8 @@
         "type": "word",
         "lemma": "ὥρα",
         "strong": "G56100",
-        "morph": "Gr,N,,,,,AFS,"
+        "morph": "Gr,N,,,,,AFS,",
+        "tw": "rc://*/tw/dict/bible/other/biblicaltimehour"
       },
       {
         "text": "εἴξαμεν",
@@ -1114,7 +1115,8 @@
         "type": "word",
         "lemma": "καθώς",
         "strong": "G25310",
-        "morph": "Gr,D,,,,,,,,,"
+        "morph": "Gr,D,,,,,,,,,",
+        "tw": "rc://*/tw/dict/bible/other/like"
       },
       {
         "text": "Πέτρος",
@@ -1978,7 +1980,8 @@
         "type": "word",
         "lemma": "ἀφορίζω",
         "strong": "G08730",
-        "morph": "Gr,V,IIA3,,S,"
+        "morph": "Gr,V,IIA3,,S,",
+        "tw": "rc://*/tw/dict/bible/kt/setapart"
       },
       {
         "text": "ἑαυτόν",
@@ -2085,8 +2088,7 @@
         "type": "word",
         "lemma": "λοιπός",
         "strong": "G30620",
-        "morph": "Gr,EQ,,,,NMP,",
-        "tw": "rc://*/tw/dict/bible/other/rest"
+        "morph": "Gr,EQ,,,,NMP,"
       },
       {
         "text": "Ἰουδαῖοι",

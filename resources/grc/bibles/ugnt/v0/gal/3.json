@@ -631,7 +631,8 @@
         "type": "word",
         "lemma": "καθώς",
         "strong": "G25310",
-        "morph": "Gr,D,,,,,,,,,"
+        "morph": "Gr,D,,,,,,,,,",
+        "tw": "rc://*/tw/dict/bible/other/like"
       },
       {
         "text": "Ἀβραὰμ",
@@ -958,11 +959,6 @@
       {
         "text": "Ἀβραὰμ",
         "tag": "w",
-        "type": "word"
-      },
-      {
-        "text": "Ἀβραὰμ",
-        "tag": "w",
         "type": "word",
         "lemma": "Ἀβραάμ",
         "strong": "G00110",
@@ -1113,11 +1109,6 @@
         "strong": "G41030",
         "morph": "Gr,AA,,,,DMS,",
         "tw": "rc://*/tw/dict/bible/other/believe"
-      },
-      {
-        "text": "Ἀβραάμ",
-        "tag": "w",
-        "type": "word"
       },
       {
         "text": "Ἀβραὰμ",
@@ -1953,11 +1944,6 @@
       {
         "text": "Ἀβραὰμ",
         "tag": "w",
-        "type": "word"
-      },
-      {
-        "text": "Ἀβραὰμ",
-        "tag": "w",
         "type": "word",
         "lemma": "Ἀβραάμ",
         "strong": "G00110",
@@ -2239,11 +2225,6 @@
         "lemma": "δέ",
         "strong": "G11610",
         "morph": "Gr,CC,,,,,,,,"
-      },
-      {
-        "text": "Ἀβραὰμ",
-        "tag": "w",
-        "type": "word"
       },
       {
         "text": "Ἀβραὰμ",
@@ -2816,11 +2797,6 @@
         "lemma": "δέ",
         "strong": "G11610",
         "morph": "Gr,CC,,,,,,,,"
-      },
-      {
-        "text": "Ἀβραὰμ",
-        "tag": "w",
-        "type": "word"
       },
       {
         "text": "Ἀβραὰμ",
@@ -3773,7 +3749,8 @@
         "type": "word",
         "lemma": "παιδαγωγός",
         "strong": "G38070",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/other/instruct"
       },
       {
         "text": "ἡμῶν",
@@ -3917,7 +3894,8 @@
         "type": "word",
         "lemma": "παιδαγωγός",
         "strong": "G38070",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/other/instruct"
       },
       {
         "text": "ἐσμεν",
@@ -4417,11 +4395,6 @@
       {
         "text": "Ἀβραὰμ",
         "tag": "w",
-        "type": "word"
-      },
-      {
-        "text": "Ἀβραὰμ",
-        "tag": "w",
         "type": "word",
         "lemma": "Ἀβραάμ",
         "strong": "G00110",
@@ -4435,7 +4408,7 @@
         "lemma": "σπέρμα",
         "strong": "G46900",
         "morph": "Gr,N,,,,,NNS,",
-        "tw": "rc://*/tw/dict/bible/other/seed"
+        "tw": "rc://*/tw/dict/bible/other/offspring"
       },
       {
         "text": "ἐστέ",

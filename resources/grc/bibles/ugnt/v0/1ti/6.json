@@ -379,7 +379,7 @@
         "lemma": "ἀγαπητός",
         "strong": "G00270",
         "morph": "Gr,NS,,,,NMP,",
-        "tw": "rc://*/tw/dict/bible/kt/love"
+        "tw": "rc://*/tw/dict/bible/kt/beloved"
       },
       {
         "type": "text",
@@ -1999,7 +1999,8 @@
         "type": "word",
         "lemma": "μάρτυρος",
         "strong": "G31440",
-        "morph": "Gr,N,,,,,GMP,"
+        "morph": "Gr,N,,,,,GMP,",
+        "tw": "rc://*/tw/dict/bible/kt/testimony"
       },
       {
         "type": "text",
@@ -2224,7 +2225,8 @@
         "type": "word",
         "lemma": "τηρέω",
         "strong": "G50830",
-        "morph": "Gr,V,NAA,,,,,"
+        "morph": "Gr,V,NAA,,,,,",
+        "tw": "rc://*/tw/dict/bible/other/obey"
       },
       {
         "text": "σε",
@@ -2433,7 +2435,8 @@
         "type": "word",
         "lemma": "δυνάστης",
         "strong": "G14130",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/other/ruler"
       },
       {
         "type": "text",
@@ -2509,7 +2512,7 @@
         "lemma": "κυριεύω",
         "strong": "G29610",
         "morph": "Gr,V,PPA,GMP,",
-        "tw": "rc://*/tw/dict/bible/kt/lord"
+        "tw": "rc://*/tw/dict/bible/other/ruler"
       },
       {
         "type": "text",
@@ -2646,8 +2649,7 @@
         "type": "word",
         "lemma": "δύναμαι",
         "strong": "G14100",
-        "morph": "Gr,V,IPM3,,S,",
-        "tw": "rc://*/tw/dict/bible/kt/power"
+        "morph": "Gr,V,IPM3,,S,"
       },
       {
         "type": "text",
@@ -2685,7 +2687,7 @@
         "lemma": "κράτος",
         "strong": "G29040",
         "morph": "Gr,N,,,,,NNS,",
-        "tw": "rc://*/tw/dict/bible/kt/power"
+        "tw": "rc://*/tw/dict/bible/other/mighty"
       },
       {
         "text": "αἰώνιον",

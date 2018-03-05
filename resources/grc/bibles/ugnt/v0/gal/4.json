@@ -810,7 +810,8 @@
         "type": "word",
         "lemma": "κράζω",
         "strong": "G28960",
-        "morph": "Gr,V,PPA,ANS,"
+        "morph": "Gr,V,PPA,ANS,",
+        "tw": "rc://*/tw/dict/bible/other/cry"
       },
       {
         "type": "text",
@@ -1332,7 +1333,8 @@
         "type": "word",
         "lemma": "ἡμέρα",
         "strong": "G22500",
-        "morph": "Gr,N,,,,,AFP,"
+        "morph": "Gr,N,,,,,AFP,",
+        "tw": "rc://*/tw/dict/bible/other/biblicaltimeday"
       },
       {
         "text": "παρατηρεῖσθε",
@@ -1360,7 +1362,8 @@
         "type": "word",
         "lemma": "μήν",
         "strong": "G33760",
-        "morph": "Gr,N,,,,,AMP,"
+        "morph": "Gr,N,,,,,AMP,",
+        "tw": "rc://*/tw/dict/bible/other/biblicaltimemonth"
       },
       {
         "type": "text",
@@ -1768,7 +1771,8 @@
         "type": "word",
         "lemma": "πειρασμός",
         "strong": "G39860",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/kt/tempt"
       },
       {
         "text": "ὑμῶν",
@@ -2317,7 +2321,7 @@
         "lemma": "ζηλόω",
         "strong": "G22060",
         "morph": "Gr,V,NPP,,,,,",
-        "tw": "rc://*/tw/dict/bible/kt/zealous"
+        "tw": "rc://*/tw/dict/bible/other/envy"
       },
       {
         "text": "ἐν",
@@ -2625,7 +2629,8 @@
         "type": "word",
         "lemma": "φωνή",
         "strong": "G54560",
-        "morph": "Gr,N,,,,,AFS,"
+        "morph": "Gr,N,,,,,AFS,",
+        "tw": "rc://*/tw/dict/bible/other/voice"
       },
       {
         "text": "μου",
@@ -2895,7 +2900,8 @@
         "type": "word",
         "lemma": "παιδίσκη",
         "strong": "G38140",
-        "morph": "Gr,N,,,,,GFSD"
+        "morph": "Gr,N,,,,,GFSD",
+        "tw": "rc://*/tw/dict/bible/other/servant"
       },
       {
         "type": "text",
@@ -3000,7 +3006,8 @@
         "type": "word",
         "lemma": "παιδίσκη",
         "strong": "G38140",
-        "morph": "Gr,N,,,,,GFSD"
+        "morph": "Gr,N,,,,,GFSD",
+        "tw": "rc://*/tw/dict/bible/other/servant"
       },
       {
         "type": "text",
@@ -3682,7 +3689,8 @@
         "type": "word",
         "lemma": "βοάω",
         "strong": "G09940",
-        "morph": "Gr,V,MAA2,,S,"
+        "morph": "Gr,V,MAA2,,S,",
+        "tw": "rc://*/tw/dict/bible/other/cry"
       },
       {
         "type": "text",
@@ -3764,7 +3772,8 @@
         "type": "word",
         "lemma": "ἔρημος",
         "strong": "G20480",
-        "morph": "Gr,NS,,,,GFS,"
+        "morph": "Gr,NS,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/other/desert"
       },
       {
         "text": "μᾶλλον",
@@ -3869,8 +3878,7 @@
         "type": "word",
         "lemma": "κατά",
         "strong": "G25960",
-        "morph": "Gr,P,,,,,A,,,",
-        "tw": "rc://*/tw/dict/bible/other/like"
+        "morph": "Gr,P,,,,,A,,,"
       },
       {
         "text": "Ἰσαὰκ",
@@ -3937,7 +3945,8 @@
         "type": "word",
         "lemma": "ὥσπερ",
         "strong": "G56180",
-        "morph": "Gr,CS,,,,,,,,"
+        "morph": "Gr,CS,,,,,,,,",
+        "tw": "rc://*/tw/dict/bible/other/like"
       },
       {
         "text": "τότε",
@@ -4110,7 +4119,8 @@
         "type": "word",
         "lemma": "ἐκβάλλω",
         "strong": "G15440",
-        "morph": "Gr,V,MAA2,,S,"
+        "morph": "Gr,V,MAA2,,S,",
+        "tw": "rc://*/tw/dict/bible/other/castout"
       },
       {
         "text": "τὴν",
@@ -4126,7 +4136,8 @@
         "type": "word",
         "lemma": "παιδίσκη",
         "strong": "G38140",
-        "morph": "Gr,N,,,,,AFSD"
+        "morph": "Gr,N,,,,,AFSD",
+        "tw": "rc://*/tw/dict/bible/other/servant"
       },
       {
         "text": "καὶ",
@@ -4229,7 +4240,8 @@
         "type": "word",
         "lemma": "παιδίσκη",
         "strong": "G38140",
-        "morph": "Gr,N,,,,,GFSD"
+        "morph": "Gr,N,,,,,GFSD",
+        "tw": "rc://*/tw/dict/bible/other/servant"
       },
       {
         "type": "text",
@@ -4332,7 +4344,8 @@
         "type": "word",
         "lemma": "παιδίσκη",
         "strong": "G38140",
-        "morph": "Gr,N,,,,,GFSD"
+        "morph": "Gr,N,,,,,GFSD",
+        "tw": "rc://*/tw/dict/bible/other/servant"
       },
       {
         "text": "τέκνα",

@@ -64,7 +64,8 @@
         "type": "word",
         "lemma": "χριστός",
         "strong": "G55470",
-        "morph": "Gr,N,,,,,GMS,"
+        "morph": "Gr,N,,,,,GMS,",
+        "tw": "rc://*/tw/dict/bible/kt/christ"
       },
       {
         "text": "λόγον",
@@ -72,7 +73,8 @@
         "type": "word",
         "lemma": "λόγος",
         "strong": "G30560",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/other/word"
       },
       {
         "type": "text",
@@ -100,7 +102,8 @@
         "type": "word",
         "lemma": "τελειότης",
         "strong": "G50470",
-        "morph": "Gr,N,,,,,AFS,"
+        "morph": "Gr,N,,,,,AFS,",
+        "tw": "rc://*/tw/dict/bible/other/perfect"
       },
       {
         "text": "φερώμεθα",
@@ -136,7 +139,8 @@
         "type": "word",
         "lemma": "θεμέλιος",
         "strong": "G23100",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/other/foundation"
       },
       {
         "text": "καταβαλλόμενοι",
@@ -152,7 +156,8 @@
         "type": "word",
         "lemma": "μετάνοια",
         "strong": "G33410",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/kt/repent"
       },
       {
         "text": "ἀπὸ",
@@ -168,7 +173,8 @@
         "type": "word",
         "lemma": "νεκρός",
         "strong": "G34980",
-        "morph": "Gr,AA,,,,GNP,"
+        "morph": "Gr,AA,,,,GNP,",
+        "tw": "rc://*/tw/dict/bible/other/death"
       },
       {
         "text": "ἔργων",
@@ -176,7 +182,8 @@
         "type": "word",
         "lemma": "ἔργον",
         "strong": "G20410",
-        "morph": "Gr,N,,,,,GNP,"
+        "morph": "Gr,N,,,,,GNP,",
+        "tw": "rc://*/tw/dict/bible/kt/works"
       },
       {
         "type": "text",
@@ -196,7 +203,8 @@
         "type": "word",
         "lemma": "πίστις",
         "strong": "G41020",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/kt/faith"
       },
       {
         "text": "ἐπὶ",
@@ -212,7 +220,8 @@
         "type": "word",
         "lemma": "θεός",
         "strong": "G23160",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/kt/god"
       },
       {
         "type": "text",
@@ -240,7 +249,8 @@
         "type": "word",
         "lemma": "διδαχή",
         "strong": "G13220",
-        "morph": "Gr,N,,,,,AFS,"
+        "morph": "Gr,N,,,,,AFS,",
+        "tw": "rc://*/tw/dict/bible/other/teach"
       },
       {
         "type": "text",
@@ -268,7 +278,8 @@
         "type": "word",
         "lemma": "χείρ",
         "strong": "G54950",
-        "morph": "Gr,N,,,,,GFP,"
+        "morph": "Gr,N,,,,,GFP,",
+        "tw": "rc://*/tw/dict/bible/other/hand"
       },
       {
         "type": "text",
@@ -280,7 +291,8 @@
         "type": "word",
         "lemma": "ἀνάστασις",
         "strong": "G03860",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/kt/resurrection"
       },
       {
         "text": "τε",
@@ -296,7 +308,8 @@
         "type": "word",
         "lemma": "νεκρός",
         "strong": "G34980",
-        "morph": "Gr,NS,,,,GMP,"
+        "morph": "Gr,NS,,,,GMP,",
+        "tw": "rc://*/tw/dict/bible/other/death"
       },
       {
         "type": "text",
@@ -316,7 +329,8 @@
         "type": "word",
         "lemma": "κρίμα",
         "strong": "G29170",
-        "morph": "Gr,N,,,,,GNS,"
+        "morph": "Gr,N,,,,,GNS,",
+        "tw": "rc://*/tw/dict/bible/kt/judge"
       },
       {
         "text": "αἰωνίου",
@@ -324,7 +338,8 @@
         "type": "word",
         "lemma": "αἰώνιος",
         "strong": "G01660",
-        "morph": "Gr,AA,,,,GNS,"
+        "morph": "Gr,AA,,,,GNS,",
+        "tw": "rc://*/tw/dict/bible/kt/eternity"
       },
       {
         "type": "text",
@@ -396,7 +411,8 @@
         "type": "word",
         "lemma": "θεός",
         "strong": "G23160",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/kt/god"
       },
       {
         "type": "text",
@@ -484,7 +500,8 @@
         "type": "word",
         "lemma": "δωρεά",
         "strong": "G14310",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/kt/gift"
       },
       {
         "text": "τῆς",
@@ -500,7 +517,8 @@
         "type": "word",
         "lemma": "ἐπουράνιος",
         "strong": "G20320",
-        "morph": "Gr,AR,,,,GFS,"
+        "morph": "Gr,AR,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/kt/heaven"
       },
       {
         "type": "text",
@@ -531,20 +549,28 @@
         "morph": "Gr,V,PAP,AMP,"
       },
       {
-        "text": "Πνεύματος",
-        "tag": "w",
-        "type": "word",
-        "lemma": "πνεῦμα",
-        "strong": "G41510",
-        "morph": "Gr,N,,,,,GNS,"
-      },
-      {
-        "text": "Ἁγίου",
-        "tag": "w",
-        "type": "word",
-        "lemma": "ἅγιος",
-        "strong": "G00400",
-        "morph": "Gr,AA,,,,GNS,"
+        "tag": "k",
+        "type": "milestone",
+        "tw": "rc://*/tw/dict/bible/kt/holyspirit",
+        "children": [
+          {
+            "text": "Πνεύματος",
+            "tag": "w",
+            "type": "word",
+            "lemma": "πνεῦμα",
+            "strong": "G41510",
+            "morph": "Gr,N,,,,,GNS,"
+          },
+          {
+            "text": "Ἁγίου",
+            "tag": "w",
+            "type": "word",
+            "lemma": "ἅγιος",
+            "strong": "G00400",
+            "morph": "Gr,AA,,,,GNS,",
+            "tw": "rc://*/tw/dict/bible/kt/holy"
+          }
+        ]
       },
       {
         "type": "text",
@@ -572,7 +598,8 @@
         "type": "word",
         "lemma": "καλός",
         "strong": "G25700",
-        "morph": "Gr,NS,,,,ANS,"
+        "morph": "Gr,NS,,,,ANS,",
+        "tw": "rc://*/tw/dict/bible/kt/good"
       },
       {
         "text": "γευσαμένους",
@@ -583,20 +610,28 @@
         "morph": "Gr,V,PAM,AMP,"
       },
       {
-        "text": "Θεοῦ",
-        "tag": "w",
-        "type": "word",
-        "lemma": "θεός",
-        "strong": "G23160",
-        "morph": "Gr,N,,,,,GMS,"
-      },
-      {
-        "text": "ῥῆμα",
-        "tag": "w",
-        "type": "word",
-        "lemma": "ῥῆμα",
-        "strong": "G44870",
-        "morph": "Gr,N,,,,,ANS,"
+        "tag": "k",
+        "type": "milestone",
+        "tw": "rc://*/tw/dict/bible/kt/wordofgod",
+        "children": [
+          {
+            "text": "Θεοῦ",
+            "tag": "w",
+            "type": "word",
+            "lemma": "θεός",
+            "strong": "G23160",
+            "morph": "Gr,N,,,,,GMS,",
+            "tw": "rc://*/tw/dict/bible/kt/god"
+          },
+          {
+            "text": "ῥῆμα",
+            "tag": "w",
+            "type": "word",
+            "lemma": "ῥῆμα",
+            "strong": "G44870",
+            "morph": "Gr,N,,,,,ANS,"
+          }
+        ]
       },
       {
         "type": "text",
@@ -608,7 +643,8 @@
         "type": "word",
         "lemma": "δύναμις",
         "strong": "G14110",
-        "morph": "Gr,N,,,,,AFP,"
+        "morph": "Gr,N,,,,,AFP,",
+        "tw": "rc://*/tw/dict/bible/kt/power"
       },
       {
         "text": "τε",
@@ -632,7 +668,8 @@
         "type": "word",
         "lemma": "αἰών",
         "strong": "G01650",
-        "morph": "Gr,N,,,,,GMS,"
+        "morph": "Gr,N,,,,,GMS,",
+        "tw": "rc://*/tw/dict/bible/other/age"
       },
       {
         "type": "text",
@@ -696,7 +733,8 @@
         "type": "word",
         "lemma": "μετάνοια",
         "strong": "G33410",
-        "morph": "Gr,N,,,,,AFS,"
+        "morph": "Gr,N,,,,,AFS,",
+        "tw": "rc://*/tw/dict/bible/kt/repent"
       },
       {
         "type": "text",
@@ -708,7 +746,8 @@
         "type": "word",
         "lemma": "ἀνασταυρόω",
         "strong": "G03880",
-        "morph": "Gr,V,PPA,AMP,"
+        "morph": "Gr,V,PPA,AMP,",
+        "tw": "rc://*/tw/dict/bible/kt/crucify"
       },
       {
         "text": "ἑαυτοῖς",
@@ -727,28 +766,36 @@
         "morph": "Gr,EA,,,,AMS,"
       },
       {
-        "text": "Υἱὸν",
-        "tag": "w",
-        "type": "word",
-        "lemma": "υἱός",
-        "strong": "G52070",
-        "morph": "Gr,N,,,,,AMS,"
-      },
-      {
-        "text": "τοῦ",
-        "tag": "w",
-        "type": "word",
-        "lemma": "ὁ",
-        "strong": "G35880",
-        "morph": "Gr,EA,,,,GMS,"
-      },
-      {
-        "text": "Θεοῦ",
-        "tag": "w",
-        "type": "word",
-        "lemma": "θεός",
-        "strong": "G23160",
-        "morph": "Gr,N,,,,,GMS,"
+        "tag": "k",
+        "type": "milestone",
+        "tw": "rc://*/tw/dict/bible/kt/sonofgod",
+        "children": [
+          {
+            "text": "Υἱὸν",
+            "tag": "w",
+            "type": "word",
+            "lemma": "υἱός",
+            "strong": "G52070",
+            "morph": "Gr,N,,,,,AMS,"
+          },
+          {
+            "text": "τοῦ",
+            "tag": "w",
+            "type": "word",
+            "lemma": "ὁ",
+            "strong": "G35880",
+            "morph": "Gr,EA,,,,GMS,"
+          },
+          {
+            "text": "Θεοῦ",
+            "tag": "w",
+            "type": "word",
+            "lemma": "θεός",
+            "strong": "G23160",
+            "morph": "Gr,N,,,,,GMS,",
+            "tw": "rc://*/tw/dict/bible/kt/god"
+          }
+        ]
       },
       {
         "type": "text",
@@ -960,7 +1007,8 @@
         "type": "word",
         "lemma": "εὐλογία",
         "strong": "G21290",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/kt/bless"
       },
       {
         "text": "ἀπὸ",
@@ -984,7 +1032,8 @@
         "type": "word",
         "lemma": "θεός",
         "strong": "G23160",
-        "morph": "Gr,N,,,,,GMS,"
+        "morph": "Gr,N,,,,,GMS,",
+        "tw": "rc://*/tw/dict/bible/kt/god"
       },
       {
         "type": "text",
@@ -1020,7 +1069,8 @@
         "type": "word",
         "lemma": "ἄκανθα",
         "strong": "G01730",
-        "morph": "Gr,N,,,,,AFP,"
+        "morph": "Gr,N,,,,,AFP,",
+        "tw": "rc://*/tw/dict/bible/other/thorn"
       },
       {
         "text": "καὶ",
@@ -1064,7 +1114,8 @@
         "type": "word",
         "lemma": "κατάρα",
         "strong": "G26710",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/kt/curse"
       },
       {
         "text": "ἐγγύς",
@@ -1141,7 +1192,8 @@
         "type": "word",
         "lemma": "πείθω",
         "strong": "G39820",
-        "morph": "Gr,V,IEP1,,P,"
+        "morph": "Gr,V,IEP1,,P,",
+        "tw": "rc://*/tw/dict/bible/other/confidence"
       },
       {
         "text": "δὲ",
@@ -1177,7 +1229,8 @@
         "type": "word",
         "lemma": "ἀγαπητός",
         "strong": "G00270",
-        "morph": "Gr,NS,,,,VMP,"
+        "morph": "Gr,NS,,,,VMP,",
+        "tw": "rc://*/tw/dict/bible/kt/beloved"
       },
       {
         "type": "text",
@@ -1221,7 +1274,8 @@
         "type": "word",
         "lemma": "σωτηρία",
         "strong": "G49910",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/kt/save"
       },
       {
         "type": "text",
@@ -1293,7 +1347,8 @@
         "type": "word",
         "lemma": "ἄδικος",
         "strong": "G00940",
-        "morph": "Gr,NP,,,,NMS,"
+        "morph": "Gr,NP,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/kt/righteous"
       },
       {
         "text": "ὁ",
@@ -1309,7 +1364,8 @@
         "type": "word",
         "lemma": "θεός",
         "strong": "G23160",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/kt/god"
       },
       {
         "type": "text",
@@ -1337,7 +1393,8 @@
         "type": "word",
         "lemma": "ἔργον",
         "strong": "G20410",
-        "morph": "Gr,N,,,,,GNS,"
+        "morph": "Gr,N,,,,,GNS,",
+        "tw": "rc://*/tw/dict/bible/kt/works"
       },
       {
         "text": "ὑμῶν",
@@ -1373,7 +1430,8 @@
         "type": "word",
         "lemma": "ἀγάπη",
         "strong": "G00260",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/kt/love"
       },
       {
         "text": "ἧς",
@@ -1413,7 +1471,8 @@
         "type": "word",
         "lemma": "ὄνομα",
         "strong": "G36860",
-        "morph": "Gr,N,,,,,ANS,"
+        "morph": "Gr,N,,,,,ANS,",
+        "tw": "rc://*/tw/dict/bible/kt/name"
       },
       {
         "text": "αὐτοῦ",
@@ -1433,7 +1492,8 @@
         "type": "word",
         "lemma": "διακονέω",
         "strong": "G12470",
-        "morph": "Gr,V,PAA,NMP,"
+        "morph": "Gr,V,PAA,NMP,",
+        "tw": "rc://*/tw/dict/bible/other/minister"
       },
       {
         "text": "τοῖς",
@@ -1449,7 +1509,8 @@
         "type": "word",
         "lemma": "ἅγιος",
         "strong": "G00400",
-        "morph": "Gr,NS,,,,DMP,"
+        "morph": "Gr,NS,,,,DMP,",
+        "tw": "rc://*/tw/dict/bible/kt/saint"
       },
       {
         "text": "καὶ",
@@ -1465,7 +1526,8 @@
         "type": "word",
         "lemma": "διακονέω",
         "strong": "G12470",
-        "morph": "Gr,V,PPA,NMP,"
+        "morph": "Gr,V,PPA,NMP,",
+        "tw": "rc://*/tw/dict/bible/other/minister"
       },
       {
         "type": "text",
@@ -1589,7 +1651,8 @@
         "type": "word",
         "lemma": "ἐλπίς",
         "strong": "G16800",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/kt/hope"
       },
       {
         "text": "ἄχρι",
@@ -1661,7 +1724,8 @@
         "type": "word",
         "lemma": "μιμητής",
         "strong": "G34020",
-        "morph": "Gr,N,,,,,NMP,"
+        "morph": "Gr,N,,,,,NMP,",
+        "tw": "rc://*/tw/dict/bible/other/imitate"
       },
       {
         "text": "δὲ",
@@ -1693,7 +1757,8 @@
         "type": "word",
         "lemma": "πίστις",
         "strong": "G41020",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/kt/faith"
       },
       {
         "text": "καὶ",
@@ -1709,7 +1774,8 @@
         "type": "word",
         "lemma": "μακροθυμία",
         "strong": "G31150",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/other/patient"
       },
       {
         "type": "text",
@@ -1721,7 +1787,8 @@
         "type": "word",
         "lemma": "κληρονομέω",
         "strong": "G28160",
-        "morph": "Gr,V,PPA,GMP,"
+        "morph": "Gr,V,PPA,GMP,",
+        "tw": "rc://*/tw/dict/bible/kt/inherit"
       },
       {
         "text": "τὰς",
@@ -1737,7 +1804,8 @@
         "type": "word",
         "lemma": "ἐπαγγελία",
         "strong": "G18600",
-        "morph": "Gr,N,,,,,AFP,"
+        "morph": "Gr,N,,,,,AFP,",
+        "tw": "rc://*/tw/dict/bible/kt/promise"
       },
       {
         "type": "text",
@@ -1778,7 +1846,8 @@
         "type": "word",
         "lemma": "Ἀβραάμ",
         "strong": "G00110",
-        "morph": "Gr,N,,,,,DMSI"
+        "morph": "Gr,N,,,,,DMSI",
+        "tw": "rc://*/tw/dict/bible/names/abraham"
       },
       {
         "text": "ἐπαγγειλάμενος",
@@ -1786,7 +1855,8 @@
         "type": "word",
         "lemma": "ἐπαγγέλλω",
         "strong": "G18610",
-        "morph": "Gr,V,PAM,NMS,"
+        "morph": "Gr,V,PAM,NMS,",
+        "tw": "rc://*/tw/dict/bible/kt/promise"
       },
       {
         "text": "ὁ",
@@ -1802,7 +1872,8 @@
         "type": "word",
         "lemma": "θεός",
         "strong": "G23160",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/kt/god"
       },
       {
         "type": "text",
@@ -1854,7 +1925,8 @@
         "type": "word",
         "lemma": "ὀμνύω",
         "strong": "G36600",
-        "morph": "Gr,V,NAA,,,,,"
+        "morph": "Gr,V,NAA,,,,,",
+        "tw": "rc://*/tw/dict/bible/other/oath"
       },
       {
         "type": "text",
@@ -1866,7 +1938,8 @@
         "type": "word",
         "lemma": "ὀμνύω",
         "strong": "G36600",
-        "morph": "Gr,V,IAA3,,S,"
+        "morph": "Gr,V,IAA3,,S,",
+        "tw": "rc://*/tw/dict/bible/other/oath"
       },
       {
         "text": "καθ’",
@@ -1922,7 +1995,8 @@
         "type": "word",
         "lemma": "μήν",
         "strong": "G33750",
-        "morph": "Gr,T,,,,,,,,,"
+        "morph": "Gr,T,,,,,,,,,",
+        "tw": "rc://*/tw/dict/bible/other/biblicaltimemonth"
       },
       {
         "text": "εὐλογῶν",
@@ -1930,7 +2004,8 @@
         "type": "word",
         "lemma": "εὐλογέω",
         "strong": "G21270",
-        "morph": "Gr,V,PPA,NMS,"
+        "morph": "Gr,V,PPA,NMS,",
+        "tw": "rc://*/tw/dict/bible/kt/bless"
       },
       {
         "type": "text",
@@ -1942,7 +2017,8 @@
         "type": "word",
         "lemma": "εὐλογέω",
         "strong": "G21270",
-        "morph": "Gr,V,IFA1,,S,"
+        "morph": "Gr,V,IFA1,,S,",
+        "tw": "rc://*/tw/dict/bible/kt/bless"
       },
       {
         "text": "σε",
@@ -1970,7 +2046,8 @@
         "type": "word",
         "lemma": "πληθύνω",
         "strong": "G41290",
-        "morph": "Gr,V,PPA,NMS,"
+        "morph": "Gr,V,PPA,NMS,",
+        "tw": "rc://*/tw/dict/bible/other/multiply"
       },
       {
         "type": "text",
@@ -1982,7 +2059,8 @@
         "type": "word",
         "lemma": "πληθύνω",
         "strong": "G41290",
-        "morph": "Gr,V,IFA1,,S,"
+        "morph": "Gr,V,IFA1,,S,",
+        "tw": "rc://*/tw/dict/bible/other/multiply"
       },
       {
         "text": "σε",
@@ -2054,7 +2132,8 @@
         "type": "word",
         "lemma": "ἐπαγγελία",
         "strong": "G18600",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/kt/promise"
       },
       {
         "type": "text",
@@ -2114,7 +2193,8 @@
         "type": "word",
         "lemma": "ὀμνύω",
         "strong": "G36600",
-        "morph": "Gr,V,IPA3,,P,"
+        "morph": "Gr,V,IPA3,,P,",
+        "tw": "rc://*/tw/dict/bible/other/oath"
       },
       {
         "type": "text",
@@ -2194,7 +2274,8 @@
         "type": "word",
         "lemma": "ὅρκος",
         "strong": "G37270",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/other/oath"
       },
       {
         "type": "text",
@@ -2254,7 +2335,8 @@
         "type": "word",
         "lemma": "θεός",
         "strong": "G23160",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/kt/god"
       },
       {
         "text": "ἐπιδεῖξαι",
@@ -2278,7 +2360,8 @@
         "type": "word",
         "lemma": "κληρονόμος",
         "strong": "G28180",
-        "morph": "Gr,N,,,,,DMP,"
+        "morph": "Gr,N,,,,,DMP,",
+        "tw": "rc://*/tw/dict/bible/other/heir"
       },
       {
         "text": "τῆς",
@@ -2294,7 +2377,8 @@
         "type": "word",
         "lemma": "ἐπαγγελία",
         "strong": "G18600",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/kt/promise"
       },
       {
         "type": "text",
@@ -2358,7 +2442,8 @@
         "type": "word",
         "lemma": "ὅρκος",
         "strong": "G37270",
-        "morph": "Gr,N,,,,,DMS,"
+        "morph": "Gr,N,,,,,DMS,",
+        "tw": "rc://*/tw/dict/bible/other/oath"
       },
       {
         "type": "text",
@@ -2462,7 +2547,8 @@
         "type": "word",
         "lemma": "θεός",
         "strong": "G23160",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/kt/god"
       },
       {
         "type": "text",
@@ -2474,7 +2560,8 @@
         "type": "word",
         "lemma": "ἰσχυρός",
         "strong": "G24780",
-        "morph": "Gr,NS,,,,AFS,"
+        "morph": "Gr,NS,,,,AFS,",
+        "tw": "rc://*/tw/dict/bible/other/strength"
       },
       {
         "text": "παράκλησιν",
@@ -2482,7 +2569,8 @@
         "type": "word",
         "lemma": "παράκλησις",
         "strong": "G38740",
-        "morph": "Gr,N,,,,,AFS,"
+        "morph": "Gr,N,,,,,AFS,",
+        "tw": "rc://*/tw/dict/bible/other/courage"
       },
       {
         "text": "ἔχωμεν",
@@ -2542,7 +2630,8 @@
         "type": "word",
         "lemma": "ἐλπίς",
         "strong": "G16800",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/kt/hope"
       },
       {
         "type": "text",
@@ -2570,7 +2659,8 @@
         "type": "word",
         "lemma": "ὡς",
         "strong": "G56130",
-        "morph": "Gr,CS,,,,,,,,"
+        "morph": "Gr,CS,,,,,,,,",
+        "tw": "rc://*/tw/dict/bible/other/like"
       },
       {
         "text": "ἄγκυραν",
@@ -2602,7 +2692,8 @@
         "type": "word",
         "lemma": "ψυχή",
         "strong": "G55900",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/kt/soul"
       },
       {
         "type": "text",
@@ -2698,7 +2789,8 @@
         "type": "word",
         "lemma": "καταπέτασμα",
         "strong": "G26650",
-        "morph": "Gr,N,,,,,GNS,"
+        "morph": "Gr,N,,,,,GNS,",
+        "tw": "rc://*/tw/dict/bible/other/curtain"
       },
       {
         "type": "text",
@@ -2762,7 +2854,8 @@
         "type": "word",
         "lemma": "Ἰησοῦς",
         "strong": "G24240",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/kt/jesus"
       },
       {
         "type": "text",
@@ -2798,7 +2891,8 @@
         "type": "word",
         "lemma": "Μελχισέδεκ",
         "strong": "G31980",
-        "morph": "Gr,N,,,,,GMSI"
+        "morph": "Gr,N,,,,,GMSI",
+        "tw": "rc://*/tw/dict/bible/names/melchizedek"
       },
       {
         "type": "text",
@@ -2810,7 +2904,8 @@
         "type": "word",
         "lemma": "ἀρχιερεύς",
         "strong": "G07490",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/kt/highpriest"
       },
       {
         "text": "γενόμενος",
@@ -2842,7 +2937,8 @@
         "type": "word",
         "lemma": "αἰών",
         "strong": "G01650",
-        "morph": "Gr,N,,,,,AMS,"
+        "morph": "Gr,N,,,,,AMS,",
+        "tw": "rc://*/tw/dict/bible/other/age"
       },
       {
         "type": "text",

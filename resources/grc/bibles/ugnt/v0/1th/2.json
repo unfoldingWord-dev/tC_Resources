@@ -192,7 +192,8 @@
         "type": "word",
         "lemma": "καθώς",
         "strong": "G25310",
-        "morph": "Gr,D,,,,,,,,,"
+        "morph": "Gr,D,,,,,,,,,",
+        "tw": "rc://*/tw/dict/bible/other/like"
       },
       {
         "text": "οἴδατε",
@@ -505,7 +506,8 @@
         "type": "word",
         "lemma": "καθώς",
         "strong": "G25310",
-        "morph": "Gr,D,,,,,,,,,"
+        "morph": "Gr,D,,,,,,,,,",
+        "tw": "rc://*/tw/dict/bible/other/like"
       },
       {
         "text": "δεδοκιμάσμεθα",
@@ -774,7 +776,8 @@
         "type": "word",
         "lemma": "καθώς",
         "strong": "G25310",
-        "morph": "Gr,D,,,,,,,,,"
+        "morph": "Gr,D,,,,,,,,,",
+        "tw": "rc://*/tw/dict/bible/other/like"
       },
       {
         "text": "οἴδατε",
@@ -819,7 +822,8 @@
         "type": "word",
         "lemma": "πλεονεξία",
         "strong": "G41240",
-        "morph": "Gr,N,,,,,GFS,"
+        "morph": "Gr,N,,,,,GFS,",
+        "tw": "rc://*/tw/dict/bible/other/envy"
       },
       {
         "text": "Θεὸς",
@@ -840,7 +844,8 @@
         "type": "word",
         "lemma": "μάρτυς",
         "strong": "G31440",
-        "morph": "Gr,N,,,,,NMS,"
+        "morph": "Gr,N,,,,,NMS,",
+        "tw": "rc://*/tw/dict/bible/kt/testimony"
       },
       {
         "type": "text",
@@ -970,8 +975,7 @@
         "type": "word",
         "lemma": "δύναμαι",
         "strong": "G14100",
-        "morph": "Gr,V,PPM,NMP,",
-        "tw": "rc://*/tw/dict/bible/kt/power"
+        "morph": "Gr,V,PPM,NMP,"
       },
       {
         "text": "ἐν",
@@ -1190,7 +1194,8 @@
         "type": "word",
         "lemma": "εὐδοκέω",
         "strong": "G21060",
-        "morph": "Gr,V,IIA1,,P,"
+        "morph": "Gr,V,IIA1,,P,",
+        "tw": "rc://*/tw/dict/bible/other/delight"
       },
       {
         "text": "μεταδοῦναι",
@@ -1326,7 +1331,7 @@
         "lemma": "ἀγαπητός",
         "strong": "G00270",
         "morph": "Gr,NP,,,,NMP,",
-        "tw": "rc://*/tw/dict/bible/kt/love"
+        "tw": "rc://*/tw/dict/bible/kt/beloved"
       },
       {
         "text": "ἡμῖν",
@@ -1623,7 +1628,8 @@
         "type": "word",
         "lemma": "μάρτυρος",
         "strong": "G31440",
-        "morph": "Gr,N,,,,,NMP,"
+        "morph": "Gr,N,,,,,NMP,",
+        "tw": "rc://*/tw/dict/bible/kt/testimony"
       },
       {
         "text": "καὶ",
@@ -1660,8 +1666,7 @@
         "type": "word",
         "lemma": "ὡς",
         "strong": "G56130",
-        "morph": "Gr,D,,,,,,,,,",
-        "tw": "rc://*/tw/dict/bible/other/like"
+        "morph": "Gr,D,,,,,,,,,"
       },
       {
         "text": "ὁσίως",
@@ -1786,8 +1791,7 @@
         "type": "word",
         "lemma": "ὡς",
         "strong": "G56130",
-        "morph": "Gr,D,,,,,,,,,",
-        "tw": "rc://*/tw/dict/bible/other/like"
+        "morph": "Gr,D,,,,,,,,,"
       },
       {
         "text": "ἕνα",
@@ -2050,7 +2054,8 @@
             "type": "word",
             "lemma": "βασιλεία",
             "strong": "G09320",
-            "morph": "Gr,N,,,,,AFS,"
+            "morph": "Gr,N,,,,,AFS,",
+            "tw": "rc://*/tw/dict/bible/other/kingdom"
           },
           {
             "text": "καὶ",
@@ -2288,7 +2293,8 @@
         "type": "word",
         "lemma": "καθώς",
         "strong": "G25310",
-        "morph": "Gr,D,,,,,,,,,"
+        "morph": "Gr,D,,,,,,,,,",
+        "tw": "rc://*/tw/dict/bible/other/like"
       },
       {
         "text": "ἀληθῶς",
@@ -2668,7 +2674,8 @@
         "type": "word",
         "lemma": "καθώς",
         "strong": "G25310",
-        "morph": "Gr,D,,,,,,,,,"
+        "morph": "Gr,D,,,,,,,,,",
+        "tw": "rc://*/tw/dict/bible/other/like"
       },
       {
         "text": "καὶ",
@@ -3205,8 +3212,7 @@
             "type": "word",
             "lemma": "καιρός",
             "strong": "G25400",
-            "morph": "Gr,N,,,,,AMS,",
-            "tw": "rc://*/tw/dict/bible/other/time"
+            "morph": "Gr,N,,,,,AMS,"
           },
           {
             "text": "ὥρας",
@@ -3214,7 +3220,8 @@
             "type": "word",
             "lemma": "ὥρα",
             "strong": "G56100",
-            "morph": "Gr,N,,,,,GFS,"
+            "morph": "Gr,N,,,,,GFS,",
+            "tw": "rc://*/tw/dict/bible/other/hour"
           }
         ]
       },

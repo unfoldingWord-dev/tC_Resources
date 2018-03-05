@@ -4,16 +4,21 @@ import * as EnglishUlbHelpers from "../helpers/englishUlbHelpers";
 
 describe('englishUlbHelpers', function() {
   const tempFilePath = './__tests__/output/en-ulb-sources';
+  const version = 'v0.0';
+  const outputFilePath = path.join('.', 'resources', 'en', 'bibles', 'ulb', version);
+
+  beforeEach(() => {
+    deletePath(tempFilePath);
+    deletePath(outputFilePath);
+  });
 
   afterEach(() => {
-    if (tempFilePath) {
-      fs.removeSync(tempFilePath);
-    }
+    deletePath(tempFilePath);
+    deletePath(outputFilePath);
   });
 
   it('should output ULB chapter files', () => {
     return new Promise((resolve) => {
-      const version = 'v0.0';
       const resourceinputpath = path.join('__tests__','fixtures','bible', 'en_aligned');
 
       const UGNTOutputPath = path.join('__tests__', 'output', 'en-ulb-sources', version);
@@ -29,7 +34,6 @@ describe('englishUlbHelpers', function() {
 
   // it('should download and output en_ULB chapter files', () => {
   //   return new Promise((resolve) => {
-  //     const version = 'v0.0';
   //     EnglishUlbHelpers.generateVersion(version, resolve);
   //   }).then(() => {
   //     console.log('en_ulb processing completed!');
@@ -37,3 +41,12 @@ describe('englishUlbHelpers', function() {
   // }, 300000); // max timeout (should be long enough, but may need to be increased on a slow connection)
 
 });
+
+//
+// helpers
+//
+function deletePath(filePath) {
+  if (fs.existsSync(filePath)) {
+    fs.removeSync(filePath);
+  }
+}

@@ -122,7 +122,8 @@
         "type": "word",
         "lemma": "σεμνός",
         "strong": "G45860",
-        "morph": "Gr,NP,,,,AMP,"
+        "morph": "Gr,NP,,,,AMP,",
+        "tw": "rc://*/tw/dict/bible/kt/honor"
       },
       {
         "type": "text",
@@ -552,8 +553,7 @@
             "type": "word",
             "lemma": "λόγος",
             "strong": "G30560",
-            "morph": "Gr,N,,,,,NMS,",
-            "tw": "rc://*/tw/dict/bible/other/word"
+            "morph": "Gr,N,,,,,NMS,"
           },
           {
             "text": "τοῦ",
@@ -1306,7 +1306,7 @@
         "lemma": "παιδεύω",
         "strong": "G38110",
         "morph": "Gr,V,PPA,NFS,",
-        "tw": "rc://*/tw/dict/bible/other/instruct"
+        "tw": "rc://*/tw/dict/bible/kt/discipline"
       },
       {
         "text": "ἡμᾶς",
@@ -1501,7 +1501,8 @@
         "type": "word",
         "lemma": "προσδέχομαι",
         "strong": "G43270",
-        "morph": "Gr,V,PPM,NMP,"
+        "morph": "Gr,V,PPM,NMP,",
+        "tw": "rc://*/tw/dict/bible/other/receive"
       },
       {
         "text": "τὴν",
@@ -1769,7 +1770,7 @@
         "lemma": "καθαρίζω",
         "strong": "G25110",
         "morph": "Gr,V,SAA3,,S,",
-        "tw": "rc://*/tw/dict/bible/kt/purify"
+        "tw": "rc://*/tw/dict/bible/kt/clean"
       },
       {
         "text": "ἑαυτῷ",
