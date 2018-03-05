@@ -1,6 +1,5 @@
 import fs from 'fs-extra';
 import path from 'path-extra';
-import yaml from 'yamljs';
 // helpers
 import * as biblesHelpers from './biblesHelpers';
 
@@ -8,6 +7,7 @@ import * as biblesHelpers from './biblesHelpers';
  * 
  * @param {String} extractedFilePath 
  * @param {String} RESOURCE_OUTPUT_PATH 
+ * @param {String} languageId
  */
 export function getTranslationHelps(extractedFilePath, RESOURCE_OUTPUT_PATH) {
   console.log(
@@ -17,15 +17,16 @@ export function getTranslationHelps(extractedFilePath, RESOURCE_OUTPUT_PATH) {
   const resourceManifest = biblesHelpers.getResourceManifestFromYaml(
     extractedFilePath,
   );
-  const folders = ['kt', 'other'];
-  const occurrences = getOccurences(extractedFilePath);
+  const folders = ['kt', 'names', 'other'];
 
   folders.forEach(folderName => {
     const filesPath = path.join(extractedFilePath, 'bible', folderName);
     const resourceVersion = 'v' + resourceManifest.dublin_core.version;
-    const files = fs.readdirSync(filesPath);
+    const files = fs.readdirSync(filesPath).filter(filename => {
+      return filename.split('.').pop() == 'md';
+    });
 
-    let groupsIndex = generateGroupsIndex(filesPath, RESOURCE_OUTPUT_PATH, resourceVersion, folderName);
+    generateGroupsIndex(filesPath, RESOURCE_OUTPUT_PATH, resourceVersion, folderName);
 
     files.forEach(fileName => {
       const sourcePath = path.join(filesPath, fileName);
@@ -37,20 +38,8 @@ export function getTranslationHelps(extractedFilePath, RESOURCE_OUTPUT_PATH) {
         fileName,
       );
       fs.copySync(sourcePath, destinationPath);
-
-      generateGroupsData(occurrences, fileName, RESOURCE_OUTPUT_PATH, groupsIndex, folderName, resourceVersion);
     });
   });
-}
-
-/**
- * 
- * @param {String} extractedFilePath 
- */
-function getOccurences(extractedFilePath) {
-  const filePath = path.join(extractedFilePath, 'bible', 'config.yaml');
-  let yamlOccurences = fs.readFileSync(filePath, 'utf8');
-  return yaml.parse(yamlOccurences);
 }
 
 /**
@@ -62,19 +51,24 @@ function getOccurences(extractedFilePath) {
  */
 function generateGroupsIndex(filesPath, RESOURCE_OUTPUT_PATH, resourceVersion, folderName) {
   let groupsIndex = [];
-  let groupIds = fs.readdirSync(filesPath);
+  let groupIds = fs.readdirSync(filesPath).filter(filename => {
+    return filename.split('.').pop() == 'md';
+  });
   groupIds.forEach(fileName => {
-    let groupObjet = {};
+    let groupObject = {};
     const filePath = path.join(filesPath, fileName);
     const articleFile = fs.readFileSync(filePath, 'utf8');
 
     const groupId = fileName.replace('.md', '');
-    const groupName = articleFile.split('\n')[0].replace(/ #|# /gi, '');
+    // get the article's first line and remove #'s and spaces from beginning/end
+    const groupName = articleFile.split('\n')[0].replace(/(^\s*#\s*|\s*#\s*$)/gi, '');
 
-    groupObjet.id = groupId;
-    groupObjet.name = groupName;
-    groupsIndex.push(groupObjet);
+    groupObject.id = groupId;
+    groupObject.name = groupName;
+    groupsIndex.push(groupObject);
   });
+
+  groupsIndex.sort(compareByFirstUniqueWord);
 
   const groupsIndexOutputPath = path.join(
     RESOURCE_OUTPUT_PATH,
@@ -83,77 +77,26 @@ function generateGroupsIndex(filesPath, RESOURCE_OUTPUT_PATH, resourceVersion, f
     'index.json',
   );
 
-  fs.outputJsonSync(groupsIndexOutputPath, groupsIndex);
-
-  return groupsIndex;
+  fs.outputJsonSync(groupsIndexOutputPath, groupsIndex, {spaces:2});
 }
 
 /**
- * 
- * @param {object} occurrences 
- * @param {String} fileName 
- * @param {String} extractedFilePath 
- * @param {object} groupsIndex 
- * @param {String} folderName 
+ * Splits the string into words delimited by commas and compares the first unique word
+ * @param {String} a 
+ * @param {String} b 
  */
-function generateGroupsData(occurrences, fileName, RESOURCE_OUTPUT_PATH, groupsIndex, folderName, resourceVersion) {
-  const articleName = fileName.replace('.md', '');
-  if (occurrences[articleName]) {
-    const wordOccurrences = occurrences[
-      articleName
-    ].occurrences.map(occurrencesString => {
-      let reference = occurrencesString
-        .replace('rc://en/ulb/book/', '')
-        .split('/');
-      return {
-        priority: 1,
-        comments: false,
-        reminders: false,
-        selections: false,
-        verseEdits: false,
-        contextId: {
-          reference: {
-            bookId: reference[0],
-            chapter: parseInt(reference[1], 10),
-            verse: parseInt(reference[2], 10)
-          },
-          tool: 'translationWords',
-          groupId: articleName,
-          quote: getGroupName(articleName, groupsIndex),
-          occurrence: 1
-        }
-      };
-    });
-
-    wordOccurrences.forEach(wordObject => {
-      const bookId = wordObject.contextId.reference.bookId;
-      const fileName = articleName + '.json';
-      const groupsSavePath = path.join(
-        RESOURCE_OUTPUT_PATH,
-        resourceVersion,
-        folderName,
-        'groups',
-        bookId,
-        fileName,
-      );
-      let groupData = wordOccurrences.filter(wordOcurrence => {
-        return bookId === wordOcurrence.contextId.reference.bookId;
-      });
-
-      fs.outputJsonSync(groupsSavePath, groupData);
-    });
+export function compareByFirstUniqueWord(a, b) {
+  let aWords = a.name.toUpperCase().split(',');
+  let bWords = b.name.toUpperCase().split(',');
+  while (aWords.length || bWords.length) {
+    if (! aWords.length) 
+      return -1;
+    if (! bWords.length)
+      return 1;
+    let aWord = aWords.shift().trim();
+    let bWord = bWords.shift().trim();
+    if (aWord != bWord)
+      return (aWord<bWord?-1:1);
   }
-}
-
-/**
- * 
- * @param {String} articleName 
- * @param {object} groupsIndex 
- */
-function getGroupName(articleName, groupsIndex) {
-  let groupObject = groupsIndex.filter(group => {
-    return group.id.toLowerCase() === articleName;
-  });
-
-  return groupObject[0].name;
+  return 0; // both lists are the same
 }

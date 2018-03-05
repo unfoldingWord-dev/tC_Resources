@@ -57,7 +57,7 @@ door43ApiHelper
       url: url,
       responseType: 'stream'
     }).then(response => {
-      console.log('\x1b[33m%s\x1b[0m', 'Downloading zip file ...');
+      console.log('\x1b[33m%s\x1b[0m', 'Downloading '+url+' to '+ZIP_FILE_PATH+' ...');
       response.data.pipe(fs.createWriteStream(ZIP_FILE_PATH));
       response.data.on('end', () => {
         // extract zip file
@@ -89,7 +89,7 @@ door43ApiHelper
         } else {
           translationHelpsHelpers.getTranslationHelps(
             extractedFilePath,
-            RESOURCE_OUTPUT_PATH,
+            RESOURCE_OUTPUT_PATH
           );
         }
       });
