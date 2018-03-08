@@ -30,7 +30,7 @@ describe('Test tw Helpers', function() {
     expect(fs.existsSync(jsonFile)).toBeTruthy();
     const data = JSON.parse(fs.readFileSync(jsonFile));
     expect(data).toMatchSnapshot();
-    const expectedItems = 6;
+    const expectedItems = 5;
     expect(data.length).toEqual(expectedItems);
   });
 
