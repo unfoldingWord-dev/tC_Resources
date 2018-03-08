@@ -187,10 +187,6 @@
   "2": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
         "text": "καὶ",
         "tag": "w",
         "type": "word",
@@ -218,7 +214,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἔστησεν",
@@ -262,16 +258,12 @@
       },
       {
         "type": "text",
-        "text": "\n"
+        "text": "\n\n"
       }
     ]
   },
   "3": {
     "verseObjects": [
-      {
-        "type": "text",
-        "text": "\n"
-      },
       {
         "text": "καὶ",
         "tag": "w",
@@ -303,7 +295,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "λέγω",
@@ -323,7 +315,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἐὰν",
@@ -394,7 +386,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "οὐ",
@@ -478,10 +470,6 @@
   "4": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
         "text": "ὅστις",
         "tag": "w",
         "type": "word",
@@ -550,7 +538,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "οὗτός",
@@ -641,10 +629,6 @@
   },
   "5": {
     "verseObjects": [
-      {
-        "type": "text",
-        "text": "\n"
-      },
       {
         "text": "καὶ",
         "tag": "w",
@@ -739,7 +723,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἐμὲ",
@@ -875,7 +859,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "συμφέρει",
@@ -960,7 +944,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "καὶ",
@@ -1027,10 +1011,6 @@
   "7": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
         "text": "οὐαὶ",
         "tag": "w",
         "type": "word",
@@ -1083,7 +1063,7 @@
       },
       {
         "type": "text",
-        "text": "!\n"
+        "text": "!"
       },
       {
         "text": "ἀνάγκη",
@@ -1136,7 +1116,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "πλὴν",
@@ -1320,7 +1300,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἔκκοψον",
@@ -1373,7 +1353,7 @@
       },
       {
         "type": "text",
-        "text": ";\n"
+        "text": ";"
       },
       {
         "text": "καλόν",
@@ -1459,7 +1439,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἢ",
@@ -1520,7 +1500,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "βληθῆναι",
@@ -1581,10 +1561,6 @@
   "9": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
         "text": "καὶ",
         "tag": "w",
         "type": "word",
@@ -1643,7 +1619,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἔξελε",
@@ -1695,7 +1671,7 @@
       },
       {
         "type": "text",
-        "text": ";\n"
+        "text": ";"
       },
       {
         "text": "καλόν",
@@ -1765,7 +1741,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἢ",
@@ -1924,7 +1900,7 @@
       },
       {
         "type": "text",
-        "text": ";\n"
+        "text": ";"
       },
       {
         "text": "λέγω",
@@ -1952,7 +1928,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ὅτι",
@@ -2006,7 +1982,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "διὰ",
@@ -2076,7 +2052,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "τοῦ",
@@ -2112,11 +2088,7 @@
   "11": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
-        "text": " ",
+        "text": "",
         "tag": "w",
         "type": "word",
         "lemma": "",
@@ -2125,16 +2097,12 @@
       },
       {
         "type": "text",
-        "text": "\n"
+        "text": "\n\n"
       }
     ]
   },
   "12": {
     "verseObjects": [
-      {
-        "type": "text",
-        "text": "\n"
-      },
       {
         "text": "τί",
         "tag": "w",
@@ -2161,7 +2129,7 @@
       },
       {
         "type": "text",
-        "text": "?\n"
+        "text": "?"
       },
       {
         "text": "ἐὰν",
@@ -2214,7 +2182,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "καὶ",
@@ -2259,7 +2227,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "οὐχὶ",
@@ -2327,7 +2295,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "καὶ",
@@ -2380,10 +2348,6 @@
   "13": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
         "text": "καὶ",
         "tag": "w",
         "type": "word",
@@ -2425,7 +2389,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἀμὴν",
@@ -2438,7 +2402,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "λέγω",
@@ -2458,7 +2422,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ὅτι",
@@ -2575,10 +2539,6 @@
   "14": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
         "text": "οὕτως",
         "tag": "w",
         "type": "word",
@@ -2652,7 +2612,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "τοῦ",
@@ -2681,7 +2641,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἵνα",
@@ -2817,7 +2777,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ὕπαγε",
@@ -2886,7 +2846,7 @@
       },
       {
         "type": "text",
-        "text": ".\n"
+        "text": "."
       },
       {
         "text": "ἐάν",
@@ -2914,7 +2874,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἐκέρδησας",
@@ -2959,10 +2919,6 @@
   "16": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
         "text": "ἐὰν",
         "tag": "w",
         "type": "word",
@@ -2996,7 +2952,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "παράλαβε",
@@ -3032,7 +2988,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἕνα",
@@ -3060,7 +3016,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἵνα",
@@ -3080,7 +3036,7 @@
       },
       {
         "type": "text",
-        "text": "‘\n"
+        "text": "‘"
       },
       {
         "text": "στόματος",
@@ -3125,7 +3081,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "σταθῇ",
@@ -3162,10 +3118,6 @@
   "17": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
         "text": "ἐὰν",
         "tag": "w",
         "type": "word",
@@ -3199,7 +3151,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "εἰπὲ",
@@ -3228,7 +3180,7 @@
       },
       {
         "type": "text",
-        "text": ".\n"
+        "text": "."
       },
       {
         "text": "ἐὰν",
@@ -3281,7 +3233,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἔστω",
@@ -3359,10 +3311,6 @@
   "18": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
         "text": "ἀμὴν",
         "tag": "w",
         "type": "word",
@@ -3373,7 +3321,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "λέγω",
@@ -3393,7 +3341,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ὅσα",
@@ -3447,7 +3395,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἔσται",
@@ -3485,7 +3433,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "καὶ",
@@ -3546,7 +3494,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἔσται",
@@ -3590,10 +3538,6 @@
   "19": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
         "text": "πάλιν",
         "tag": "w",
         "type": "word",
@@ -3612,7 +3556,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "λέγω",
@@ -3632,7 +3576,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ὅτι",
@@ -3733,7 +3677,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "οὗ",
@@ -3761,7 +3705,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "γενήσεται",
@@ -3814,7 +3758,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "τοῦ",
@@ -3849,10 +3793,6 @@
   },
   "20": {
     "verseObjects": [
-      {
-        "type": "text",
-        "text": "\n"
-      },
       {
         "text": "οὗ",
         "tag": "w",
@@ -3944,7 +3884,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἐκεῖ",
@@ -4021,7 +3961,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ὁ",
@@ -4071,7 +4011,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ποσάκις",
@@ -4133,7 +4073,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "καὶ",
@@ -4162,7 +4102,7 @@
       },
       {
         "type": "text",
-        "text": "?\n"
+        "text": "?"
       },
       {
         "text": "ἕως",
@@ -4188,10 +4128,6 @@
   },
   "22": {
     "verseObjects": [
-      {
-        "type": "text",
-        "text": "\n"
-      },
       {
         "text": "λέγει",
         "tag": "w",
@@ -4271,7 +4207,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἀλλὰ",
@@ -4407,7 +4343,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ὃς",
@@ -4484,10 +4420,6 @@
   "24": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
         "text": "ἀρξαμένου",
         "tag": "w",
         "type": "word",
@@ -4521,7 +4453,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "προσηνέχθη",
@@ -4580,10 +4512,6 @@
   "25": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
         "text": "μὴ",
         "tag": "w",
         "type": "word",
@@ -4625,7 +4553,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἐκέλευσεν",
@@ -4671,7 +4599,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "καὶ",
@@ -4699,7 +4627,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "καὶ",
@@ -4728,7 +4656,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "καὶ",
@@ -4764,7 +4692,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "καὶ",
@@ -4790,10 +4718,6 @@
   },
   "26": {
     "verseObjects": [
-      {
-        "type": "text",
-        "text": "\n"
-      },
       {
         "text": "πεσὼν",
         "tag": "w",
@@ -4855,7 +4779,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "Κύριε",
@@ -4868,7 +4792,7 @@
       },
       {
         "type": "text",
-        "text": "‘,\n"
+        "text": "‘,"
       },
       {
         "text": "μακροθύμησον",
@@ -4897,7 +4821,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "καὶ",
@@ -4940,10 +4864,6 @@
   "27": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
         "text": "σπλαγχνισθεὶς",
         "tag": "w",
         "type": "word",
@@ -4962,7 +4882,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ὁ",
@@ -5024,7 +4944,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "καὶ",
@@ -5076,10 +4996,6 @@
   "28": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
         "text": "ἐξελθὼν",
         "tag": "w",
         "type": "word",
@@ -5097,7 +5013,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ὁ",
@@ -5167,7 +5083,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ὃς",
@@ -5211,7 +5127,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "καὶ",
@@ -5256,7 +5172,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἀπόδος",
@@ -5268,7 +5184,7 @@
       },
       {
         "type": "text",
-        "text": "‘\n"
+        "text": "‘"
       },
       {
         "text": "εἴ",
@@ -5303,10 +5219,6 @@
   "29": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
         "text": "πεσὼν",
         "tag": "w",
         "type": "word",
@@ -5325,7 +5237,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ὁ",
@@ -5379,7 +5291,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "μακροθύμησον",
@@ -5392,7 +5304,7 @@
       },
       {
         "type": "text",
-        "text": "‘\n"
+        "text": "‘"
       },
       {
         "text": "ἐπ’",
@@ -5412,7 +5324,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "καὶ",
@@ -5447,10 +5359,6 @@
   "30": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
         "text": "ὁ",
         "tag": "w",
         "type": "word",
@@ -5484,7 +5392,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἀλλὰ",
@@ -5504,7 +5412,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἔβαλεν",
@@ -5541,7 +5449,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἕως",
@@ -5591,10 +5499,6 @@
   },
   "31": {
     "verseObjects": [
-      {
-        "type": "text",
-        "text": "\n"
-      },
       {
         "text": "ἰδόντες",
         "tag": "w",
@@ -5654,7 +5558,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἐλυπήθησαν",
@@ -5674,7 +5578,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "καὶ",
@@ -5759,10 +5663,6 @@
   "32": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
         "text": "τότε",
         "tag": "w",
         "type": "word",
@@ -5830,7 +5730,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "δοῦλε",
@@ -5843,7 +5743,7 @@
       },
       {
         "type": "text",
-        "text": "‘\n"
+        "text": "‘"
       },
       {
         "text": "πονηρέ",
@@ -5856,7 +5756,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "πᾶσαν",
@@ -5909,7 +5809,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἐπεὶ",
@@ -5944,10 +5844,6 @@
   },
   "33": {
     "verseObjects": [
-      {
-        "type": "text",
-        "text": "\n"
-      },
       {
         "text": "οὐκ",
         "tag": "w",
@@ -6016,7 +5912,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ὡς",
@@ -6061,10 +5957,6 @@
   "34": {
     "verseObjects": [
       {
-        "type": "text",
-        "text": "\n"
-      },
-      {
         "text": "καὶ",
         "tag": "w",
         "type": "word",
@@ -6083,7 +5975,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ὁ",
@@ -6144,7 +6036,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἕως",
@@ -6202,10 +6094,6 @@
   },
   "35": {
     "verseObjects": [
-      {
-        "type": "text",
-        "text": "\n"
-      },
       {
         "text": "οὕτως",
         "tag": "w",
@@ -6288,7 +6176,7 @@
       },
       {
         "type": "text",
-        "text": ",\n"
+        "text": ","
       },
       {
         "text": "ἐὰν",
