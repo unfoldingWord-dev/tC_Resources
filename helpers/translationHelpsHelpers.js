@@ -7,21 +7,18 @@ import * as biblesHelpers from './biblesHelpers';
  * 
  * @param {String} extractedFilePath 
  * @param {String} RESOURCE_OUTPUT_PATH 
- * @param {String} languageId
  */
-export function getTranslationHelps(extractedFilePath, RESOURCE_OUTPUT_PATH) {
+export function getTranslationWords(extractedFilePath, RESOURCE_OUTPUT_PATH) {
   console.log(
     '\x1b[33m%s\x1b[0m',
-    'Generating tC compatible resource data structure ...',
+    'Generating tW resource data structure ...',
   );
-  const resourceManifest = biblesHelpers.getResourceManifestFromYaml(
-    extractedFilePath,
-  );
+  const resourceManifest = biblesHelpers.getResourceManifestFromYaml(extractedFilePath);
+  const resourceVersion = 'v' + resourceManifest.dublin_core.version;
   const folders = ['kt', 'names', 'other'];
 
   folders.forEach(folderName => {
     const filesPath = path.join(extractedFilePath, 'bible', folderName);
-    const resourceVersion = 'v' + resourceManifest.dublin_core.version;
     const files = fs.readdirSync(filesPath).filter(filename => {
       return filename.split('.').pop() == 'md';
     });
@@ -38,6 +35,36 @@ export function getTranslationHelps(extractedFilePath, RESOURCE_OUTPUT_PATH) {
         fileName,
       );
       fs.copySync(sourcePath, destinationPath);
+    });
+  });
+}
+
+/**
+ * 
+ * @param {String} extractedFilePath 
+ * @param {String} RESOURCE_OUTPUT_PATH 
+ */
+export function getTranslationAcademy(extractedFilePath, RESOURCE_OUTPUT_PATH) {
+  console.log(
+    '\x1b[33m%s\x1b[0m',
+    'Generating tA resource data structure ...',
+  );
+  const resourceManifest = biblesHelpers.getResourceManifestFromYaml(extractedFilePath);
+  const resourceVersion = 'v' + resourceManifest.dublin_core.version;
+  resourceManifest.projects.forEach(project => {
+    const folderPath = path.join(extractedFilePath, project.path);
+    const isDirectory = item => fs.lstatSync(path.join(folderPath, item)).isDirectory();
+    const articleDirs = fs.readdirSync(folderPath).filter(isDirectory);
+    articleDirs.forEach(articleDir => {
+      let content = '# '+fs.readFileSync(path.join(folderPath, articleDir, 'title.md'), 'utf8')+' #\n';
+      content += fs.readFileSync(path.join(folderPath, articleDir, '01.md'), 'utf8');
+      const destinationPath = path.join(
+        RESOURCE_OUTPUT_PATH,
+        resourceVersion,
+        project.path,
+        articleDir+'.md'
+      );
+      fs.outputFileSync(destinationPath, content);
     });
   });
 }
