@@ -17,14 +17,16 @@ describe('Translation Helps Helpers', () => {
     const zipFileName = 'en_tw.zip';
     const zipfilepath = path.join(tempFilePath, zipFileName);
     fs.copySync(path.join('./__tests__/fixtures/th', zipFileName), zipfilepath); // copy zip to new location since it will be deleted
-    const resourceinputpath = path.join(tempFilePath,'dummyDestinationFolder');
-    if(resourceinputpath) {
-      fs.removeSync(resourceinputpath);
+    const resourceInputPath = path.join(tempFilePath, 'dummyDestinationFolder');
+    if(resourceInputPath) {
+      fs.removeSync(resourceInputPath);
     }
-    extractZipFile(zipfilepath, resourceinputpath);
+    extractZipFile(zipfilepath, resourceInputPath);
 
-    const resourceOutputPath = path.join(tempFilePath,'dummyResourceFolder');
-    translationHelpsHelpers.getTranslationWords(path.join(resourceinputpath,'en_tw'), resourceOutputPath);
+    const resourceOutputPath = path.join(tempFilePath,'dummyResourceFolder', 'en', 'translationHelps', 'translationWords');
+    translationHelpsHelpers.getTranslationWords(path.join(resourceInputPath, 'en_tw'), resourceOutputPath);
+    const expectedExistingFile = path.join(resourceOutputPath, 'v8', 'kt', 'articles', 'inchrist.md');
+    expect(fs.existsSync(expectedExistingFile)).toBeTruthy();
   });
 
   test('getTranslationWords with invalid input', () => {
@@ -43,14 +45,16 @@ describe('Translation Helps Helpers', () => {
     const zipFileName = 'en_ta.zip';
     const zipfilepath = path.join(tempFilePath, zipFileName);
     fs.copySync(path.join('./__tests__/fixtures/th', zipFileName), zipfilepath); // copy zip to new location since it will be deleted
-    const resourceinputpath = path.join(tempFilePath,'dummyDestinationFolder');
-    if(resourceinputpath) {
-      fs.removeSync(resourceinputpath);
+    const resourceInputPath = path.join(tempFilePath,'dummyDestinationFolder');
+    if(resourceInputPath) {
+      fs.removeSync(resourceInputPath);
     }
-    extractZipFile(zipfilepath, resourceinputpath);
+    extractZipFile(zipfilepath, resourceInputPath);
 
-    const resourceOutputPath = path.join(tempFilePath,'dummyResourceFolder');
-    translationHelpsHelpers.getTranslationAcademy(path.join(resourceinputpath,'en_ta'), resourceOutputPath);
+    const resourceOutputPath = path.join(tempFilePath,'dummyResourceFolder', 'en', 'translationHelps', 'translationAcademy');
+    translationHelpsHelpers.getTranslationAcademy(path.join(resourceInputPath,'en_ta'), resourceOutputPath);
+    const expectedExistingFile = path.join(resourceOutputPath, 'v9', 'translate', 'translate-names.md');
+    expect(fs.existsSync(expectedExistingFile)).toBeTruthy();
   });
 
   test('getTranslationAcademy with invalid input', () => {
