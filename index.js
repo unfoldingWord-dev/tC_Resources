@@ -22,9 +22,9 @@ if (!process.argv[2] || !process.argv[3]) {
 }
 // node process variables
 const LANGUAGE_ID = process.argv[2].toLowerCase(); // ex. en, hi, es
-const RESOURCE_ID = process.argv[3].toLowerCase(); // ex. ulb, udb, ugnt, tW, tN, tA
+const RESOURCE_ID = process.argv[3].toLowerCase(); // ex. ulb, udb, ugnt, tw, tn, ta
 // constants
-const RESOURCE_Key = stringsHelper.getResourceId(process.argv[3].toLowerCase()); // ex. ulb, udb, ugnt, translatioWords, translationNotes, translationAcademy
+const RESOURCE_KEY = stringsHelper.getResourceId(RESOURCE_ID); // ex. ulb, udb, ugnt, translatioWords, translationNotes, translationAcademy
 const RESOURCE_TYPE = stringsHelper.getResourceType(RESOURCE_ID);
 const TEMP_PATH = path.join(__dirname, 'temp');
 const RESOURCE_INPUT_PATH = path.join(TEMP_PATH, 'input');
@@ -33,7 +33,7 @@ const RESOURCE_OUTPUT_PATH = path.join(
   'resources',
   LANGUAGE_ID,
   RESOURCE_TYPE,
-  RESOURCE_Key,
+  RESOURCE_KEY,
 );
 console.log(RESOURCE_OUTPUT_PATH);
 const ZIP_FILE_PATH = path.join(RESOURCE_INPUT_PATH, RESOURCE_ID + '.zip');
@@ -86,11 +86,18 @@ door43ApiHelper
             extractedFilePath,
             RESOURCE_OUTPUT_PATH,
           );
-        } else {
-          translationHelpsHelpers.getTranslationHelps(
+        } else if (RESOURCE_ID === 'tw') {
+          translationHelpsHelpers.getTranslationWords(
             extractedFilePath,
             RESOURCE_OUTPUT_PATH
           );
+        } else if (RESOURCE_ID === 'ta') {
+          translationHelpsHelpers.getTranslationAcademy(
+            extractedFilePath,
+            RESOURCE_OUTPUT_PATH
+          );
+        } else {
+          console.error("ERROR: "+RESOURCE_ID+" is not a valid resource. Existing.");
         }
       });
     })

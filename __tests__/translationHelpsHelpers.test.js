@@ -13,24 +13,26 @@ describe('Translation Helps Helpers', () => {
     }
   });
 
-  test('getTranslationHelps with valid input', () => {
+  test('getTranslationWords with valid input', () => {
     const zipFileName = 'en_tw.zip';
     const zipfilepath = path.join(tempFilePath, zipFileName);
     fs.copySync(path.join('./__tests__/fixtures/th', zipFileName), zipfilepath); // copy zip to new location since it will be deleted
-    const resourceinputpath = path.join(tempFilePath,'dummyDestinationFolder');
-    if(resourceinputpath) {
-      fs.removeSync(resourceinputpath);
+    const resourceInputPath = path.join(tempFilePath, 'dummyDestinationFolder');
+    if(resourceInputPath) {
+      fs.removeSync(resourceInputPath);
     }
-    extractZipFile(zipfilepath, resourceinputpath);
+    extractZipFile(zipfilepath, resourceInputPath);
 
-    const resourceOutputPath = path.join(tempFilePath,'dummyResourceFolder');
-    translationHelpsHelpers.getTranslationHelps(path.join(resourceinputpath,'en_tw'), resourceOutputPath);
+    const resourceOutputPath = path.join(tempFilePath,'dummyResourceFolder', 'en', 'translationHelps', 'translationWords');
+    translationHelpsHelpers.getTranslationWords(path.join(resourceInputPath, 'en_tw'), resourceOutputPath);
+    const expectedExistingFile = path.join(resourceOutputPath, 'v8', 'kt', 'articles', 'inchrist.md');
+    expect(fs.existsSync(expectedExistingFile)).toBeTruthy();
   });
 
-  test('getTranslationHelps with invalid input', () => {
+  test('getTranslationWords with invalid input', () => {
     let exception = true;
     try {
-      translationHelpsHelpers.getTranslationHelps(null, null);
+      translationHelpsHelpers.getTranslationWords(null, null);
       exception = false;
     } catch (e) {
       console.log("failure: " + e);
@@ -39,6 +41,33 @@ describe('Translation Helps Helpers', () => {
     expect(exception).toEqual(true);
   });
 
+  test('getTranslationAcademy with valid input', () => {
+    const zipFileName = 'en_ta.zip';
+    const zipfilepath = path.join(tempFilePath, zipFileName);
+    fs.copySync(path.join('./__tests__/fixtures/th', zipFileName), zipfilepath); // copy zip to new location since it will be deleted
+    const resourceInputPath = path.join(tempFilePath,'dummyDestinationFolder');
+    if(resourceInputPath) {
+      fs.removeSync(resourceInputPath);
+    }
+    extractZipFile(zipfilepath, resourceInputPath);
+
+    const resourceOutputPath = path.join(tempFilePath,'dummyResourceFolder', 'en', 'translationHelps', 'translationAcademy');
+    translationHelpsHelpers.getTranslationAcademy(path.join(resourceInputPath,'en_ta'), resourceOutputPath);
+    const expectedExistingFile = path.join(resourceOutputPath, 'v9', 'translate', 'translate-names.md');
+    expect(fs.existsSync(expectedExistingFile)).toBeTruthy();
+  });
+
+  test('getTranslationAcademy with invalid input', () => {
+    let exception = true;
+    try {
+      translationHelpsHelpers.getTranslationAcademy(null, null);
+      exception = false;
+    } catch (e) {
+      console.log("failure: " + e);
+      exception = true;
+    }
+    expect(exception).toEqual(true);
+  });
 });
 
 describe('translationHelpsHelpers.compareByFirstUniqueWord() tests', () => {
