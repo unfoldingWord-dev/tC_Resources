@@ -3032,25 +3032,6 @@
       {
         "tag": "zaln",
         "type": "milestone",
-        "lemma": "πᾶς",
-        "morph": "Gr,EQ,,,,DMP,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G39560",
-        "content": "πᾶσιν",
-        "children": [
-          {
-            "text": "of",
-            "tag": "w",
-            "type": "word",
-            "occurrence": 1,
-            "occurrences": 2
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
         "lemma": "ὁ",
         "morph": "Gr,EA,,,,GMS,",
         "occurrence": 1,
@@ -3068,6 +3049,13 @@
             "strong": "G23160",
             "content": "Θεοῦ",
             "children": [
+              {
+                "text": "of",
+                "tag": "w",
+                "type": "word",
+                "occurrence": 1,
+                "occurrences": 2
+              },
               {
                 "text": "God",
                 "tag": "w",
@@ -3141,37 +3129,6 @@
       {
         "tag": "zaln",
         "type": "milestone",
-        "lemma": "ὁ",
-        "morph": "Gr,EA,,,,GMS,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G35880",
-        "content": "τοῦ",
-        "children": [
-          {
-            "tag": "zaln",
-            "type": "milestone",
-            "lemma": "θεός",
-            "morph": "Gr,N,,,,,GMS,",
-            "occurrence": 1,
-            "occurrences": 1,
-            "strong": "G23160",
-            "content": "Θεοῦ",
-            "children": [
-              {
-                "text": "of",
-                "tag": "w",
-                "type": "word",
-                "occurrence": 2,
-                "occurrences": 2
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
         "lemma": "πᾶς",
         "morph": "Gr,EQ,,,,DMP,",
         "occurrence": 1,
@@ -3179,6 +3136,13 @@
         "strong": "G39560",
         "content": "πᾶσιν",
         "children": [
+          {
+            "text": "of",
+            "tag": "w",
+            "type": "word",
+            "occurrence": 2,
+            "occurrences": 2
+          },
           {
             "text": "all",
             "tag": "w",
