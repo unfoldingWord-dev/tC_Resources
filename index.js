@@ -16,15 +16,15 @@ if (!process.argv[2] || !process.argv[3]) {
   );
   console.error(
     '\x1b[36m%s\x1b[0m',
-    "For example: npm run update-resource ulb en,\n where 'ulb' is the resource Id and 'en' the language Id",
+    "For example: npm run update-resource ult en,\n where 'ult' is the resource Id and 'en' the language Id",
   );
   process.exit(1);
 }
 // node process variables
 const LANGUAGE_ID = process.argv[2].toLowerCase(); // ex. en, hi, es
-const RESOURCE_ID = process.argv[3].toLowerCase(); // ex. ulb, udb, ugnt, tw, tn, ta
+const RESOURCE_ID = process.argv[3].toLowerCase(); // ex. ult, udb, ugnt, tw, tn, ta
 // constants
-const RESOURCE_KEY = stringsHelper.getResourceId(RESOURCE_ID); // ex. ulb, udb, ugnt, translatioWords, translationNotes, translationAcademy
+const RESOURCE_KEY = stringsHelper.getResourceId(RESOURCE_ID); // ex. ult, udb, ugnt, translatioWords, translationNotes, translationAcademy
 const RESOURCE_TYPE = stringsHelper.getResourceType(RESOURCE_ID);
 const TEMP_PATH = path.join(__dirname, 'temp');
 const RESOURCE_INPUT_PATH = path.join(TEMP_PATH, 'input');
