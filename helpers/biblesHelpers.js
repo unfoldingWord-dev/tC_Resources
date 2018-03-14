@@ -83,7 +83,7 @@ function generateBibleManifest(
   newManifest.resource_title = oldManifest.dublin_core.title;
   const oldMainfestIdentifier = oldManifest.dublin_core.identifier.toLowerCase();
   newManifest.description =
-  oldMainfestIdentifier === 'ulb' || oldMainfestIdentifier === 'udb' || oldMainfestIdentifier === 'ult'
+  oldMainfestIdentifier === 'ult' || oldMainfestIdentifier === 'udb' || oldMainfestIdentifier === 'ult'
       ? 'Gateway Language'
       : 'Original Language';
 
