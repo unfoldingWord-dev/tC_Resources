@@ -79,8 +79,9 @@ function generateBibleManifest(oldManifest, bibleVersion, RESOURCE_OUTPUT_PATH) 
   newManifest.subject = oldManifest.dublin_core.subject;
   newManifest.resource_id = oldManifest.dublin_core.identifier;
   newManifest.resource_title = oldManifest.dublin_core.title;
+  const oldMainfestIdentifier = oldManifest.dublin_core.identifier.toLowerCase();
   newManifest.description =
-    oldManifest.dublin_core.identifier.toLowerCase() === 'ulb' || 'udb'
+  oldMainfestIdentifier === 'ult' || oldMainfestIdentifier === 'udb' || oldMainfestIdentifier === 'ult'
       ? 'Gateway Language'
       : 'Original Language';
 

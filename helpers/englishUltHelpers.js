@@ -1,15 +1,15 @@
 /**
- * hindiUlbHelpers.js - this is the code called by hindiUlbParse.js to download and convert hindi ULB.
+ * englishUltHelpers.js - this is the code called by englishUltParse.js to download and convert english ULT resources
  */
 
 import path from 'path-extra';
 import * as bible from '../scripts/bible';
 import * as UsfmParseHelpers from './usfmParseHelpers';
 
-//TODO: HI_ULB_URL path is a temporary repo, needs to be updated to final location.
-const HI_ULB_URL = 'https://git.door43.org/photonomad0/AlignedUlb_hi/raw/master';
+//TODO: EN_ULT_URL path is a temporary repo, needs to be updated to final location.
+const EN_ULT_URL = 'https://git.door43.org/photonomad0/AlignedUlb_en/raw/master';
 
-const ugntOutputPath = path.join('resources', 'hi', 'bibles', 'ulb');
+const ugntOutputPath = path.join('resources', 'en', 'bibles', 'ult');
 
 const SOURCE = bible.BIBLE_LIST_NT;
 
@@ -22,7 +22,7 @@ const SOURCE = bible.BIBLE_LIST_NT;
 export function generateVersion(version, resolve, index=true) {
   console.log(`Using version: '${version}'`);
   let books = ['57-TIT']; // TODO add other books as completed
-  UsfmParseHelpers.parseUsfmToChapters(HI_ULB_URL, version, books, 'hi-ulb-sources', ugntOutputPath, () => {
+  UsfmParseHelpers.parseUsfmToChapters(EN_ULT_URL, version, books, 'en-ult-sources', ugntOutputPath, () => {
     if (index) {
       UsfmParseHelpers.generateIndex(SOURCE, version);
     }

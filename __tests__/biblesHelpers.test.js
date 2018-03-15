@@ -13,6 +13,7 @@ describe('Bible Helpers', () => {
   });
 
   test('generateBibles with good input', () => {
+    // TODO: Update ulb to ult once it is updated in the catalog.
     const zipFileName = 'en_ulb.zip';
     const zipfilepath = path.join(tempFilePath, zipFileName);
     fs.copySync(path.join('.', '__tests__', 'fixtures', 'bible', zipFileName), zipfilepath); // copy zip to new location since it will be deleted

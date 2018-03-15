@@ -3,7 +3,7 @@ import { getResourceType, getResourceId } from "../helpers/stringsHelpers";
 describe('Strings Helpers', () => {
     describe('getResourceType', () => {
       test('with valid id', () => {
-        const resourceId = 'ulb';
+        const resourceId = 'ult';
         const expectedResType = 'bibles';
         expect(getResourceType(resourceId)).toEqual(expectedResType);
       });
@@ -23,7 +23,7 @@ describe('Strings Helpers', () => {
 
     describe('getResourceId', () => {
       test('with valid id', () => {
-        const resourceId = 'ulb';
+        const resourceId = 'ult';
         const expectedResID = resourceId;
         expect(getResourceId(resourceId)).toEqual(expectedResID);
       });

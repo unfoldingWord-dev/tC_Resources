@@ -19,7 +19,7 @@ describe('ugntHelpers', function() {
   });
 
   it('should output UGNT chapter files', () => {
-    return new Promise((resolve) => {
+    return new Promise(async(resolve) => {
       const zipFileName = 'ugnt.zip';
       const zipfilepath = path.join(tempFilePath, zipFileName);
       fs.copySync(path.join('.', '__tests__', 'fixtures', 'ugnt', zipFileName), zipfilepath); // copy zip to new location since it will be deleted
@@ -36,7 +36,7 @@ describe('ugntHelpers', function() {
       fs.removeSync(UGNTOutputPath);
       fs.moveSync(testVersionFolder, UGNTOutputPath);
 
-      ugntHelpers.generateUgntVersion(version, resolve);
+      await ugntHelpers.generateUgntVersion(version, resolve);
     }).then(() => {
       console.log('UGNT processing completed!');
     });
