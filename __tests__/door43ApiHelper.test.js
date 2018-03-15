@@ -16,6 +16,7 @@ describe('Door43 API Helper', () => {
           });
         };
 
+        // using ulb here until ult is added to the catalog
         door43ApiHelper
           .getUrl('en', 'ulb', mock_get)
           .then(url => {

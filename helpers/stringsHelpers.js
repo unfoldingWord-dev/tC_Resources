@@ -1,6 +1,7 @@
 export function getResourceType(resourceId) {
   switch (resourceId) {
     case 'ulb':
+    case 'ult':
     case 'udb':
     case 'bhp':
     case 'ugnt':
@@ -17,6 +18,7 @@ export function getResourceType(resourceId) {
 export function getResourceId(resourceId) {
   switch (resourceId) {
     case 'ulb':
+    case 'ult':
     case 'udb':
     case 'bhp':
     case 'ugnt':

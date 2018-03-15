@@ -4,10 +4,10 @@ import usfm from 'usfm-js';
 import yaml from 'yamljs';
 
 /**
- * 
- * @param {array} bibles 
- * @param {String} extractedFilePath 
- * @param {String} RESOURCE_OUTPUT_PATH 
+ *
+ * @param {array} bibles
+ * @param {String} extractedFilePath
+ * @param {String} RESOURCE_OUTPUT_PATH
  */
 export function generateBibles(
   bibles,
@@ -54,8 +54,8 @@ export function generateBibles(
 }
 
 /**
- * 
- * @param {String} extractedFilePath 
+ *
+ * @param {String} extractedFilePath
  */
 export function getResourceManifestFromYaml(extractedFilePath) {
   let filePath = path.join(extractedFilePath, 'manifest.yaml');
@@ -64,10 +64,10 @@ export function getResourceManifestFromYaml(extractedFilePath) {
 }
 
 /**
- * 
- * @param {object} oldManifest 
- * @param {String} bibleVersion 
- * @param {String} RESOURCE_OUTPUT_PATH 
+ *
+ * @param {object} oldManifest
+ * @param {String} bibleVersion
+ * @param {String} RESOURCE_OUTPUT_PATH
  */
 function generateBibleManifest(
   oldManifest,
@@ -81,8 +81,9 @@ function generateBibleManifest(
   newManifest.subject = oldManifest.dublin_core.subject;
   newManifest.resource_id = oldManifest.dublin_core.identifier;
   newManifest.resource_title = oldManifest.dublin_core.title;
+  const oldMainfestIdentifier = oldManifest.dublin_core.identifier.toLowerCase();
   newManifest.description =
-    oldManifest.dublin_core.identifier.toLowerCase() === 'ulb' || 'udb'
+  oldMainfestIdentifier === 'ult' || oldMainfestIdentifier === 'udb' || oldMainfestIdentifier === 'ult'
       ? 'Gateway Language'
       : 'Original Language';
 
