@@ -32,7 +32,7 @@ export function parseUsfmToChapters(sourceUrl, version, books, tempID, outputPat
   verseObjectsOutputPath = outputPath;
   let book_name = books.pop();
   getBookUsfm(sourceUrl, book_name, (ugntPath, bookCode) => {
-    console.log("Parsing: " + book_name);
+    console.log('\x1b[36m%s\x1b[0m', `Parsing: ${book_name}`);
 
     const outputPath_ = path.join(outputPath, ugntVersion, bookCode);
     if(fs.existsSync(outputPath_)) {
