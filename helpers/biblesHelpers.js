@@ -47,7 +47,7 @@ export function generateBibles(bibles, extractedFilePath, RESOURCE_OUTPUT_PATH) 
       });
     });
   } catch (error) {
-    console.error(error);
+    throw new Error(error);
   }
 }
 
@@ -80,8 +80,8 @@ function generateBibleManifest(oldManifest, bibleVersion, RESOURCE_OUTPUT_PATH) 
   newManifest.resource_id = oldManifest.dublin_core.identifier;
   newManifest.resource_title = oldManifest.dublin_core.title;
   const oldMainfestIdentifier = oldManifest.dublin_core.identifier.toLowerCase();
-  newManifest.description =
-  oldMainfestIdentifier === 'ult' || oldMainfestIdentifier === 'udb' || oldMainfestIdentifier === 'ult'
+  const identifiers = ['ulb', 'ult', 'udb', 'udt'];
+  newManifest.description = identifiers.includes(oldMainfestIdentifier)
       ? 'Gateway Language'
       : 'Original Language';
 
