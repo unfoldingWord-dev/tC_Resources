@@ -31,6 +31,6 @@ describe('Bible Helpers', () => {
     function generateBiblesFails() {
       biblesHelpers.generateBibles(['41-MAT.usfm'], null, null);
     }
-    expect(generateBiblesFails).toThrowError('The "path" argument must be of type string');
+    expect(generateBiblesFails).toThrowError('Something went wrong while generating tC compatible bibles');
   });
 });

@@ -47,7 +47,8 @@ export function generateBibles(bibles, extractedFilePath, RESOURCE_OUTPUT_PATH) 
       });
     });
   } catch (error) {
-    throw new Error(error);
+    console.error(error);
+    throw new Error('Something went wrong while generating tC compatible bibles');
   }
 }
 
