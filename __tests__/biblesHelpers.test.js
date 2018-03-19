@@ -28,14 +28,9 @@ describe('Bible Helpers', () => {
   });
 
   test('generateBibles with bad input', () => {
-    let exception = true;
-    try {
+    function generateBiblesFails() {
       biblesHelpers.generateBibles(['41-MAT.usfm'], null, null);
-      exception = false;
-    } catch (e) {
-      console.log("failure: " + e);
-      exception = true;
     }
-    expect(exception).toEqual(true);
+    expect(generateBiblesFails).toThrowError('Something went wrong while generating tC compatible bibles');
   });
 });

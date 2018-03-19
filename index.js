@@ -22,9 +22,9 @@ if (!process.argv[2] || !process.argv[3]) {
 }
 // node process variables
 const LANGUAGE_ID = process.argv[2].toLowerCase(); // ex. en, hi, es
-const RESOURCE_ID = process.argv[3].toLowerCase(); // ex. ult, udb, ugnt, tw, tn, ta
+const RESOURCE_ID = process.argv[3].toLowerCase(); // ex. ult, udt, ugnt, tw, tn, ta
 // constants
-const RESOURCE_KEY = stringsHelper.getResourceId(RESOURCE_ID); // ex. ult, udb, ugnt, translatioWords, translationNotes, translationAcademy
+const RESOURCE_KEY = stringsHelper.getResourceId(RESOURCE_ID); // ex. ult, udt, ugnt, translatioWords, translationNotes, translationAcademy
 const RESOURCE_TYPE = stringsHelper.getResourceType(RESOURCE_ID);
 const TEMP_PATH = path.join(__dirname, 'temp');
 const RESOURCE_INPUT_PATH = path.join(TEMP_PATH, 'input');
