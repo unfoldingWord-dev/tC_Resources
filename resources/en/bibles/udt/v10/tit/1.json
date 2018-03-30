@@ -900,12 +900,12 @@
       {
         "tag": "zaln",
         "type": "milestone",
-        "lemma": "ἐπαγγέλλω",
-        "morph": "Gr,V,IAM3,,S,",
+        "lemma": "αἰώνιος",
+        "morph": "Gr,AA,,,,GFS,",
         "occurrence": 1,
         "occurrences": 1,
-        "strong": "G18610",
-        "content": "ἐπηγγείλατο",
+        "strong": "G01660",
+        "content": "αἰωνίου",
         "children": [
           {
             "text": "forever",
@@ -1133,19 +1133,7 @@
             "type": "word",
             "occurrence": 3,
             "occurrences": 3
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
-        "lemma": "αἰώνιος",
-        "morph": "Gr,AA,,,,GFS,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G01660",
-        "content": "αἰωνίου",
-        "children": [
+          },
           {
             "text": "forever",
             "tag": "w",
@@ -1977,7 +1965,7 @@
         "type": "milestone",
         "lemma": "καί",
         "morph": "Gr,CC,,,,,,,,",
-        "occurrence": 2,
+        "occurrence": 1,
         "occurrences": 2,
         "strong": "G25320",
         "content": "καὶ",
@@ -2145,7 +2133,7 @@
         "type": "milestone",
         "lemma": "καί",
         "morph": "Gr,CC,,,,,,,,",
-        "occurrence": 1,
+        "occurrence": 2,
         "occurrences": 2,
         "strong": "G25320",
         "content": "καὶ",
@@ -5314,50 +5302,14 @@
             "type": "word",
             "occurrence": 2,
             "occurrences": 4
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
-        "lemma": "καί",
-        "morph": "Gr,D,,,,,,,,,",
-        "occurrence": 1,
-        "occurrences": 2,
-        "strong": "G25320",
-        "content": "καὶ",
-        "children": [
+          },
           {
-            "tag": "zaln",
-            "type": "milestone",
-            "lemma": "ἀνυπότακτος",
-            "morph": "Gr,NS,,,,NMP,",
+            "text": "say",
+            "tag": "w",
+            "type": "word",
             "occurrence": 1,
-            "occurrences": 1,
-            "strong": "G05060",
-            "content": "ἀνυπότακτοι",
-            "children": [
-              {
-                "text": "say",
-                "tag": "w",
-                "type": "word",
-                "occurrence": 1,
-                "occurrences": 1
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
-        "lemma": "ματαιολόγος",
-        "morph": "Gr,NS,,,,NMP,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G31510",
-        "content": "ματαιολόγοι",
-        "children": [
+            "occurrences": 1
+          },
           {
             "text": "has",
             "tag": "w",
