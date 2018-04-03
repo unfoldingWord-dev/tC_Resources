@@ -17,7 +17,7 @@ _*** Note: we are still transitioning from ULB to ULT (and UDB to UDT), so for n
 
 To update UGNT resources, run `npm run ugnt-parse` _(instructions given in `./script/ugntParse.js`)_.
 
-To update TW resources, run `npm run build-ugnt-tw` _(instructions given in `./script/ugntParse.js`)_.
+And after updating UGNT resources, you need update TW resources, run `npm run build-ugnt-tw` _(instructions given in `./script/ugntParse.js`)_.
 
 
 [translationCore]:https://github.com/unfoldingWord-dev/translationCore
