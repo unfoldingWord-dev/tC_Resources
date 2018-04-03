@@ -11,7 +11,13 @@ This repository should be included as a sub-module in [translationCore].
 
 ## Scripts
 
-To update UGNT chapter files, follow instructions given in `./script/ugntParse.js`.
+To update resources, run `npm run update-resource <args>` _(instructions given in `./index.js`)_.  
+_*** Note: we are still transitioning from ULB to ULT (and UDB to UDT), so for now will have to manually move the output file until the source files are renamed.  Also for now we need
+ to run the scripts `npm run update-aligned-ult` and `npm run update-aligned-udt` until aligned data is integrated in._
+
+To update UGNT resources, run `npm run ugnt-parse` _(instructions given in `./script/ugntParse.js`)_.
+
+To update TW resources, run `npm run build-ugnt-tw` _(instructions given in `./script/ugntParse.js`)_.
 
 
 [translationCore]:https://github.com/unfoldingWord-dev/translationCore

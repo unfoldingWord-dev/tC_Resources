@@ -16,7 +16,8 @@ describe('Bible Helpers', () => {
     // TODO: Update ulb to ult once it is updated in the catalog.
     const zipFileName = 'en_ulb.zip';
     const zipfilepath = path.join(tempFilePath, zipFileName);
-    fs.copySync(path.join('.', '__tests__', 'fixtures', 'bible', zipFileName), zipfilepath); // copy zip to new location since it will be deleted
+    let testBible = path.resolve(path.join('.', 'fixtures', 'bible', zipFileName));
+    fs.copySync(testBible, zipfilepath); // copy zip to new location since it will be deleted
     const resourceinputpath = path.join(tempFilePath,'dummyDestinationFolder');
     if(resourceinputpath) {
       fs.removeSync(resourceinputpath);
