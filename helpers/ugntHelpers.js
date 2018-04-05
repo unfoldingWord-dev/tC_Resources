@@ -21,6 +21,7 @@ const SOURCE = bible.BIBLE_LIST_NT;
 export function generateUgntVersion(version, resolve) {
   console.log(`Using version: '${version}'`);
   let books = SOURCE.slice(0).reverse(); // make a reversed copy so we pop in book order
+  books.push('manifest.yaml');
   UsfmParseHelpers.parseUsfmToChapters(UGNT_URL, version, books, 'ugnt-sources', ugntOutputPath, () => {
     UsfmParseHelpers.generateIndex(SOURCE, version);
     resolve(true);

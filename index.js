@@ -16,7 +16,7 @@ if (!process.argv[2] || !process.argv[3]) {
   );
   console.error(
     '\x1b[36m%s\x1b[0m',
-    "For example: npm run update-resource ult en,\n where 'ult' is the resource Id and 'en' the language Id",
+    "For example: npm run update-resource en ult\n where 'ult' is the resource Id and 'en' the language Id",
   );
   process.exit(1);
 }
