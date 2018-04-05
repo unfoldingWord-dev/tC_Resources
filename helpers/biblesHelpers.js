@@ -42,7 +42,7 @@ export function generateBibles(bibles, extractedFilePath, RESOURCE_OUTPUT_PATH) 
             bibleId,
             fileName,
           );
-          fs.outputJsonSync(savePath, jsonBibleBook[chapterNumber]);
+          fs.outputJsonSync(savePath, jsonBibleBook.chapters[chapterNumber]);
         }
       });
     });
@@ -72,8 +72,13 @@ export function getResourceManifestFromYaml(extractedFilePath) {
  * @param {String} bibleVersion
  * @param {String} RESOURCE_OUTPUT_PATH
  */
-function generateBibleManifest(oldManifest, bibleVersion, RESOURCE_OUTPUT_PATH) {
+export function generateBibleManifest(oldManifest, bibleVersion, RESOURCE_OUTPUT_PATH) {
   let newManifest = {};
+  newManifest.dublin_core = oldManifest.dublin_core; // preserve original manifest data
+  newManifest.checking = oldManifest.checking;
+  newManifest.projects = oldManifest.projects;
+
+  // copy some data for more convenient access
   newManifest.language_id = oldManifest.dublin_core.language.identifier;
   newManifest.language_name = oldManifest.dublin_core.language.title;
   newManifest.direction = oldManifest.dublin_core.language.direction;
