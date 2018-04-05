@@ -7,6 +7,7 @@ import fs from 'fs-extra';
 import path from 'path-extra';
 import * as bible from '../scripts/bible';
 import assert from 'assert';
+import {getResourceManifestFromYaml, generateBibleManifest} from "./biblesHelpers";
 
 let ugntVersion = null;
 let usfmCachePath = null;
@@ -34,13 +35,22 @@ export function parseUsfmToChapters(sourceUrl, version, books, tempID, outputPat
   getBookUsfm(sourceUrl, book_name, (ugntPath, bookCode) => {
     console.log('\x1b[36m%s\x1b[0m', `Parsing: ${book_name}`);
 
-    const outputPath_ = path.join(outputPath, ugntVersion, bookCode);
-    if(fs.existsSync(outputPath_)) {
-      fs.removeSync(outputPath_);
+    if(book_name !== 'manifest.yaml') {
+      const outputPath_ = path.join(outputPath, ugntVersion, bookCode);
+      if(fs.existsSync(outputPath_)) {
+        fs.removeSync(outputPath_);
+      }
+
+      usfmToJsonHelpers.toChapterFiles(ugntPath, outputPath_);
+      const firstChapter = path.join(outputPath_, '1.json');
+      assert.deepEqual(fs.existsSync(firstChapter), true);
+    } else { // manifest
+      let extractedFilePath = path.resolve(path.join(ugntPath, '..'));
+      console.log("extractedFilePath= " + extractedFilePath);
+      let oldManifest = getResourceManifestFromYaml(extractedFilePath);
+      console.log(JSON.stringify(oldManifest, null, 2));
+      generateBibleManifest(oldManifest, ugntVersion, outputPath);
     }
-    usfmToJsonHelpers.toChapterFiles(ugntPath, outputPath_);
-    const firstChapter = path.join(outputPath_, '1.json');
-    assert.deepEqual(fs.existsSync(firstChapter),true);
 
     setTimeout( () => {
       parseUsfmToChapters(sourceUrl, version, books, tempID, outputPath, callback); // start next book
@@ -64,16 +74,24 @@ function getBookCode(bookName) {
  * @param {function} callback
  */
 function getBookUsfm(sourceUrl, bookName, callback) {
-  const bookCode = getBookCode(bookName);
   const ugntFolder = path.join(usfmCachePath, ugntVersion);
-  const ugntFilePath = path.join(ugntFolder, bookCode + ".usfm");
+  let bookCode;
+  let ugntFilePath;
+  let url;
+  if(bookName !== 'manifest.yaml') {
+    bookCode = getBookCode(bookName);
+    ugntFilePath = path.join(ugntFolder, bookCode + ".usfm");
+    url = `${sourceUrl}/${bookName}.usfm`;
+  } else { // manifest
+    ugntFilePath = path.join(ugntFolder, bookName);
+    url = `${sourceUrl}/${bookName}`;
+  }
   if(fs.existsSync(ugntFilePath)) { // if already downloaded, just do callback
     console.log("file already downloaded: " + ugntFilePath);
     callback(ugntFilePath, bookCode);
     return;
   }
 
-  const url = `${sourceUrl}/${bookName}.usfm`;
   console.log("Downloading: " + url);
   getUsfm(url, (data) => {
     assert.deepEqual(!!data,true);
