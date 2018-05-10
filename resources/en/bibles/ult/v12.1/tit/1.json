@@ -5315,19 +5315,7 @@
             "type": "word",
             "occurrence": 1,
             "occurrences": 2
-          }
-        ]
-      },
-      {
-        "tag": "zaln",
-        "type": "milestone",
-        "lemma": "καθαρός",
-        "morph": "Gr,NP,,,,NNP,",
-        "occurrence": 1,
-        "occurrences": 1,
-        "strong": "G25130",
-        "content": "καθαρὰ",
-        "children": [
+          },
           {
             "text": "are",
             "tag": "w",
@@ -5378,11 +5366,11 @@
         "tag": "zaln",
         "type": "milestone",
         "lemma": "καθαρός",
-        "morph": "Gr,NS,,,,DMP,",
+        "morph": "Gr,NP,,,,NNP,",
         "occurrence": 1,
         "occurrences": 1,
         "strong": "G25130",
-        "content": "καθαροῖς",
+        "content": "καθαρὰ",
         "children": [
           {
             "text": "are",
