@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "eslint ./helpers ./index.js && jest",
-    "ugnt-parse": "babel-node --presets node6 ./scripts/ugntParse.js --ver=v0",
+    "ugnt-parse": "babel-node --presets node6 ./scripts/ugntParse.js --ver=v0.2",
     "update-aligned-udt": "babel-node --presets node6 ./scripts/udtParse.js",
     "update-aligned-ult": "babel-node --presets node6 ./scripts/ultParse.js",
     "update-resource": "babel-node index.js",
