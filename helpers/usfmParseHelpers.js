@@ -48,7 +48,6 @@ export function parseUsfmToChapters(sourceUrl, version, books, tempID, outputPat
       let extractedFilePath = path.resolve(path.join(ugntPath, '..'));
       console.log("extractedFilePath= " + extractedFilePath);
       let oldManifest = getResourceManifestFromYaml(extractedFilePath);
-      console.log(JSON.stringify(oldManifest, null, 2));
       generateBibleManifest(oldManifest, ugntVersion, outputPath);
     }
 
