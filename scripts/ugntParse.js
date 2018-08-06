@@ -16,7 +16,7 @@ function main() {
   let version = getParameter('ver');
   if(!version) {
     console.log('process.argv', process.argv);
-    console.log("Invalid parameter, expect version such as: '--ver=v0'");
+    console.log("Invalid parameter, expect version such as: '--ver=v0.2'");
     return;
   }
 

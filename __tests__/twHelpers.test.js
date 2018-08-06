@@ -5,7 +5,7 @@ import * as twHelpers from '../helpers/twHelpers';
 describe('Test tw Helpers', function() {
   const lang = 'grc';
   const resource = 'ugnt';
-  const version = 'v0';
+  const version = 'v0.2';
   const tempFilePath = path.join('.', '__tests__', 'tw_helpers_test_temp');
   const twOutputPath = path.join(tempFilePath, 'resources', lang, 'translationHelps', 'translationWords', version);
   const origUgntBibleDir = path.join('.', 'resources', lang, 'bibles', resource, version);

@@ -7,7 +7,7 @@ import path from 'path-extra';
 import * as bible from '../scripts/bible';
 import * as UsfmParseHelpers from './usfmParseHelpers';
 
-const UGNT_URL = 'https://git.door43.org/Door43/UGNT/raw/master';
+const UGNT_URL = 'https://git.door43.org/Door43-Catalog/el-x-koine_ugnt/raw/master';
 
 const ugntOutputPath = path.join('resources', 'grc', 'bibles', 'ugnt');
 
