@@ -129,37 +129,46 @@ function indexBook(index, bookCode) {
   const expectedChapters = bible.BOOK_CHAPTER_VERSES[bookCode];
   const bookPath = path.join(verseObjectsOutputPath, ugntVersion, bookCode);
   const files = fs.readdirSync(bookPath);
-  const chapterCount = Object.keys(expectedChapters).length;
-  console.log(`${bookCode} - found ${chapterCount} chapters`);
-  assert.deepEqual(files.length,chapterCount);
+  let chapterCount = Object.keys(expectedChapters).length;
+  console.log(`${bookCode} - expected ${chapterCount} chapters`);
+  if (files.length != chapterCount) {
+    console.log(`warning different chapter counts\n${bookCode} - found ${files.length} chapters`);
+    if (files.length > chapterCount) {
+      chapterCount = files.length;
+    }
+  }
   const bookIndex = {};
   index[bookCode] = bookIndex;
 
   // add chapters
-  for (let chapter of Object.keys(expectedChapters)) {
+  for (let chapter = 1; chapter < chapterCount; chapter++) {
     const chapterIndex = {};
     bookIndex[chapter] = chapterIndex;
     const expectedVerseCount = parseInt(expectedChapters[chapter]);
     const chapterPath = path.join(bookPath, chapter + ".json");
-    const ugntChapter = JSON.parse(fs.readFileSync(chapterPath));
-    const ugntVerses = Object.keys(ugntChapter);
-    let frontPos = ugntVerses.indexOf("front");
-    if (frontPos >= 0) { // remove chapter front matter
-      ugntVerses.splice(frontPos, 1); // remove front item
-    }
-    console.log(`${bookCode} - in chapter ${chapter}, found ${ugntVerses.length} verses`);
-    if (ugntVerses.length !== expectedVerseCount) {
-      console.warn(`WARNING: ${bookCode} - in chapter ${chapter}, found ${ugntVerses.length} verses but should be ${expectedVerseCount} verses`);
-    }
-
-    // add verses
-    for (let verse of ugntVerses) {
-      let words = ugntChapter[verse];
-      if (words.verseObjects) { // check for new verse objects support
-        words = words.verseObjects;
+    if (!fs.pathExistsSync(chapterPath)) {
+      console.log("Missing chapter: " + chapterPath);
+    } else {
+      const ugntChapter = JSON.parse(fs.readFileSync(chapterPath));
+      const ugntVerses = Object.keys(ugntChapter);
+      let frontPos = ugntVerses.indexOf("front");
+      if (frontPos >= 0) { // remove chapter front matter
+        ugntVerses.splice(frontPos, 1); // remove front item
       }
-      const wordCount = words.length;
-      chapterIndex[verse] = wordCount;
+      console.log(`${bookCode} - in chapter ${chapter}, found ${ugntVerses.length} verses`);
+      if (ugntVerses.length !== expectedVerseCount) {
+        console.warn(`WARNING: ${bookCode} - in chapter ${chapter}, found ${ugntVerses.length} verses but should be ${expectedVerseCount} verses`);
+      }
+
+      // add verses
+      for (let verse of ugntVerses) {
+        let words = ugntChapter[verse];
+        if (words.verseObjects) { // check for new verse objects support
+          words = words.verseObjects;
+        }
+        const wordCount = words.length;
+        chapterIndex[verse] = wordCount;
+      }
     }
   }
 }
